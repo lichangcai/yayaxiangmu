@@ -1,0 +1,82 @@
+
+/*{height: 0.9rem;}*/
+.pay .has-header{top: 0.9rem;}
+.pay .top{overflow: hidden;padding-left: 3%;padding-top:0.2rem;border-bottom: 1px solid #aaa;padding-bottom: 0.5rem;}
+.pay .top h1{margin: 0px;font-size: 0.24rem;}
+.pay .top p{margin-left: 1.5rem;font-family: "微软雅黑";font-size: 0.28rem;padding: 0.17rem 0;}
+.pay .top p:nth-child(3) i{color: red;}
+.pay .top p:nth-child(5){margin-left: 2.9rem;}
+.pay .top p:nth-child(5) i{padding-left: 0.6rem;}
+.pay .way{width: 100%;padding-left:3% ;padding-right: 3%;padding-bottom: 0.2rem;border-bottom: 1px dashed;}
+.pay .way>h2{font-family: "微软雅黑";font-size: 0.24rem;color: black;}
+
+
+.pay .way label p.active{border: 1px solid black;background: #c9c9c9;padding:0.1rem 0rem 0.1rem 1rem ;margin: 0.1rem 0;margin: 0.2rem 0;
+ padding-left:1rem;padding-left: 1.5rem; }
+.pay .way>label>p{ font-family: "微软雅黑";font-size: 0.24rem;margin: 0.1rem 0; padding-left: 1rem;margin: 0.2rem 0;padding:0.1rem 0.1rem 0.1rem 1rem ;border: 1px solid inherit;}
+.way label i{padding-left: 0.5rem;}
+.pay .way label:nth-child(3) i{color:red}
+/*下面是before做的图标*/
+.pay .way label p{position: relative;display: flex;align-items: center;border: 1px solid #fff;padding-left: 1.5rem;}
+.pay .way label p input{visibility: hidden;}
+.pay .way label p span{width: 0.2rem;height: 0.2rem;background:#fff;border-radius: 50%;display: inline-block;position: absolute;
+left: 0.7rem;border: 1px solid #aaa;margin-left: 0.65rem;}
+.pay .way label p input:checked+span:before{content: "";width: 0.2rem;height: 0.2rem;background: yellow;position: absolute;border-radius: 50%;
+background: black;border: 0.05rem solid #f4f1f1;top: -0.01rem;margin-left: -0.01rem;}
+.pay .fan{display: flex;justify-content: center;height:1rem;width: 100%;margin-top: 0.5rem;margin-bottom: 0.1rem;}
+.pay .fan button{width: 2.3rem;font-family: "微软雅黑";font-size: 0.24rem;height: 0.5rem;background: #010744;color: #fff;border: none;}
+.pay .fan button:nth-child(1){margin-right: 0.65rem;}
+.pay .anquan{height: 0.8rem;display: flex;align-items: center;margin-bottom: 10px;overflow: hidden;}
+.pay .anquan p{width: 100%; margin-bottom: 0px;margin-left: 1.5rem;display: flex;align-items: center;font-family: "微软雅黑";font-size: 0.24rem;}
+.pay .anquan p img{width: 9%;margin-right: 0.3rem;}
+
+
+/*支付密码那里*/
+.pay .zhi{font-family: "微软雅黑";font-size: 0.24rem;margin-left: 1.5rem;}
+.pay .input_list{display: inline-block;margin-left: 1.5rem;margin-top: 0.2rem;margin-bottom: 0.2rem;}
+.pay .input_list input{outline: none; width:0.5rem;text-align: center;display: inline-block;margin-bottom: 10px;height: 0.5rem;margin-right: 0.2rem;
+margin-right: -0.09rem;border: 1px solid #aaa;}
+.pay .input_list input:nth-child(4){border-left: none;}
+.pay .mi{margin-bottom: 0px; font-family: "微软雅黑";font-size: 0.24rem;padding-left: 1.5rem;
+padding-bottom: 0.2rem;border-bottom: 1px solid #aaa;width: 100%;}
+.pay .mi i{float: right;margin-right: 3%;}
+.queren{width: 100%; margin-bottom: 0.5rem;border-bottom:1px solid #aaa ;}
+.pay .queren h1{margin-bottom: 0px; font-family: "微软雅黑";font-size: 0.28rem;padding-left: 0.45rem;padding: 0.18rem 0; 
+  padding-left: 3%;}
+.pay .queren .cart{ height: 2.3rem;width: 100%;background: #eeeeee;}
+.pay .list{ width: 100%;padding: 0px; margin: 0 auto;height: 3.2rem;
+           display: flex;overflow: hidden; background: #EAE8E8;}
+.pay .list .left{width: 40%;height: 100%;margin-left: -0.2rem;display: flex;align-items: center;}
+.pay .list img{border: 1px solid #aaa;border-radius: 10px;margin-left: 0.2rem;width: 58%;}
+.pay .list label{float: left;width: 15px;height: 15px;border-radius: 50%;margin-left: 0.5rem;}
+.pay .list .right{color: #969696; width: 60%; margin-left: 0.1rem;}
+.pay .list .right h3{padding-top: 0.28rem;margin: 0;font-family: "微软雅黑";font-size: 0.24rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.pay .p_jia{ font-family: "微软雅黑";font-size: 0.28rem;margin-top:0.2rem ;}
+.pay .p_jia i{color: red;font-size: 0.28rem;}
+/* justify-content: space-between;排在一个div里面的两边*/
+.pay .bottom{margin-top:0.2rem ; display: flex; justify-content: space-between; align-items: center; font-family: "微软雅黑";font-size: 0.24rem;width: 83%;}
+.pay .bottom div {display: flex;align-items: center;}
+.pay .bottom span{font-size: 0.28rem;}
+.pay .bottom div span{font-size: 0.28rem;font-family: "微软雅黑";}
+.pay .bottom div div span{font-family: "微软雅黑";font-size: 0.28rem;}
+.pay .bottom div div{display: flex;margin-left: 0.2rem;}
+.pay .bottom div div>button{border: none;background: inherit;font-size: 0.28rem;}
+.pay .bottom div div .kuang{width:1rem;text-align: center;height: 0.5rem;border: 1px solid #aaa;}
+.pay .bottom div div .kuang input:{font-family: "微软雅黑";font-size: 0.28rem;}
+.pay .xiao{font-family: "微软雅黑";font-size: 0.28rem;margin-top:0.2rem ;}
+/*做一个为元素*/
+.pay .list label {position: relative;display: flex;align-items: center;}
+.pay .list label  input{visibility: hidden;}
+.pay .list label  span{width: 0.2rem;height: 0.2rem;background:#fff;border-radius: 50%;display: inline-block;position: absolute;
+border: 1px solid #aaa;margin-left: -0.01rem;}
+.pay .list label  input:checked+span:before{content: "";width: 0.2rem;height: 0.2rem;position: absolute;border-radius: 50%;
+background: #fff;border: 0.05rem solid #707070;top: -0.02rem;margin-left: -0.02rem;}
+/*end*/
+
+
+.pay .foo{display: flex;margin-bottom: 2rem;margin-bottom: 0.6rem;width: 100%;padding: 0 3%;}
+.pay .foo p:nth-child(1){padding-left: 2.5rem;}
+.pay .foo p:nth-child(1) i{color: red;}
+.pay .foo p{margin-bottom: 0px; font-family: "微软雅黑";font-size: 0.24rem;   width: 100%;align-items:center ; display: flex;}
+.pay .foo p button{ width: 1.5rem;height:0.5rem;color: #FFFFFF;border: none;background: red;font-family: "微软雅黑";font-size: 0.24rem;margin-left: 1rem;}
+

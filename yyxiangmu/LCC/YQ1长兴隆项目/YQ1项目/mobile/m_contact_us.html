@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" type="text/css" href="css/m_common_contact_us.css" />
+  <link rel="stylesheet" type="text/css" href="css/m_contact_us.css"/>
+   <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>
+    <script type="text/javascript" src="js/m_index.js"></script>
+
+
+   <title>联系我们</title>
+   
+   
+       <script type="text/javascript">
+		var inputFocus = function(element,value){
+			if(element.value == value){
+				element.value = "";
+			}
+		}
+		var inputBlur = function(element,value){
+			if(element.value == ""){
+				element.value = value;
+			}
+		}
+	 </script>
+   
+   </head>
+
+<body>
+   <!--header头部-->
+   <header class="header">
+	 <h1>在线留言<a href="javascript:history.back()"><img src="imager/m_common.png"></a></h1>
+   </header>
+   <div class="centent">
+   <nav class="nav">
+				<ul>
+					<li class="on"><a href="m_contact_us.html">在线留言</a></li>
+					<li><a href="m_contact_us.html">联系方式</a></li>
+                </ul>	
+   </nav>
+  </div>
+   <!--轮播图的代码-->
+  <article class="content"> 
+   <section class="index_banner">
+			<div id="bd">
+				<ul>
+					<li>
+						<a href="###"><img src="imager/m_banner1.jpg"   alt="banner图" /></a>
+					</li>
+					<li>
+						<a href="###"><img src="imager/m_banner2.jpg"  alt="banner图" /></a>
+					</li>
+					<li>
+						<a href="###"><img src="imager/m_banner.jpg"  alt="banner图" /></a>
+					</li>
+				</ul>
+			</div>
+			<div id="hd">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+                    </ul>
+                </div>
+    </section>
+  </article>
+  
+    <div class="center">
+     <div class="topD">
+           <h1>在线留言</a></h1>
+      </div>
+      
+      <div style="width:100%;height:400px;border:#ccc solid 1px;" id="dituContent">
+      </div> 
+      
+      <div class="mag">
+              <form> 
+                <div class="username">
+                  <label for="">姓名</label>
+				<input type="text" data-role="none"/>
+               </div>
+                <div class="username">
+                  <label for="">电话</label>
+				<input type="text" data-role="none"/>
+               </div>
+               <div class="username">
+                  <label for="">地址</label>
+				<input type="text" data-role="none"/>
+               </div>
+             <div class="inpu">
+              <label for="user_message">留言</label>
+              
+					<textarea id="user_message"></textarea>
+             </div>
+             
+             <div class="inp">
+              <label for=""></label>
+				 <input type="text" value="请输入您的验证码" class="kuang" onfocus="inputFocus(this,this.defaultValue)" onblur="inputBlur(this,this.defaultValue)"/>
+                <img src="imager/m_contact_us2.jpg"> 
+             </div>
+             
+             <div class="submit">
+                  <label for=""></label>
+				<input type="text" value="提交"data-role="none"/>
+             </div>
+      </div>
+   
+   <div class="contact">
+      <div class="contact_us">
+     <h1>联系方式</h1>
+       <ul>
+         <li>联系人：肖生</li>
+         <li>联系电话：0769-82365678</li>
+         <li>QQ : 12345678901</li>
+         <li>传真 ： 028-12345678</li>
+         <li>联系地址：广东省东莞市桥头镇桥龙路120号</li>
+         <li>邮政编码：523523	</li>
+       </ul>
+       </div>
+   </div>
+
+    
+    
+    
+    
+    
+         <!--底部的代码--> 
+    <div class="footer">
+           <ul>
+               <li>
+                <a href="m_index.html"><img src="imager/m_index1.png"></a>
+               <a href="m_index.html">首页</a>
+             </li>
+             
+             <li>
+               <a href="m_about_us.html"><img src="imager/m_index2.png"></a>
+              <a href="m_about_us.html">公司介绍</a>
+             </li>
+             
+             <li>
+               <a href="m_news.html"><img src="imager/m_index3.png"></a>
+              <a href="m_news.html">新闻中心</a>
+             </li>
+             
+             <li>
+              <a href="m_product.html"><img src="imager/m_index4.png"></a>
+                <a href="m_product.html">产品中心</a>
+             </li>
+             
+             <li class="on">
+              <a href="m_contact_us.html"><img src="imager/m_index5-1.png"></a>
+                <a href="m_contact_us.html">联系我们</a> 
+             </li>
+          </ul>
+    </div>
+</div>
+
+</body>
+</html>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script type="text/javascript" src="js/map.js"></script>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--content属性值:
+    	initial-scale:当页面首次展示，可视区域的缩放级别。取值1.0则页面按照实际尺寸显示，无任何缩放
+    	maximum-scale=1.0,minimum-scale=1.0;可视区域的缩放级别。
+    	maximun-scale=1.0:指用户可将页面放大的属性，1.0是指禁止用户放大到实际尺寸以上
+    	user-scalable:是否可以对页面进行缩放，no是指禁止缩放
+        -->
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/address_common.css" />
+		<link rel="stylesheet"href="css/pay_finish.css" />
+		<title>完成订单</title>
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+	<body>
+			<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+    	<!--这是头部的按钮-->
+    	<div class="car col-lg-12 col-md-12 ">
+			<div class="dropdown  car_right">
+				<button type="button" class="btn dropdown-toggle user" id="dropdownMenu1"  data-toggle="dropdown">
+					CCC
+					<span><img src="img/address.png"/></span>
+				</button>
+					<ul class="dropdown-menu xiala" role="menu" aria-labelledby="dropdownMenu1">
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="user.html">会员中心</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="order.html">我的订单</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="order_details.html">订单详情</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="address.html">收货地址</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="shop_cart.html">购物车</a></li>
+						
+					</ul>
+					
+					<span><a href="shop_cart.html"><img src="img/cart.png"></a><a href="shop_cart.html">购物车</a><i>( 0 )</i> </span>
+			</div>
+    	</div>
+    	<div class="container-fluid">
+    <div class="navbar-header navbar-left">
+   
+      <a href="index.html"><img src="img/logo.png" class="img-responsive logo" title="欢迎来到宋迈品牌商城！" alt="亲，请您刷新在试试！" /></a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+
+   
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-left">
+      	<li><a href="index.html">首页</a></li>
+      	<li><a href="brand_introduction.html">品牌介绍</a></li>
+      	<li><a href="product.html">产品中心</a></li>
+      	<li><a href="news.html">新闻中心</a></li>
+      	<li><a href="contact_us.html">联系我们</a></li>
+      </ul>
+      
+        <div class="form-group icon">
+          <button type="submit"><img src="img/submit.png"/></button>
+          <input type="text"  placeholder="">
+        
+        </div>
+      
+      
+    </div>
+  </div>
+</nav>
+
+
+<div class="concent">
+   <div class="container">
+   	    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 top">
+	   	  	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+	   	  		<h1><a href="###">完成订单</a></h1>
+	   	  	</div>
+	   	  	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+	   	  	<img src="img/pay_finish.png"/>
+	   	  	</div>
+	   	</div>
+	   	  	<div class="col-lg-12 col-md-12 shop_car col-sm-12 col-xs-12">
+	   	  	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+	   	  	</div>
+	   	  	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+	   	  	<p>购物车</p>
+	   	  	<p>确认订单</p>
+	   	  	<p>完成订单</p>
+	   	  	</div>
+	   	  	</div>
+	   	  	
+	   	<div class="col-lg-12 center col-md-12 complete">
+	   		<img src="img/pay_finish2.png"/><label>您的订单已完成</label><br />
+	   		<p>您的包裹，保证24小时内发货完毕，可注意手机提示</p>
+	   	</div>
+	   	<div class="nav row">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  mail">
+				<img src="img/pay_finish4.png">
+				<p>79元包邮</p>
+				<p>订单满79元，全国包邮</p>				
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs mail">
+				<img src="img/pay_finish4.png">
+				<p>79元包邮</p>
+				<p>订单满79元，全国包邮</p>	
+			</div>
+			<div class="col-lg-3 col-md-3  col-sm-3 hidden-xs mail">
+				<img src="img/pay_finish4.png">
+				<p>79元包邮</p>
+				<p>订单满79元，全国包邮</p>	
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs mail">
+				<img src="img/pay_finish4.png">
+				<p>79元包邮</p>
+				<p>订单满79元，全国包邮</p>	
+			</div>
+		</div>
+		<div class="next col-lg-12 col-md-12 col-xs-12">
+			<h1 class="col-xs-12 col-md-12 col-lg-12">继续购物</h1>
+			<ul class="col-xs-12 col-lg-12 col-md-12">
+				<li class="col-xs-6 col-lg-3 col-md-3"><a href="pro_details.html"><img src="img/pay_finish1.png"></a></li>
+				<li class="col-xs-6 col-lg-3 col-md-3"><a href="pro_details.html"><img src="img/pay_finish1.png"></a></li>
+				<li class="col-xs-6 col-lg-3 col-md-3"><a href="pro_details.html"><img src="img/pay_finish1.png"></a></li>
+				<li class="col-xs-6 col-lg-3 col-md-3"><a href="pro_details.html"><img src="img/pay_finish1.png"></a></li>
+			</ul>
+		</div>
+   </div>
+</div>
+<div class="footer">
+   	<p>COPYRIGHT (C) 2016WWW.JINLIAN.COM ALL RIGHTS RSERVED</p>
+</div>
+	</body>
+</html>

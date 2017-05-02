@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/ionic.min.css" />
+		<link rel="stylesheet" href="css/login.css" />
+		<title>登录</title>
+	</head>
+	<!--ng-controller 指令用于为你的应用添加控制器。在控制器中，你可以编写代码，制作函数和变量，并使用 scope 对象来访问。-->
+	<!--homeController是ng-controller自己定义的名字-->
+	<body ng-controller="logController">
+		<ion-view class="login">
+			<!--ion-hearder-bar 这个是固定在屏幕顶部的一个头部标题栏的用法。-->
+			<ion-header-bar class="head-top">
+				<h1>登   录</h1>
+			</ion-header-bar>
+			<!--top这是结尾-->
+			<!--<这是自动轮播的代码 要加上ion-content才可以居中-->
+				<ion-content class="content logins">
+				    <form class="top_pic">
+				    	<P>请输入你的手机号码</p>
+				    	<label>    		
+				    		<img src="img/login/name.png" />
+				    		<input type="text" placeholder="会员名:"  ng-focus="text_focus()" ng-blur="text_blur()" id="aaaa"/>
+				    	</label>
+				    	<P>请输入你的密码</p>
+				    	<label> 		
+				    		<img src="img/login/mima.png" />
+				    		<input type="password"placeholder="密    码:" ng-focus="pass_focus()" ng-blur="pass_blur()" id="passs"/>
+				    	</label>
+				    	<P>请输入正确的验证码</p>
+				    	<label class="code">				    		
+				    		<img src="img/login/yzm.png" />
+				    		<input type="text"placeholder="验证码:" ng-focus="code_focus()" ng-blur="code_blur()" id="codes"/>
+				    		<button>获取验证码</button>
+				    	</label>
+				    </form>
+				    <!--协议那块-->
+				    <div class="xieyi">
+						<label for="" class="addto" >
+					    		<input type="checkbox" id="servise"/>服务协议
+					    </label>
+						<label  for="" class ="addto" >
+							<input type="checkbox" id="agress">我同意
+						</label>
+					</div>
+				    <!--确认登录那块-->
+				    <div class="sure">
+				    	<button  ng-click="login()">确认登录</button>				    	
+				    </div>
+				    <div class="forget">
+				    	<a><span>忘记密码</span>?</a>
+				    	<a ui-sref="register">立即注册</a>
+				    </div>
+				    <div class="back">
+				    	<span>BACK</span>
+				    </div>
+				</ion-content>			  
+		</ion-view>
+	</body>
+</html>

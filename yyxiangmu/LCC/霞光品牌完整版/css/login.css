@@ -1,0 +1,35 @@
+.login .ion-content{background: transparent no-repeat center;}
+body .login {background: url(../img/login/bg.jpg)no-repeat center;}
+.login .pane, .view{background: transparent;}
+.login .bar-header.has-tabs-top, .tabs-top .bar-header{background: transparent;}
+.login .bar-footer{background: transparent;}
+.login .content{background: transparent;}
+.login .head-top{width: 100%; height: 2.6rem;display:flex;align-items: center;justify-content: center;background: transparent;border: none;}
+.login .head-top h1{font-family: "微软雅黑";font-size: 0.55rem;color: #fff;width: 100%;text-align: center;}
+.login .top_pic{width: 100%;margin-top: 2.18rem; }
+.login .top_pic label{ height: 0.6rem; width:5.6rem;display: flex;justify-content: center;align-items: center; margin: 0 auto;border-bottom:1px solid #aaa ;margin-bottom: 0.1rem;}
+.login .top_pic label input{width: 4.5rem;font-family: "微软雅黑";font-size: 0.28rem;margin-left: 0.2rem;color: #fff;background: inherit;}
+.login .top_pic label img{width: 5%;}
+.login .xieyi{width:5.6rem;height:0.4rem;display: flex;align-items: center;margin: 0 auto;justify-content: space-between;}
+.login .xieyi label{font-family: "微软雅黑";font-size: 0.28rem;color: #fff;display: flex;align-items: center;}
+.login .xieyi label input{margin-right: 0.1rem;height: 0.3rem;width: 0.4rem;}
+.login .xieyi label:nth-child(2){margin-left:2.5rem;}
+.login .sure{ width: 5rem; margin: 0.5rem auto 0;display: flex;justify-content: center;align-items: center;border-radius: 10px;}
+.login .sure button{font-family: "微软雅黑";font-size: 0.3rem;color: #fff;border: none;background: inherit;width: 5rem;height: 0.65rem;border-radius: 10px;background: #b62020;}
+.login .forget{width: 5rem;margin: 0.5rem auto 0;height: 0.5rem;display: flex;align-items: center;}
+.login .forget span{border-bottom: 1px solid #fff;}
+.login .forget a:nth-child(2){margin-left: 2.5rem;}
+.login .forget a{color: #fff;font-family: "微软雅黑";font-size: 0.24rem;}
+.login .back {text-align: center;}
+
+.login .back span{font-size: 0.24rem;display: inline-block;line-height: 0.24rem;margin-top: 0.8rem;color: #fff;}
+.login .back span:before{content: "";display: inline-block;height: 0.06rem;width: 2.0rem;border-bottom: 1px solid #fff;position: relative;top:-0.06rem;margin-right: 0.2rem;}
+.login .back span:after{content: "";display: inline-block;height: 0.06rem;width: 2.0rem;border-bottom: 1px solid #fff;position: relative;top:-0.06rem;margin-left: 0.2rem;}
+
+
+
+.login p{margin-bottom: 0.1rem;visibility: hidden}
+.login .content .top_pic p{font-size: 0.28rem;color: black;text-align: center;width: 100%;margin-top: 0.2rem;}
+.login .code button{position: relative;width: 3rem;font-family: "微软雅黑";font-size: 0.24rem;}
+.login .content .top_pic label:nth-child(3){position: absolute;}
+.login .top_pic label:nth-child(6) img{margin-left:0.34rem;}

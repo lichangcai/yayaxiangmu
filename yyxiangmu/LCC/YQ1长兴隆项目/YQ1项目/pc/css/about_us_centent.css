@@ -1,0 +1,131 @@
+.centent{
+	height:100%;
+	overflow:hidden;
+	margin-bottom:50px;
+	margin-top:50px;
+	}
+
+.centent .mg .left{
+	height:100%;
+	overflow:hidden;
+	width:284px;
+	}
+
+/*这是中心的左边列表*/
+.centent .mg .left .top{
+	width:240px;
+	height:100%;
+	overflow:hidden;
+	background:url(../images/news-top.jpg);
+	}
+.centent .mg .left .top h3{
+	line-height:50px;
+	font-family:微软雅黑;
+	font-size:18px;
+	margin-left:50px;
+	color:#333333;
+	font-weight:normal;
+	}
+	
+	
+.centent .mg .left .topA {
+	height:100%;
+	overflow:hidden;
+	width:240px;
+	background:url(../images/news-topA.jpg)
+	}
+.centent .mg .left .topA ul{
+	padding-top:4px;
+	text-align:center;
+	}
+.centent .mg .left .topA ul li a{
+	font-family:微软雅黑;
+	color:#333333;
+	font-size:14px;
+	line-height:32px;
+	}
+.centent .mg .left .topA ul li a:hover{
+	text-decoration:underline;
+	color:red;
+	}	
+.centent .mg .left .topA ul li .on{
+	color:#F00;
+	text-decoration:underline;
+	}
+
+
+/*这是联系方式那里的列表*/
+.centent .left img{
+	margin-top:20px;
+	float:left;
+	width:240px;
+	height:100%;
+	overflow:hidden
+	}
+	
+.centent .mg .left .contact{
+	width:240px;
+	height:170px;
+	background:#9fded2;
+	float:left;
+	}
+.centent .mg .left .contact ul{
+	font-family:微软雅黑;
+	font-size:12px;
+	margin-left:10px;
+	}
+.centent .mg .left .contact ul li{
+	color:#333333;}
+
+/*这是中心部分右边的代码*/
+.centent .mg .right{
+	height:100%;
+	overflow:hidden;
+	width:916px;
+	}
+/*	border-bottom:2px solid #999;是加下边宽的表达*/
+.centent .mg .right .top{
+	height:28px;
+	border-bottom:2px solid #999;
+	}
+.centent .mg .right .top p{
+	color:#333333;
+	font-family:微软雅黑;
+	font-size:12px;
+	}
+.centent .mg .right .top p span a{
+	color:red;
+	}
+.centent .mg .right .center{
+	height:100%;
+	overflow:hidden;
+	}
+.centent .mg .right .center h1{
+	font-weight:normal;
+	font-family:微软雅黑;
+	font-size:18px;
+	color:#ed1721;
+	text-align:center;
+	padding-top:15px;
+	padding-bottom:15px;
+	}
+	
+.centent .right .center img{
+	display:block;
+	margin:0 auto;
+	height:100%;
+	overflow:hidden;	
+	padding-bottom:20px;
+	}
+.centent .right .center p{
+	padding-top:10px;
+	text-indent:2em;
+	font-family:微软雅黑;
+	font-size:14px;
+	line-height:24px;
+	}
+.centent .right .footer1 p{
+	text-indent:2em;
+	font-family:微软雅黑;
+	font-size:14px;
+	line-height:24px;}

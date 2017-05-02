@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			var winW = $(window).width();
+			var liLen = $(".inner_banner .bd li").length;
+			$(".inner_banner .bd").css({"width":winW*liLen+"px"});
+			$(".inner_banner .bd li").width(winW+"px");
+			var a = 0,
+				bool = true
+			$(".inner_banner .hd li").eq(0).addClass("on");
+
+			$(".inner_banner .next").click(function(){
+				show()
+				
+			})
+
+			$(".inner_banner .prev").click(function(){
+				if(bool){
+					bool = false;
+					a = $(".inner_banner .hd li.on").index();
+					a --;
+					if(a<0){
+						a = liLen-1;
+					}
+					$(".inner_banner .bd").animate({"left":-winW*a+"px"},700,function(){
+						bool = true	
+					});
+					$(".inner_banner .hd li").removeClass("on").eq(a).addClass("on");	
+				}else{
+					return ;	
+				}
+				
+			})
+
+			$(".inner_banner .hd li").click(function(){
+				if(bool){
+					bool = false
+					a = $(this).index();
+					$(".inner_banner .bd").animate({"left":-winW*a+"px"},700,function(){
+						bool = true		
+					});
+					$(".inner_banner .hd li").removeClass("on").eq(a).addClass("on");	
+				}else{
+					return ;	
+				}
+				
+			})
+
+			$(".inner_banner").mouseover(function(){
+				clearInterval(lun);
+			})
+			$(".inner_banner").mouseout(function(){
+				lun = setInterval(show,3000);
+			})
+			function show(){
+				if(bool){
+					bool = false;
+					a = a + 1;
+					if(a>liLen-1){
+						a = 0;
+					}
+					$(".inner_banner .bd").animate({"left":-winW*a+"px"},700,function(){
+						bool = true	
+					});
+					$(".inner_banner .hd li").removeClass("on").eq(a).addClass("on");
+				}else{
+					return ;	
+				}
+				
+				
+			}
+			var lun = setInterval(show,3000);
+		})
+	</script>
+     <script type="text/javascript">
+		var inputFocus = function(element,value){
+			if(element.value == value){
+				element.value = "";
+			}
+		}
+		var inputBlur = function(element,value){
+			if(element.value == ""){
+				element.value = value;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="header">
+		<div class="top">
+			<div class="mg">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.jpg" title="欢迎来到长兴隆电子有限公司" alt="亲，你的图片未加载，请刷新再试！"></a>
+				</div>
+				<div class="logo_right">
+					<form action="" class="search">
+						<input type="text" value="请输入产品信息" class="text" onfocus="inputFocus(this,this.defaultValue)" onblur="inputBlur(this,this.defaultValue)">
+						<input type="submit" value="" class="submit">
+					</form>
+					
+				</div>
+			</div>
+		</div>
+		<div class="navbar">
+			<div class="mg">
+				<ul>
+					<li class="on"><a href="index.html">首页</a></li>
+					<li>
+						<a href="about_us.html">公司介绍</a>
+						<dl>
+                            <dd><a href="about_us.html">公司介绍</a></dd>
+							<dd><a href="about_us.html">公司文化</a></dd>
+							<dd><a href="about_us.html">公司环境</a></dd>
+						</dl>
+					</li>
+					<li>
+						<a href="news.html">新闻中心</a>
+						<dl>
+							<dd><a href="news.html">最新动态</a></dd>
+							<dd><a href="news.html">产品新闻</a></dd>
+							<dd><a href="news.html">行业新闻</a></dd>
+						</dl>
+					</li>
+					<li>
+						<a href="product.html">产品中心</a>
+						<dl>
+							<dd><a href="product.html" >音响类</a></dd>
+							<dd><a href="product.html" >耳机类</a></dd>
+							<dd><a href="product.html" >键盘类</a></dd>
+                            <dd><a href="product.html" >鼠标类</a></dd>
+                            <dd><a href="product.html" >其他</a></dd>
+						</dl>
+					</li>
+					<li>
+						<a href="contact_us.html">联系我们</a>
+						<dl>
+							<dd><a href="contact_us.html">在线留言</a></dd>
+							<dd><a href="contact_us.html">联系我们</a></dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    
+	<div class="content">
+		<div class="inner_banner">
+		<div class="bd">
+			<ul>
+				<li><a href="index.html"><img src="images/banner.jpg"></a></li>
+				<li><a href="news.html"><img src="images/banner2.jpg"></a></li>
+				<li><a href="product.html"><img src="images/banner3.jpg"></a></li>
+			</ul>
+		</div>
+		<div class="hd">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<a href="###" class="prev"><img src="images/prev-2.jpg"></a>
+		<a href="###" class="next"><img src="images/next-2.jpg"></a>
+	    </div>
+        
+        
+		<div class="index_about">
+			<div class="mg">
+            
+            
+				<div class="index_title">
+					<h2>公司介绍<span>ABOUT US</span></h2>
+				</div>
+                
+               <div class="ov">
+				<div class="pic">
+                    <a href="about_us.html"><img src="images/us-left.jpg"></a>
+                </div>
+                <div class="textA">
+                      <p>
+                      长兴隆电子有限公司是一家专业的音响
+                      、键盘、鼠标、头戴无线耳机的公司，拥有庞大的服务网点，以高覆盖
+                      、高效率的服务获得多家公司和机构的认可。将以最专
+                      业的精神为您提供安全、经济、专业的服务。公司秉承“顾客至上，锐意
+                      进取”的经营理念，坚持“客户第一”的原则为广大客户提供优质的服务。在激
+                      烈的市场竞争中迅速发展壮大，赢得了广泛的支持与用户的信赖。
+                      </p>
+                      <p>
+                     长兴隆电子有限公司是一家专业的音响、键盘、鼠标、
+                     头戴无线耳机的公司，拥有庞大的服务网点，以高覆盖、高
+                     效率的服务获得多家公司和机构的认可。将以最专业的精
+                     神为您提供安全、经济、专业的服务。公司秉承“顾客至上，
+                     锐意进取”的经营理念，坚持“客户第一”的原则为广大客户提
+                     供优质的服务。在激烈的市场竞争中迅速发展壮大，赢得了广泛的支持与
+                     用户的信赖。
+                     </p>
+                     <p>
+                    长兴隆电子有限公司是一家专业的
+                    音响、键盘、鼠标、头戴无线耳机的公司，拥有庞大
+                    的服务网点，以高覆盖、高效率的服务获得多家公司
+                    和机构的认可。将以最专业的精神为您提供安全、经
+                    济、专业的服务。公司秉承在激烈的市场竞争中迅速
+                    发展壮大，赢得了广泛的支持与用户的信赖。
+                      </p>
+                      <a href="about_us.html">查看详情</a>
+                   </div>
+                 </div>
+                 
+                 
+	<!-----------------------------------------------------------新闻中心动态-->
+		<div class="index_news">
+			<div class="mg">
+            
+				<div class="index_title">
+					<h2>新闻动态<span>NEWS</span></h2>
+				</div>
+                
+                <div class="ov">
+				   <div class="pic">
+                       <a href="news.html"><img src="images/news-left.jpg"></a>
+                   </div>
+                   
+                    <div class="textB">
+                        <h1><a href="news_details.html">江城台式电脑起步价降至千元内</a></h1>
+                        <p>江城各大高校相继开学，到武汉电脑市场选购电脑的消费者也多了起来。记者近
+                         日走访市场了解到，由于配件价格持续走低，竞争不断加剧，使得部分经
+                         销商对兼容台式机开出了千元以核心配件跌价两三成。
+                       </p>
+                        	
+                        <p>前天上午，大学新生程同学来到汉口前进电脑城准备
+                        一番询价比较后，他决定购买一台990元的电脑。
+                        </p>
+                        <p>“核心配件也能达到1T硬盘，4G内存，就是主板和处理器稍微
+                        弱一点。”经销商黄佳鑫对小程说，如只是要满足日常学习娱乐的需求，
+                        这台千元机已足够，没有更低的了。江城各大高校相继开学，
+                        到武汉电脑市场选购电脑的消费者也多了。……
+                       </p>
+                       <p>
+                       核心配件也能达到1T硬盘，4G内存，就是主板和处理器稍
+                       微弱一点。”经销商黄佳鑫对小程说，如只是要满足日常学
+                       习娱乐的需求，这台千元机已足够，没有更低的了。江城各大
+                       高校相继开学，到武汉电脑市场选购电脑的消费者也多了。……
+                       </p>
+                       <h2><a href="news.html">查看详情</a></h2>
+                   
+                  </div>
+			   </div>
+               
+               
+			</div>
+		</div>
+    <!-----------------------------------------------------------------新闻列表-->
+         <div class="news">
+            <div class="mg">
+               <div class="line">
+                   <ul>
+                     <li><a href="news_details.html"><img src="images/index_dain.jpg"/>长兴隆电子有限公司取得最新成果</a>  
+                             <span>2016-09-13</span>
+                     </li>
+                     <li><a href="news_details.html"><img src="images/index_dain.jpg"/>长兴隆电子有限公司取得最新成果</a>  
+                             <span>2016-09-13</span>
+                     </li>
+                     
+                     <li><a href="news_details.html"><img src="images/index_dain.jpg"/>长兴隆电子有限公司取得最新成果</a>  
+                             <span>2016-09-13</span>
+                       </li>
+                     
+                     <li><a href="news_details.html"><img src="images/index_dain.jpg"/>长兴隆电子有限公司取得最新成果</a>  
+                             <span>2016-09-13</span>
+                       </li>
+                     
+                     <li><a href="news_details.html"><img src="images/index_dain.jpg"/>长兴隆电子有限公司取得最新成果</a>  
+                             <span>2016-09-13</span>
+                       </li>
+                     
+                     <li><a href="news_details.html"><img src="images/index_dain.jpg"/>长兴隆电子有限公司取得最新成果</a>  
+                             <span>2016-09-13</span>
+                       </li>
+                     
+                     <li><a href="news_details.html"><img src="images/index_dain.jpg"/>长兴隆电子有限公司取得最新成果</a>  
+                             <span>2016-09-13</span>
+                       </li>
+                     
+                     <li><a href="news_details.html"><img src="images/index_dain.jpg"/>长兴隆电子有限公司取得最新成果</a>  
+                             <span>2016-09-13</span>
+                       </li>
+                     
+                     <li><a href="news_details.html"><img src="images/index_dain.jpg"/>长兴隆电子有限公司取得最新成果</a>  
+                             <span>2016-09-13</span>
+                       </li>
+    
+            	      </ul>
+                      <p><a href="news.html">更多</a></p>
+               
+               </div>	
+            </div>
+        </div>
+       
+       
+       
+        
+      <!------------------------------------------------------产品中心-->  
+      <div class="product">
+          <div class="mg">
+              <div class="product_title">
+				  <h2>产品展示<span>PRODUCT</span></h2>
+		      </div>
+          <div class="list">
+              <ul>
+			      <li>
+					  <div class="pic">
+						  <a href="pro_details.html"><img src="images/product_centent_left.jpg"></a>
+					  </div>
+					  <div class="text">
+					      <h3><a href="pro_details.html">台式音箱</a></h3>
+                      </div>
+				  </li>
+				  <li>
+					  <div class="pic">
+						  <a href="pro_details.html"><img src="images/product_centent_left3.jpg"></a>
+					  </div>
+                      <div class="text">
+						  <h3><a href="pro_details.html">迷你音响</a></h3>
+					  </div>
+				 </li>
+				 <li>
+					 <div class="pic">
+						 <a href="pro_details.html"><img src="images/right.jpg"></a>
+				     </div>
+				     <div class="text">
+					     <h3><a href="pro_details.html">无线蓝牙耳机</a></h3>
+					 </div>
+				 </li>
+				 <li>
+					 <div class="pic">
+						 <a href="pro_details.html"><img src="images/left-1.jpg"></a>
+					 </div>
+					 <div class="text">
+						 <h3><a href="pro_details.html">炫酷键盘</a></h3>	
+					 </div>
+				 </li>
+				 <li>
+					 <div class="pic">
+						 <a href="pro_details.html"><img src="images/center-1.jpg"></a>
+					 </div>
+                     <div class="text">
+						 <h3><a href="pro_details.html">无线鼠标</a></h3>
+					 </div>
+				  </li>
+				  <li>
+					  <div class="pic">
+						 <a href="pro_details.html"><img src="images/right-1.jpg"></a>
+					  </div>
+					  <div class="text">
+						  <h3><a href="pro_details.html">立体环绕音响</a></h3>
+					  </div>
+				   </li>
+				</ul>
+	     	</div>
+       </div>
+      </div> 
+     </div>
+    </div>
+    
+    
+    
+    
+     <div class="footer">
+       <div class="mg">
+           <div class="footer-right">
+               <img src="images/erweima.jpg" alt="请刷新再试！" title="欢迎关注我们的官方二维码！">
+           </div>
+       <div class="footer-left">
+               <p>Copyright@2003-2016,All Right  Reserve 长兴隆电子有限公司</p>
+               <p>四川广东省东莞市桥头镇桥龙路120号（523523）</p>
+               <p>Powered by: <a href="http://www.kguowai.com/news/303.html">跨国财购网</a></p>
+      </div>
+   </div>
+</body>
+</html>

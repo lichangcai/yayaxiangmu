@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/top_common.css" />
+		<link rel="stylesheet" href="css/fonts.css" />
+		<link rel="stylesheet" href="css/shop_list.css" />
+		<title>商店列表</title>
+		<script src="js/jquery-1.11.0.js" ></script>
+		<script src="js/bootstrap.js" ></script>
+		
+	</head>
+	<body>
+		<!--这里是头部的样式-->
+		<div class="header">
+			<div class="header_top">
+				<div class="top">
+					<ul>
+						<li>您好，欢迎光临UGG商城！</li>
+						<li><a href="login.html">登录</a></li>
+						<li>|</li>
+						<li><a href="register.html">注册</a></li>
+						<li><a href="order.html">我的订单</a></li>
+						<li>
+							<a href="user.html">我的UGG<img src="img/index_top1.png"/></a>
+							<dl>
+								<dd><a href="shop_car.html">我的购物车</a></dd>
+								<dd><a href="order.html">我的订单</a></dd>
+								
+							</dl>
+						</li>
+						<li>
+							<a>客户服务<img src="img/index_top1.png"/></a>
+							<dl>
+								<dd><a href="###">联系我们</a></dd>
+								<dd><a href="###">查看公司</a></dd>
+								
+							</dl>
+						</li>
+					</ul>	
+				</div>
+			</div>
+			<!--这里是输入框那里的-->
+			<div class="nav">
+				<a href="index.html"><img src="img/logo.png" title="欢迎来到UGG平品牌商城！" alt="亲，请您刷新在试试！" /></a>
+				<div class="input-group search">
+					<input type="text" class="form-control input">
+					<span class="input-group-addon icon"><img src="img/search.png"/></span>
+				</div>
+				<div class="car">
+				    <a href="shop_car.html"><img src="img/i_car.png" /></a>
+				    <span><a href="shop_car.html">我的购物车<sup>2</sup><img src="img/i_bian.png" /></a></span>
+				  
+			    </div>
+			</div>
+			<!--这里是导航列表-->
+			<div class="nav_lists">
+				<ul>
+					<li>
+						<a class="on" href="index.html">首&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp页</a>
+						<dl>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							
+							
+						</dl>
+					</li>
+					<li>
+					  <a href="shop_list.html">商店列表</a>
+					   <dl>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							
+							
+						</dl>
+					</li>
+					<li>
+					  <a href="###">独家新品</a>
+					   <dl>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							
+							
+						</dl>
+					</li>
+					<li>
+					  <a href="###">特色主题</a>
+					   <dl>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							
+							
+						</dl>
+					</li>
+					<li>
+					   <a href="###">自营精选</a>
+					   <dl>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							<dd><a href="###">商城分类</a></dd>
+							
+							
+						</dl>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="banner">
+	<div id="myCarousel" class="carousel slide">
+	<!-- 轮播（Carousel）指标 -->
+	<ol class="carousel-indicators dot">
+		<li data-target="#myCarousel" data-slide-to="0" class="active on"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>   
+	<!-- 轮播（Carousel）项目 -->
+	<div class="carousel-inner">
+		<div class="item active">
+			<a href="shop_list.html"><img src="img/banner1.jpg" alt="First slide"></a>
+		</div>
+		<div class="item">
+			<a href="shop_list.html"><img src="img/banner2.jpg" alt="Second slide"></a>
+		</div>
+		<div class="item">
+			<a href="shop_list.html"><img src="img/banner3.jpg"  alt="Third slide"></a>
+		</div>
+	</div>
+  </div>
+</div>
+		</div>
+		<!--end-->
+		<div class="content">
+			<div class="container">
+				<div class="shop_top">
+					<h1>全部结果 > <i>"服饰"</i></h1>
+					
+					<ul>
+						<li>
+							<p>品<span>牌：</span></p>
+						</li>
+						<li>
+							<p><a href="###" class="on">盖璞（GAP)</a></p>
+							<p><a href="###">七匹狼</a></p>
+						</li>
+						<li>
+							<p><a href="###">波司登</a></p>
+							<p><a href="###">美特斯邦威</a></p>
+						</li>
+						<li>
+							<p><a href="###">花花公子</a></p>
+							<p><a href="###">雪中飞</a></p>
+						</li>
+						<li>
+							<p><a href="###">森马</a></p>
+							<p><a href="###">战地吉普</a></p>
+						</li>
+						<li>
+							<i>更多<img src="img/s_l1.png"/></i>
+							<dl>
+								<dd><a href="###">盖璞（GAP)</a></dd>
+								<dd><a href="###">七匹狼</a></dd>
+								<dd><a href="###">七匹狼</a></dd>
+								
+							</dl>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p>分<span>类：</span></p>
+						</li>
+						<li>
+							<p><a href="###">女装/内衣</a></p>
+						</li>
+						<li>
+							<p><a href="###">男装/内衣</a></p>
+						</li>
+						<li>
+							<p><a href="###">棉装/羽绒服</a></p>
+						</li>
+						<li>
+							<p><a href="###">童装</a></p>
+						</li>
+						<li>
+							<i>更多<img src="img/s_l1.png"/></i>
+							<dl>
+								<dd><a href="###">童装</a></dd>
+								<dd><a href="###">男装/内衣</a></dd>
+								<dd><a href="###">男装/内衣</a></dd>
+								
+							</dl>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p>尺<span>码：</span></p>
+						</li>
+						<li>
+							<p><a>28</a><a>29</a><a>30</a></p>
+						</li>
+						<li>
+							<p><a>31</a><a>32</a><a>33</a></p>
+						</li>
+						<li>
+							<p><a>34</a><a>35</a><a>36</a></p>
+						</li>
+						<li>
+							<p><a>37</a></p>
+						</li>
+						<li>
+							<i>更多<img src="img/s_l1.png"/></i>
+							<dl>
+								<dd><a href="###">28</a></dd>
+								<dd><a href="###">29</a></dd>
+								
+							</dl>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p>衣<span>长：</span></p>
+						</li>
+						<li>
+							<p><a>中长款</a></p>
+						</li>
+						<li>
+							<p><a>中长款</a><a>常规款</a></p>
+						</li>
+						<li>
+							<p><a>长款</a></p>
+						</li>
+						<li>
+							<p><a>超长款</a><a>超短款</a></p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p>高级选项：</p>
+						</li>
+						<li>
+							<i>更多<img src="img/s_l1.png"/></i>
+							<dl>
+								<dd><a href="###">28</a></dd>
+								<dd><a href="###">29</a></dd>
+								
+							</dl>
+						</li>
+						<li>
+							<i>更多<img src="img/s_l1.png"/></i>
+							<dl>
+								<dd><a href="###">28</a></dd>
+								<dd><a href="###">29</a></dd>
+								
+							</dl>
+						</li>
+						<li>
+							<i>更多<img src="img/s_l1.png"/></i>
+							<dl>
+								<dd><a href="###">28</a></dd>
+								<dd><a href="###">29</a></dd>
+								
+							</dl>
+						</li>
+						<li>
+							<i>更多<img src="img/s_l1.png"/></i>
+							<dl>
+								<dd><a href="###">28</a></dd>
+								<dd><a href="###">29</a></dd>
+								
+							</dl>
+						</li>
+						<li>
+							<i>更多<img src="img/s_l1.png"/></i>
+							<dl>
+								<dd><a href="###">28</a></dd>
+								<dd><a href="###">29</a></dd>
+								
+							</dl>
+						</li>
+						<li>
+							<i>更多<img src="img/s_l1.png"/></i>
+							<dl>
+								<dd><a href="###">28</a></dd>
+								<dd><a href="###">29</a></dd>
+								
+							</dl>
+						</li>
+						<li>
+							<i>其他分类<img src="img/s_l1.png"/></i>
+							<dl>
+								<dd><a href="###">28</a></dd>
+								<dd><a href="###">29</a></dd>
+								
+							</dl>
+						</li>
+					</ul>
+				</div>
+				
+				
+				<!--排列那里-->
+				<div class="pai">
+					<div class="left">
+						<p><a href="###" class="on">综合排序</a><a href="###">销量</a><a href="###">价格</a><a href="###">评论数</a><a href="###">新品</a>
+						</p>
+						<p>
+						     配送至
+						    <i>北京朝阳区三环以内<img src="img/s_l1.png"/></i>
+						    <!--<dl>
+						    	<dd>fsad</dd>
+						    </dl>-->
+						</p>
+						<label>
+						    <span><input type="checkbox">UGG配送</span>
+						</label>
+						<label>
+							<span><input type="checkbox">货到付款</span>
+						</label>
+						<label>
+							<span><input type="checkbox">仅显示有货</span>
+						</label>
+						
+					</div>
+					<div class="right">
+						<p>共123.4万商品	<a>1</a>/100</p>
+						<i><img src="img/s_l2.png"/></i>
+						<i><img src="img/s_l3.png"/></i>
+						<label>
+							<input type="text" placeholder="在结果中搜索" /><span>确定</span>
+						</label>
+					</div>
+				</div>
+				<div class="center">
+					<div class="left">
+						<div class="dian">
+							<p>店内搜索</p>
+							<a>关键词<input type="text"></a>
+							<span>价格
+								<input type="text" placeholder="￥"class="text">
+								到
+								<input type="text" placeholder="￥"class="text">
+							</span>
+							<span><img src="img/s_l5.jpg"></span>
+						</div>
+						<div class="lie">
+							<ul>
+								<li>
+									<div class="jingxuan">
+										<h1>商品精选</h1>
+										<a href="pro_details.html"><img src="img/s_l1.jpg"></a>
+										<i>￥388.00</i>
+										<p><a href="pro_details.html">FEMLY 法曼丽2016早秋<br />新款女装网纱镶</a></p>
+										<a>已有<span>100+</span>人评价</a>
+									</div>
+								</li>
+								<li>
+									<div class="jingxuan">
+										<h1>商品精选</h1>
+										<a href="pro_details.html"><img src="img/s_l1.jpg"></a>
+										<i>￥388.00</i>
+										<p><a href="pro_details.html">FEMLY 法曼丽2016早秋<br />新款女装网纱镶</a></p>
+										<a>已有<span>100+</span>人评价</a>
+									</div>
+								</li>
+								<li>
+									<div class="jingxuan">
+										<h1>商品精选</h1>
+										<a href="pro_details.html"><img src="img/s_l1.jpg"></a>
+										<i>￥388.00</i>
+										<p><a href="pro_details.html">FEMLY 法曼丽2016早秋<br />新款女装网纱镶</a></p>
+										<a>已有<span>100+</span>人评价</a>
+									</div>
+								</li>
+								<li>
+									<div class="jingxuan">
+										<h1>商品精选</h1>
+										<a href="pro_details.html"><img src="img/s_l1.jpg"></a>
+										<i>￥388.00</i>
+										<p><a href="pro_details.html">FEMLY 法曼丽2016早秋<br />新款女装网纱镶</a></p>
+										<a>已有<span>100+</span>人评价</a>
+									</div>
+								</li>
+								<li>
+									<div class="jingxuan">
+										<h1>商品精选</h1>
+										<a href="pro_details.html"><img src="img/s_l1.jpg"></a>
+										<i>￥388.00</i>
+										<p><a href="pro_details.html">FEMLY 法曼丽2016早秋<br />新款女装网纱镶</a></p>
+										<a>已有<span>100+</span>人评价</a>
+									</div>
+								</li>
+								<li>
+									<div class="jingxuan">
+										<h1>商品精选</h1>
+										<a href="pro_details.html"><img src="img/s_l1.jpg"></a>
+										<i>￥388.00</i>
+										<p><a href="pro_details.html">FEMLY 法曼丽2016早秋<br />新款女装网纱镶</a></p>
+										<a>已有<span>100+</span>人评价</a>
+									</div>
+								</li>
+								<li>
+									<div class="jingxuan">
+										<h1>商品精选</h1>
+										<a href="pro_details.html"><img src="img/s_l1.jpg"></a>
+										<i>￥388.00</i>
+										<p><a href="pro_details.html">FEMLY 法曼丽2016早秋<br />新款女装网纱镶</a></p>
+										<a>已有<span>100+</span>人评价</a>
+									</div>
+								</li>
+								<li>
+									<div class="jingxuan">
+										<h1>商品精选</h1>
+										<a href="pro_details.html"><img src="img/s_l1.jpg"></a>
+										<i>￥388.00</i>
+										<p><a href="pro_details.html">FEMLY 法曼丽2016早秋<br />新款女装网纱镶</a></p>
+										<a>已有<span>100+</span>人评价</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="right">
+						<ul>
+							<li>
+								<div class="change_box">
+			                        <div class="change_box_top text-center"> 
+			                             	<a href="pro_details.html"><img src="img/s_l2.jpg" /></a>
+			                        </div>
+			                        <div class="change_box_bottom text-center">
+			                              <dl >
+			                                 <dd class="on"><img img_num="0" src="img/s_l3.jpg" /></dd>
+			                                 <dd><img img_num="1" src="img/s_l4.jpg" /></dd>
+			                               </dl> 
+			                        </div>
+                                </div>
+                                <i>￥388.00</i>
+                                <p><a href="pro_details.html">VKE 男士羽绒服男装冬款2016时尚长款外套<br/>男字母印花防寒连帽衣服 </a></p>
+                                <p>美润尔服饰专营店</p>
+							</li>
+							<li>
+								<div class="change_box">
+			                        <div class="change_box_top text-center"> 
+			                             	<a href="pro_details.html"><img src="img/s_l2.jpg" /></a>
+			                        </div>
+			                        <div class="change_box_bottom text-center">
+			                              <dl >
+			                                 <dd class="on"><img img_num="0" src="img/s_l3.jpg" /></dd>
+			                                 <dd><img img_num="1" src="img/s_l4.jpg" /></dd>
+			                               </dl> 
+			                        </div>
+                                </div>
+                                <i>￥388.00</i>
+                                 <p><a href="pro_details.html">VKE 男士羽绒服男装冬款2016时尚长款外套<br/>男字母印花防寒连帽衣服 </a></p>
+                                <p>美润尔服饰专营店</p>
+							</li>
+							<li>
+								<div class="change_box">
+			                        <div class="change_box_top text-center"> 
+			                             	<a href="pro_details.html"><img src="img/s_l2.jpg" /></a>
+			                        </div>
+			                        <div class="change_box_bottom text-center">
+			                              <dl >
+			                                 <dd class="on"><img img_num="0" src="img/s_l3.jpg" /></dd>
+			                                 <dd><img img_num="1" src="img/s_l4.jpg" /></dd>
+			                               </dl> 
+			                        </div>
+                                </div>
+                                <i>￥388.00</i>
+                                 <p><a href="pro_details.html">VKE 男士羽绒服男装冬款2016时尚长款外套<br/>男字母印花防寒连帽衣服 </a></p>
+                                <p>美润尔服饰专营店</p>
+							</li>
+							<li>
+								<div class="change_box">
+			                        <div class="change_box_top text-center"> 
+			                             	<a href="pro_details.html"><img src="img/s_l2.jpg" /></a>
+			                        </div>
+			                        <div class="change_box_bottom text-center">
+			                              <dl >
+			                                 <dd class="on"><img img_num="0" src="img/s_l3.jpg" /></dd>
+			                                 <dd><img img_num="1" src="img/s_l4.jpg" /></dd>
+			                               </dl> 
+			                        </div>
+                                </div>
+                                <i>￥388.00</i>
+                                <p><a href="pro_details.html">VKE 男士羽绒服男装冬款2016时尚长款外套<br/>男字母印花防寒连帽衣服 </a></p>
+                                <p>美润尔服饰专营店</p>
+							</li>
+							<li>
+								<div class="change_box">
+			                        <div class="change_box_top text-center"> 
+			                             	<a href="pro_details.html"><img src="img/s_l2.jpg" /></a>
+			                        </div>
+			                        <div class="change_box_bottom text-center">
+			                              <dl >
+			                                 <dd class="on"><img img_num="0" src="img/s_l3.jpg" /></dd>
+			                                 <dd><img img_num="1" src="img/s_l4.jpg" /></dd>
+			                               </dl> 
+			                        </div>
+                                </div>
+                                <i>￥388.00</i>
+                                <p><a href="pro_details.html">VKE 男士羽绒服男装冬款2016时尚长款外套<br/>男字母印花防寒连帽衣服 </a></p>
+                                <p>美润尔服饰专营店</p>
+							</li>
+							<li>
+								<div class="change_box">
+			                        <div class="change_box_top text-center"> 
+			                             	<a href="pro_details.html"><img src="img/s_l2.jpg" /></a>
+			                        </div>
+			                        <div class="change_box_bottom text-center">
+			                              <dl >
+			                                 <dd class="on"><img img_num="0" src="img/s_l3.jpg" /></dd>
+			                                 <dd><img img_num="1" src="img/s_l4.jpg" /></dd>
+			                               </dl> 
+			                        </div>
+                                </div>
+                                <i>￥388.00</i>
+                                 <p><a href="pro_details.html">VKE 男士羽绒服男装冬款2016时尚长款外套<br/>男字母印花防寒连帽衣服 </a></p>
+                                <p>美润尔服饰专营店</p>
+							</li>
+							<li>
+								<div class="change_box">
+			                        <div class="change_box_top text-center"> 
+			                             	<a href="pro_details.html"><img src="img/s_l2.jpg" /></a>
+			                        </div>
+			                        <div class="change_box_bottom text-center">
+			                              <dl >
+			                                 <dd class="on"><img img_num="0" src="img/s_l3.jpg" /></dd>
+			                                 <dd><img img_num="1" src="img/s_l4.jpg" /></dd>
+			                               </dl> 
+			                        </div>
+                                </div>
+                                <i>￥388.00</i>
+                                <p><a href="pro_details.html">VKE 男士羽绒服男装冬款2016时尚长款外套<br/>男字母印花防寒连帽衣服 </a></p>
+                                <p>美润尔服饰专营店</p>
+							</li>
+							<li>
+								<div class="change_box">
+			                        <div class="change_box_top text-center"> 
+			                             	<a href="pro_details.html"><img src="img/s_l2.jpg" /></a>
+			                        </div>
+			                        <div class="change_box_bottom text-center">
+			                              <dl >
+			                                 <dd class="on"><img img_num="0" src="img/s_l3.jpg" /></dd>
+			                                 <dd><img img_num="1" src="img/s_l4.jpg" /></dd>
+			                               </dl> 
+			                        </div>
+                                </div>
+                                <i>￥388.00</i>
+                                <p><a href="pro_details.html">VKE 男士羽绒服男装冬款2016时尚长款外套<br/>男字母印花防寒连帽衣服 </a></p>
+                                <p>美润尔服饰专营店</p>
+							</li>
+							<li>
+								<div class="change_box">
+			                        <div class="change_box_top text-center"> 
+			                             	<a href="pro_details.html"><img src="img/s_l2.jpg" /></a>
+			                        </div>
+			                        <div class="change_box_bottom text-center">
+			                              <dl >
+			                                 <dd class="on"><img img_num="0" src="img/s_l3.jpg" /></dd>
+			                                 <dd><img img_num="1" src="img/s_l4.jpg" /></dd>
+			                               </dl> 
+			                        </div>
+                                </div>
+                                <i>￥388.00</i>
+                                 <p><a href="pro_details.html">VKE 男士羽绒服男装冬款2016时尚长款外套<br/>男字母印花防寒连帽衣服 </a></p>
+                                <p>美润尔服饰专营店</p>
+							</li>
+							<li>
+								<div class="change_box">
+			                        <div class="change_box_top text-center"> 
+			                             	<a href="pro_details.html"><img src="img/s_l2.jpg" /></a>
+			                        </div>
+			                        <div class="change_box_bottom text-center">
+			                              <dl >
+			                                 <dd class="on"><img img_num="0" src="img/s_l3.jpg" /></dd>
+			                                 <dd><img img_num="1" src="img/s_l4.jpg" /></dd>
+			                               </dl> 
+			                        </div>
+                                </div>
+                                <i>￥388.00</i>
+                                 <p><a href="pro_details.html">VKE 男士羽绒服男装冬款2016时尚长款外套<br/>男字母印花防寒连帽衣服 </a></p>
+                                <p>美润尔服饰专营店</p>
+							</li>
+							<li>
+								<div class="change_box">
+			                        <div class="change_box_top text-center"> 
+			                             	<a href="pro_details.html"><img src="img/s_l2.jpg" /></a>
+			                        </div>
+			                        <div class="change_box_bottom text-center">
+			                              <dl >
+			                                 <dd class="on"><img img_num="0" src="img/s_l3.jpg" /></dd>
+			                                 <dd><img img_num="1" src="img/s_l4.jpg" /></dd>
+			                               </dl> 
+			                        </div>
+                                </div>
+                                <i>￥388.00</i>
+                                <p><a href="pro_details.html">VKE 男士羽绒服男装冬款2016时尚长款外套<br/>男字母印花防寒连帽衣服 </a></p>
+                                <p>美润尔服饰专营店</p>
+							</li>
+							<li>
+								<div class="change_box">
+			                        <div class="change_box_top text-center"> 
+			                             	<a href="pro_details.html"><img src="img/s_l2.jpg" /></a>
+			                        </div>
+			                        <div class="change_box_bottom text-center">
+			                              <dl >
+			                                 <dd class="on"><img img_num="0" src="img/s_l3.jpg" /></dd>
+			                                 <dd><img img_num="1" src="img/s_l4.jpg" /></dd>
+			                               </dl> 
+			                        </div>
+                                </div>
+                                <i>￥388.00</i>
+                                <p><a href="pro_details.html">VKE 男士羽绒服男装冬款2016时尚长款外套<br/>男字母印花防寒连帽衣服 </a></p>
+                                <p>美润尔服饰专营店</p>
+							</li>
+							<li>
+								<div class="change_box">
+			                        <div class="change_box_top text-center"> 
+			                             	<a href="pro_details.html"><img src="img/s_l2.jpg" /></a>
+			                        </div>
+			                        <div class="change_box_bottom text-center">
+			                              <dl >
+			                                 <dd class="on"><img img_num="0" src="img/s_l3.jpg" /></dd>
+			                                 <dd><img img_num="1" src="img/s_l4.jpg" /></dd>
+			                               </dl> 
+			                        </div>
+                                </div>
+                                <i>￥388.00</i>
+                                <p><a href="pro_details.html">VKE 男士羽绒服男装冬款2016时尚长款外套<br/>男字母印花防寒连帽衣服 </a></p>
+                                <p>美润尔服饰专营店</p>
+							</li>
+							<li>
+								<div class="change_box">
+			                        <div class="change_box_top text-center"> 
+			                             	<a href="pro_details.html"><img src="img/s_l2.jpg" /></a>
+			                        </div>
+			                        <div class="change_box_bottom text-center">
+			                              <dl >
+			                                 <dd class="on"><img img_num="0" src="img/s_l3.jpg" /></dd>
+			                                 <dd><img img_num="1" src="img/s_l4.jpg" /></dd>
+			                               </dl> 
+			                        </div>
+                                </div>
+                                <i>￥388.00</i>
+                                <p><a href="pro_details.html">VKE 男士羽绒服男装冬款2016时尚长款外套<br/>男字母印花防寒连帽衣服 </a></p>
+                                <p>美润尔服饰专营店</p>
+							</li>
+							<li>
+								<div class="change_box">
+			                        <div class="change_box_top text-center"> 
+			                             	<a href="pro_details.html"><img src="img/s_l2.jpg" /></a>
+			                        </div>
+			                        <div class="change_box_bottom text-center">
+			                              <dl >
+			                                 <dd class="on"><img img_num="0" src="img/s_l3.jpg" /></dd>
+			                                 <dd><img img_num="1" src="img/s_l4.jpg" /></dd>
+			                               </dl> 
+			                        </div>
+                                </div>
+                                <i>￥388.00</i>
+                                <p><a href="pro_details.html">VKE 男士羽绒服男装冬款2016时尚长款外套<br/>男字母印花防寒连帽衣服 </a></p>
+                                <p>美润尔服饰专营店</p>
+							</li>
+							<li>
+								<div class="change_box">
+			                        <div class="change_box_top text-center"> 
+			                             	<a href="pro_details.html"><img src="img/s_l2.jpg" /></a>
+			                        </div>
+			                        <div class="change_box_bottom text-center">
+			                              <dl >
+			                                 <dd class="on"><img img_num="0" src="img/s_l3.jpg" /></dd>
+			                                 <dd><img img_num="1" src="img/s_l4.jpg" /></dd>
+			                               </dl> 
+			                        </div>
+                                </div>
+                                <i>￥388.00</i>
+                                <p><a href="pro_details.html">VKE 男士羽绒服男装冬款2016时尚长款外套<br/>男字母印花防寒连帽衣服 </a></p>
+                                <p>美润尔服饰专营店</p>
+							</li>
+							<li>
+								<div class="change_box">
+			                        <div class="change_box_top text-center"> 
+			                             	<a href="pro_details.html"><img src="img/s_l2.jpg" /></a>
+			                        </div>
+			                        <div class="change_box_bottom text-center">
+			                              <dl >
+			                                 <dd class="on"><img img_num="0" src="img/s_l3.jpg" /></dd>
+			                                 <dd><img img_num="1" src="img/s_l4.jpg" /></dd>
+			                               </dl> 
+			                        </div>
+                                </div>
+                                <i>￥388.00</i>
+                                <p><a href="pro_details.html">VKE 男士羽绒服男装冬款2016时尚长款外套<br/>男字母印花防寒连帽衣服 </a></p>
+                                <p>美润尔服饰专营店</p>
+							</li>尔服饰专营店</p>
+							<li>
+								<div class="change_box">
+			                        <div class="change_box_top text-center"> 
+			                             	<a href="pro_details.html"><img src="img/s_l2.jpg" /></a>
+			                        </div>
+			                        <div class="change_box_bottom text-center">
+			                              <dl >
+			                                 <dd class="on"><img img_num="0" src="img/s_l3.jpg" /></dd>
+			                                 <dd><img img_num="1" src="img/s_l4.jpg" /></dd>
+			                               </dl> 
+			                        </div>
+                                </div>
+                                <i>￥388.00</i>
+                                <p><a href="pro_details.html">VKE 男士羽绒服男装冬款2016时尚长款外套<br/>男字母印花防寒连帽衣服 </a></p>
+                                <p>美润尔服饰专营店</p>
+							</li>
+							<li>
+								<div class="change_box">
+			                        <div class="change_box_top text-center"> 
+			                             	<a href="pro_details.html"><img src="img/s_l2.jpg" /></a>
+			                        </div>
+			                        <div class="change_box_bottom text-center">
+			                              <dl >
+			                                 <dd class="on"><img img_num="0" src="img/s_l3.jpg" /></dd>
+			                                 <dd><img img_num="1" src="img/s_l4.jpg" /></dd>
+			                               </dl> 
+			                        </div>
+                                </div>
+                                <i>￥388.00</i>
+                                <p><a href="pro_details.html">VKE 男士羽绒服男装冬款2016时尚长款外套<br/>男字母印花防寒连帽衣服 </a></p>
+                                <p>美润尔服饰专营店</p>
+							</li>
+							<li>
+								<div class="change_box">
+			                        <div class="change_box_top text-center"> 
+			                             	<a href="pro_details.html"><img src="img/s_l2.jpg" /></a>
+			                        </div>
+			                        <div class="change_box_bottom text-center">
+			                              <dl >
+			                                 <dd class="on"><img img_num="0" src="img/s_l3.jpg" /></dd>
+			                                 <dd><img img_num="1" src="img/s_l4.jpg" /></dd>
+			                               </dl> 
+			                        </div>
+                                </div>
+                                <i>￥388.00</i>
+                               <p><a href="pro_details.html">VKE 男士羽绒服男装冬款2016时尚长款外套<br/>男字母印花防寒连帽衣服 </a></p>
+                                <p>美润尔服饰专营店</p>
+							</li>
+							<li>
+								<div class="change_box">
+			                        <div class="change_box_top text-center"> 
+			                             	<a href="pro_details.html"><img src="img/s_l2.jpg" /></a>
+			                        </div>
+			                        <div class="change_box_bottom text-center">
+			                              <dl >
+			                                 <dd class="on"><img img_num="0" src="img/s_l3.jpg" /></dd>
+			                                 <dd><img img_num="1" src="img/s_l4.jpg" /></dd>
+			                               </dl> 
+			                        </div>
+                                </div>
+                                <i>￥388.00</i>
+                               <p><a href="pro_details.html">VKE 男士羽绒服男装冬款2016时尚长款外套<br/>男字母印花防寒连帽衣服 </a></p>
+                                <p>美润尔服饰专营店</p>
+							</li>
+							
+							<!--$(function(){ }  这是jquery里的,是当文档载入完毕就执行,的意思.-->
+							
+							
+							
+							<script>
+								$(function(){
+									$(".change_box_bottom dd").click(function(){
+										var a = $(this).index();
+										var img = $(this).find("img").attr("src");
+										$(this).parent().parent().prev().find("img").attr("src",img);
+									})
+								})
+								/***颜色的默认值***/
+								$(".text-center").find("dd").click(function(){
+									$(this).addClass("on")
+									$(this).siblings("dd").removeClass("on")
+								})
+							</script>
+
+						</ul>
+					</div>
+					<div class="s_number">
+						<ul>
+							<li><a href="###">第一页</a></li>
+							<li><a href="###">2</a></li>
+							<li><a href="###">3</a></li>
+							<li><a href="###">4</a></li>
+							<li><a href="###">5</a></li>
+							<li><a href="###">6</a></li>
+							<li><a href="###">7</a></li>
+							<li><a href="###">...</a></li>
+							<li><a href="###">100</a></li>
+							<li><a href="###">下一页</a></li>
+						</ul>
+					</div>
+					
+				</div>
+				<!--end-->
+				
+				
+				
+			</div>
+		</div>
+		
+		
+		<div class="footer">
+			<div class="list">
+			   <div class="left">
+			   	   <ul>
+			   	   	<li>
+			   	   		<a>购物指南</a>
+				   	   		<dl>
+				   	   			<dd><a href="###">免费注册</a></dd>
+				   	   			<dd><a href="###">开通支付宝</a></dd>
+				   	   			<dd><a href="###">支付宝支付</a></dd>
+				   	   		</dl>
+			   	   	</li>
+			   	   	<li>
+			   	   		<a>购物保障</a>
+				   	   		<dl>
+				   	   			<dd><a href="###">发票保障</a></dd>
+				   	   			<dd><a href="###">售后规则</a></dd>
+				   	   			<dd><a href="###">缺货赔付</a></dd>
+				   	   		</dl>
+			   	   	</li>
+			   	   <li>
+			   	   		<a>支付方式</a>
+				   	   		<dl>
+				   	   			<dd><a href="###">快捷支付</a></dd>
+				   	   			<dd><a href="###">余额宝</a></dd>
+				   	   			<dd><a href="###">信用卡</a></dd>
+				   	   			<dd><a href="###">蚂蚁花呗</a></dd>
+				   	   		    <dd><a href="###">货到付款</a></dd>
+				   	   		</dl>
+			   	   	</li>
+			   	   </ul>
+			   </div>
+			   <div class="right">
+			   	<img src="img/e_tu2.jpg" title="欢迎扫码！" alt="亲，请您刷新在试试！"/>
+			   </div>
+			</div>
+			<div class="dibu">
+				<p>Copyright2007 - 2016 vancl.com All 京ICP证100557号 京公网安备11011502002400号</p>
+				<p>UGG商城</p>
+			</div>
+		</div>
+	</body>
+	<script src="js/pro_toplie.js"></script>
+	<script type="text/javascript" src="js/savelogin.js" ></script>
+</html>

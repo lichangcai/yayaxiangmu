@@ -1,0 +1,64 @@
+.center{/*padding: 0 5%;*/ box-sizing: border-box;margin-top: 18%;}
+.center .top{overflow: hidden; padding: 0px;background: #000;/**/}
+.center .top h1{font-family: "微软雅黑";background:url(../img/background.png) no-repeat center bottom;font-size: 24px;margin-top: 16%;text-align:center;padding: 0px;padding-bottom:30px;color: #FFFFFF;}
+.login{margin-top: 10%;}
+.login .kuang{text-align: center;font-family: "微软雅黑";height:36px;font-size: 14px;outline: none;border-radius: 0px;/*max-width:100%;*/}
+.forget{padding: 0 1px; border-color:#FFF ; font-family: "微软雅黑";font-size: 10px;border-radius: 0px;}
+.Account{padding: 0 11.5px;background: #FFF;border-radius: 0px;}
+.password{padding: 0 13px;background: #FFF;border-radius: 0px;}
+#isAutoLogin{display: none;}
+.checkbox{margin-left: 10%; margin-bottom:33%; margin-top: 15%;font-family: "微软雅黑";font-size:14px;color: #FFF;}
+.checkbox label{min-height: 24px;width: 50%;background: url(../img/login1.png) no-repeat left center;line-height: 26px;padding-left: 10%;}
+.checkbox label.on{background: url(../img/login2.png) no-repeat left center;}
+.checkbox a{ font-family: "微软雅黑";font-size: 14px;color: #FFF;text-decoration:underline;cursor: pointer;padding-left: 10%;}
+.checkbox .enter{float:right;padding: 7px 25px;border-radius: 0px;margin-top: -6%;}
+.right{padding: 0px;}
+.right img{max-width: 100%;display: block;position: relative;}
+.right img:nth-child(2){z-index: 10;position: absolute;top: 5px;right: 34%;cursor: pointer;}
+
+.right p{color: #FFFFFF;font-size: 24px;float:right ;}
+@media only screen and (max-width: 1200px){
+	.navbar-nav > li{margin-top: -40px;margin-right: -32px;}
+	.form-group{margin-top: 10px;margin-right: 10px;}
+}
+
+@media (min-width:1081px) and (max-width:1200px){
+	.navbar-nav > li{margin-top: 0px;margin-right: -18px;}
+	.form-group{margin-top: 32px;margin-right: 0px;}
+}
+@media (max-width:1080px) and (min-width:994px){
+	.form-group{margin-top: 32px;}
+	.navbar-nav > li{margin-right: -20px;margin-top: 0px;}
+}
+@media (max-width:993px) and (min-width:768px){
+		.form-group{margin-top:33px; width: 130px;}
+		.navbar-nav > li{margin-top: 7px;margin-right: -5px;margin-left: -15px;}
+		.navbar-header{margin-top: 5px;}
+		
+		.login .kuan{margin-right: 10%;margin-left: 10%;}
+		.checkbox{margin-right: 10%;}
+}
+
+
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+	
+  /*这是一块的转化为顶部的 导航的代码first*/
+  .nav .on a{color: red;border-left: 1px solid transparent;border-right: 1px solid transparent;}
+   .nav li a{color: #FFFFFF;font-size: 22px; padding: 0px;/*margin:18px 22px;*/line-height: 18px; cursor: pointer;text-align: center;}
+   .nav li a{margin-top: 61px;}
+   .nav ul{ padding-left:0%;padding-right:0%;padding-top: 15px;width: 100%;overflow: hidden;}
+   .navbar-nav > li { margin-top: -40px;margin-right: 0px; }
+   .form-group{width: 80%;margin-right: 10%;height: 36px;}
+   .icon button{height: 34px;width:10%}
+   .icon input{height: 34px;font-size: 22px;padding:0px;width: 88%;padding: 0px 5px;}
+   .right{display: none;}
+   /*end*/
+  .login .kuan{margin-right: 10%;margin-left: 13%;}
+  .checkbox{margin-right: 10%;margin-left: 12%;}
+  }
+  
+/*这是手机端消除伪类的代码*/
+@media only screen and (min-width: 768px) {
+	.center .top{border-right: 1px solid #FFFFFF;}
+}

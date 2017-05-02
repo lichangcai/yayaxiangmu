@@ -1,0 +1,83 @@
+/*中心内容*/
+
+
+.content .container .center{margin-top: 5%; height: 100%;overflow: hidden;}
+.content .container .center h1 {font-family: "微软雅黑";font-size: 30px;color: #FFFFFF;border-bottom: 1px solid #FFFFFF;}
+.content .container .center span{display: block; font-family: "微软雅黑";font-size: 12px;line-height: 12px;margin-top:0.5% ;}
+.content .container .center h1 img{display: block;margin-left: 1.5%;}
+
+
+
+.main li:nth-child(2) img:nth-child(1){padding-bottom: 9px;;}
+.main li:nth-child(4) img:nth-child(1){padding-bottom: 10px;}
+
+.main{clear: both;overflow: hidden;margin: 80px 0 102px;text-align: center;}
+.main h2 {font-size: 36px;color: #f1f1f1;font-family: arial;display: block;text-decoration: none;margin-top: 14px;}
+.main h4 {font-size: 14px;color: #f1f1f1;font-family: arial;display: block;text-decoration: none;margin-top: -14px;}
+.main h3{font-family: "微软雅黑";font-size: 30px;color: #fefefe;margin-top: -7px;}
+.main li{width: 19%;text-align: center;float: left;margin-top: 88px;border: 5px solid #FFFFFF;margin-right: 78px;padding-bottom: 20px;margin-bottom: 50px;}
+
+.main li img:nth-child(2){display: none;}
+
+
+.main li:last-child{margin-right: 0;}
+.main hr{width:30% ;margin: 5px auto 12px;}
+
+.main img{padding-top:23px;padding-bottom: 0px;}
+.main li p{font-family: "微软雅黑";font-size: 14px;color: #F0F0F0;margin: 0 10%;text-align: left;display: none;}
+
+figcaption{margin-top: 16px;}
+/*.main li img{display: none;}*/
+
+@media only screen and (min-width:992px) and (max-width: 1200px){	
+	.content .container .center h1{font-size: 28px;}
+	.content .container .center span{font-size: 12px;}
+	.main li{width: 18%;margin-left: 8px;}
+	
+	.main h2{font-size: 30px;}
+	.main h3{font-size: 26px;}
+	.main h4{font-size: 12px;}
+	.main li p{font-size: 13px;}
+} 
+@media(min-width:769px) and (max-width: 991px){
+	.main li{width: 17%;}
+	.main h2{font-size: 23px;}
+	.main h4{font-size: 10px;}
+	.main h3{font-size: 24px;}
+	.main li p{font-size: 12px;}
+}
+/*这里是那个992-1200px的代码*/
+@media (min-width:1081px) and (max-width:1200px){
+	.navbar-nav > li{margin-top: 0px;margin-right: -18px;}
+	.form-group{margin-top: 32px;margin-right: 0px;}
+}
+@media (max-width:1080px) and (min-width:994px){
+	.form-group{margin-top: 32px;}
+	.navbar-nav > li{margin-right: -20px;margin-top: 0px;}
+}
+@media (max-width:993px) and (min-width:768px){
+		.form-group{margin-top:33px; width: 130px;}
+		.navbar-nav > li{margin-top: 7px;margin-right: -5px;margin-left: -15px;}
+		.navbar-header{margin-top: 5px;}
+}
+
+
+@media(min-width:320px) and (max-width: 768px){
+	body{padding: 0px 5px;}
+	.main{clear: both;overflow: hidden; text-align: center;}
+	.main li{text-align: center;width: 50%;margin-left: 25%;overflow: hidden;margin-right: 0px;}
+
+}
+
+
+
+/*伪类出现*/
+@media only screen and (min-width:768px){
+.main i{display: none; }
+.main li:hover img{display: none;}
+	.main li:hover{margin-top: 0px;margin-bottom: 0;border-color:red;}
+.main li:hover p{display: block;}
+.main li:hover h2{color: red;margin-top: 30px;}
+.main li:hover h4{color: red;}
+.main li:hover img:nth-child(2){display:block;margin:0 auto;padding-top:20px;padding-bottom: 20px;}
+}

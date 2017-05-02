@@ -1,0 +1,87 @@
+
+
+*{margin: 0px;padding: 0px;}
+a{color: #0F0F0F;text-decoration: none;}
+/*z-index: 100; width: 100%;这里层级关系，z-index: 100; 表示高于一层*/
+.navbar{position: absolute;z-index: 100; width: 100%;}
+/*body{background:url(../img/background.jpg);}*/
+.header{height:100%;overflow:hidden;width: 100%;}
+.car ul{list-style: none;float: right;margin-right:25px;}
+.car ul li{float: left;margin-top: 10px;font-family: "微软雅黑";font-size: 16px;}
+.car ul li a{color: black;font-family: "微软雅黑";font-size: 16px;text-decoration: none;}
+.car ul li:nth-child(4){margin-left: 30px;margin-right: 10px;}
+
+.navbar-header{margin-top: 2%;}
+.nav{margin-top: 2%;}
+.nav ul{ padding-left:1%;padding-right:1.5%;padding-top: 15px;}
+.nav li a{ border-left:1px solid rgba(0,0,0,0);border-right:1px solid rgba(0,0,0,0); color: #0F0F0F;font-family: "微软雅黑";font-size: 18px; padding: 0px;margin:18px 22px;line-height: 18px; cursor: pointer;padding: 0px 3px;}
+.nav .on a{color: red;border-left: 1px solid red;border-right: 1px solid red;padding: 0px 3px;}
+
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") 
+  format("embedded-opentype"), 
+  url("../fonts/glyphicons-halflings-regular.woff") format("woff"), 
+  url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), 
+  url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");}
+.icon{width: 15%;height: 24px;border: 1px solid #0F0F0F;float: right;margin-top: 35px;margin-right: 17px;}
+.icon input{float: left;width: 80%;border: none;padding: 0 5px;outline: none;background:inherit;color: #0F0F0F;}
+.icon button{float:left;width: 20%;border: none;padding: 0 5px;background:inherit;}
+.banner .on{width: 34px;height: 34px;margin-bottom: 6%;}
+.dot li{width: 34px; height: 34px; border-radius: 17px;margin-right: 30px;margin-bottom: 6%;}
+.carousel-indicators .active{width: 34px; height: 34px;margin-bottom: 6%;}
+
+.content{position: absolute;z-index: 100; width: 100%;}
+
+
+
+.footer{position: absolute;width: 100%;}
+.footer p{font-family: "微软雅黑";font-size: 12px;color: #0F0F0F;text-align: center;margin-top: -20px;}
+
+@media only screen and (max-width: 1200px){
+	.navbar-nav > li{margin-top: -40px;margin-right: -32px;}
+	.form-group{margin-top: 10px;margin-right: 10px;}
+}
+
+@media (min-width:1081px) and (max-width:1200px){
+	.navbar-nav > li{margin-top: 0px;margin-right: -18px;}
+	.form-group{margin-top: 32px;margin-right: 0px;}
+}
+@media (max-width:1080px) and (min-width:994px){
+	.form-group{margin-top: 32px;}
+	.navbar-nav > li{margin-right: -20px;margin-top: 0px;}
+}
+@media (max-width:993px) and (min-width:768px){
+		.form-group{margin-top:33px; width: 130px;}
+		.navbar-nav > li{margin-top: 7px;margin-right: -5px;margin-left: -15px;}
+		.navbar-header{margin-top: 5px;}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+	.carousel-indicators .active{width: 24px;height: 24px;}
+	.dot li{width: 24px;height: 24px;}
+	.banner .on{width: 24px;height: 24px;}
+	.footer p{margin-top:-13% ;}
+	.carousel-indicators .active{margin-bottom: 31%;}
+	.dot li{margin-bottom: 31%;}
+	.banner .on{margin-bottom: 31%;}
+}
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+   .nav .on a{color: red;border-left: 1px solid transparent;border-right: 1px solid transparent;}
+   .nav li a{color: #FFFFFF;font-size: 22px; padding: 0px;/*margin:18px 22px;*/line-height: 18px; cursor: pointer;text-align: center;}
+   .nav li a{margin-top: 61px;}
+   .nav ul{ padding-left:0%;padding-right:0%;padding-top: 15px;width: 100%;overflow: hidden;}
+   .navbar-nav > li { margin-top: -40px;margin-right: 0px; }
+   .form-group{width: 80%;margin-right: 10%;height: 36px;}
+   .icon button{height: 34px;width:10%}
+   .icon input{height: 34px;font-size: 22px;padding:0px;width: 88%;padding: 0px 5px;}
+   /*end*/
+  .carousel-inner > .item > a > img{width: 300%;margin-left: -69%;max-width: none;}
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form{background:#666;}
+}
+@media only screen and (min-width: 768px) {
+.car ul li a:hover{color: red;}	
+.nav li a:hover{color: red;border-left: 1px solid red;border-right: 1px solid red;}	
+}

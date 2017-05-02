@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/sure_order.css" />
+		<link rel="stylesheet" href="css/sure_order_top.css" />
+		<title>确认订单</title>
+	</head>
+	<!--ng-controller 指令用于为你的应用添加控制器。在控制器中，你可以编写代码，制作函数和变量，并使用 scope 对象来访问。-->
+	<!--homeController是ng-controller自己定义的名字-->
+	<body ng-controller="sure_orderController">
+		<ion-view class="sure_order">
+			<!--ion-hearder-bar 这个是固定在屏幕顶部的一个头部标题栏的用法。-->
+			<ion-header-bar class="head-top">
+				<ul>
+					<li class="item-icon-left item-icon-right">
+						<i class="ion-ios-undo-outline icon item-icon-left" ng-click="backs()" ></i>
+						<div class="header_center">
+						确认订单
+					   </div>						
+					</li>
+				</ul>
+			</ion-header-bar>
+			<!--top这是结尾-->
+			<!--<这是自动轮播的代码 要加上ion-content才可以居中-->
+				<ion-content class="content">
+					<p class="address"><img src="img/sure_order/s_pic.png"><span>请填写收货地址：山西省太原市平路高新街<i> > </i></span></p>
+				    <!--购物车列表-->
+					<ion-list class="list"ng-repeat="item in obj.sure_order">
+						<div class="left">
+							
+							<a ui-sref="pro_details"><img src="{{item.img}}" /></a>
+						</div>
+						<div class="right">
+							<h3 ui-sref="pro_details">{{item.name}}</h3>
+							<p class="p_jia">货号：   000--123</p>
+							<p class="p_jia">材质： 铝塑</p>
+							<div class="bottom">
+								<div>
+									<span>数量：</span>
+									<div>										
+										<input type="text" value="{{item.num}}" class="kuang"/>										
+									</div>
+								</div>								
+							</div>
+							<p class="p_jia">风格：带支架型</p>
+							<p class="p_jia">单价<i>￥{{item.prices}}</i></p>
+							
+						</div>
+					</ion-list>
+				</ion-content>
+				
+			    <!--这里是底部的代码-->
+			   <ion-footer-bar class="end">
+					<div class="fo">
+							<p>应付金额：<i>328</i>元 </p>
+							<p><button ui-sref="pay">提交订单</button></p>
+					</div>			
+		        </ion-footer-bar>
+		</ion-view>
+	</body>
+</html>
+

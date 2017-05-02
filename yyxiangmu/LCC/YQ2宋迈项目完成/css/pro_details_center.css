@@ -1,0 +1,168 @@
+.content .container .center{margin-top: 4%; height: 100%;overflow: hidden;}
+
+ .text{margin-top: 5%;}
+
+.content .container .center h1 {font-family: "微软雅黑";font-size: 30px;color: #FFFFFF;border-bottom: 1px solid #FFFFFF;}
+.content .container .center span{display: block; font-family: "微软雅黑";font-size: 14px;line-height: 12px;margin-top:0.5% ;}
+.content .container .center h1 img{display: block;margin-left: 1.5%;}
+.content .container .center p{margin-top:-30px;float: right;font-family: "微软雅黑";display:block;margin-right: 10px;color: #FFFFFF;font-size: 12px;}
+.content .container .center p a{text-decoration: none;color: #FFFFFF;font-size: 12px;}
+.content .container .center p a:hover{color: red;}
+.content .container .top h1{text-align: center; display: block;}
+.content .container .top h1 a{text-decoration: none;font-family: "微软雅黑";font-size: 16px;color:#FFFFFF;padding-bottom: 5px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.content .container .on h1 a {color: red;border-bottom: 10px solid red;}
+.content .container .top:hover h1 a{color: red;border-bottom: 10px solid red;}
+
+
+.textA{padding: 0PX; margin-top: 3%;}
+.textA .top h1{font-family: "微软雅黑";font-size: 24px;color: #FFFFFF;}
+.textA .top p{font-size: 14px;font-family: "微软雅黑";color: #FFFFFF;text-indent:2em;}
+.price{margin-top: 3%;}
+.price p{font-family: "微软雅黑";font-size: 14px;color: #FFFFFF;}
+.price p i{font-style: normal;font-size: 16px;color: red;padding-left: 5px;}
+.color{padding-bottom: 2%;padding-top: 2%;}
+.color p{color: #FFFFFF;font-family: "微软雅黑";font-size: 14px;}
+.color p span{margin-left: 4%; padding:2px 23px;cursor: pointer;}
+.color p span:hover{border: 1px solid red;padding: 1px 22px;}
+.color p span.on{border: 1px solid red;padding: 1px 22px;}
+
+ .textA .peison{clear: both;height: 20%;margin-top: 2%}
+ .textA .peison p{font-family: "微软雅黑";font-size: 14px;color: #FFFFFF;float: left;margin-left:6% ;line-height: 30px;}
+ .textA .peison .group{margin-left: 6%;font-family: "微软雅黑";border: 0px;}
+ .textA .peison .group menu{max-width: 120px;}
+.textA .peison span{margin-right:20px ;font-family: "微软雅黑";font-size: 14px;color: #FFFFFF;line-height: 32px;}
+.textA .peison span i{font-style: normal;padding-left: 10%;}
+
+
+
+.content .container .details .textA .car{height: 10%;background:yellow;margin-top: 2%;}
+.content .container .details .textA .car p{cursor: pointer; color: #FFFFFF; width: 20%;line-height: 28px;background: red;float: left;margin-left: 17%;text-align: center;font-family: "微软雅黑";font-size: 14px;}
+.content .container .details .textA .car p a{color: #FFFFFF;text-decoration: none;}
+.content .container .details .textA .car img{line-height: 24px;padding: 1px;float: left;margin-left:5px;}
+.content .container .details .textA .car p:nth-child(2){color:#FFFFFF; width: 20%;line-height: 24px; border: 2px solid #FFFFFF;background:none;margin-left: 11%;}
+/***********change_box************/					
+.change_box_top img{max-width: 100%;margin-bottom: 20px;width: 410px;height: 410px; cursor: pointer;}				 
+.change_box_bottom li{float: left;margin-left:4.5%;cursor: pointer;}
+/*图片切换*/
+
+.number{clear: both;overflow: hidden;margin-top: 4%;margin-bottom: 4%;}
+.number p{float: left;font-family: "微软雅黑";font-size: 14px;color: #FFFFFF;}
+.number>div{float: left;font-family: "微软雅黑";font-size: 14px;color: #FFFFFF;margin-left: 11%;}
+.number>div:nth-child(2){color: #000000;}
+.number>div:nth-child(2) button{width: 20px;height: 20px;background: #5d5d5d;border: none;text-align: center;line-height: 20px;outline: none;}
+.number>div:nth-child(2) input{width: 57px;height: 20px;background: inherit;border: none;text-align: center;line-height: 20px;color: #FFFFFF;outline-style: none;}
+.number>div:nth-child(3){margin-left: 5%;}
+/*购物车代码*/
+.right{margin-left: 25%;}
+.prd_num {text-align: center;float: left;height: 100%;width: 50px;border: none;border-left: 1px solid #AAAAAA;border-right: 1px solid #AAAAAA;}
+.prd_subNum {text-align: center;float: left;height: 100%;width: 30px;border: none;background-color: #DCDCDC}
+.prd_addNum{text-align: center;float: left;height: 100%;width: 30px;border: none;background-color: #DCDCDC}
+
+/*复选框的代码*/
+ul{list-style: none;}
+.content .container .details .textA #tab{width:100%;/*border:3px solid red;*/}
+.content .container .details .textA #tab ul {margin-top: 6%;}
+.content .container .details .textA #tab ul li{cursor:pointer;float:left;text-align: center;background:inherit;margin-left: 16%;font-size:14px;height:30px;line-height:26px;color:#FFFFFF;border: 2px solid transparent;margin-right: -5%;font-family: "微软雅黑";padding: 0 2%;}
+
+.content .container .details .textA #tab li:hover{border: 2px solid red;}
+.content .container .details .textA #tab li.on{border: 2px solid red;}
+.content .container .details .textA #tab p{font-family: "微软雅黑";font-size: 14px;color: #FFFFFF;line-height: 34px;} 
+#tab div{clear:both;font-size:14px;padding:20px;display:none;}
+#tab .active{background_color:#fffffff;}
+
+
+
+
+
+
+/*这里是头部的响应代码768-1200px*/
+@media (min-width:1081px) and (max-width:1200px){
+	.navbar-nav > li{margin-top: 0px;margin-right: -18px;}
+	.form-group{margin-top: 32px;margin-right: 0px;}
+}
+@media (max-width:1080px) and (min-width:994px){
+	.form-group{margin-top: 32px;}
+	.navbar-nav > li{margin-right: -20px;margin-top: 0px;}
+}
+@media (max-width:993px) and (min-width:768px){
+		.form-group{margin-top:33px; width: 130px;}
+		.navbar-nav > li{margin-top: 7px;margin-right: -5px;margin-left: -15px;}
+		.navbar-header{margin-top: 5px;}
+}
+
+
+
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+	.box_top_img img{width: 89%;}
+	.box_top_img{max-height:325px;}
+	.change_box_bottom img{width: 95%;}
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+  .content .container .top h1 a{font-size: 14px;} 
+  .content .container .on h1 a{border-bottom: 5px solid red;}
+  .content .container .top:hover h1 a{border-bottom: 5px solid red;}
+  .textA .peison span i{padding-left: 5%;} 
+  .textA .peison span{margin-right: 0px;}
+  .content .container .details .textA .car img{width: 21%;margin-top: 5px;}
+  .content .container .details .textA .car p:nth-child(2){width: 23%;}
+  .content .container .details .textA .car p{width: 23%;}
+  .color p span{margin-left: 0;}
+  .box_top_img{max-height:255px;}
+  .box_top_img img{width: 91%}
+  	.change_box_bottom img{width: 95%;}
+  	.content .container .details .textA #tab p{line-height: 24px;}
+}
+@media only screen and (min-width:471px) and (max-width:767px){
+  .content .container .top h1 a{font-size: 14px;} 
+  .content .container .on h1 a{border-bottom: 5px solid red;}
+  .content .container .top:hover h1 a{border-bottom: 5px solid red;}
+  .textA .peison span i{padding-left: 5%;} 
+  .textA .peison span{margin-right: 0px;}
+  .content .container .details .textA .car img{width: 21%;margin-top: 5px;}
+  .content .container .details .textA .car p:nth-child(2){width: 23%;}
+  .content .container .details .textA .car p{width: 23%;}
+  .color p span{margin-left: 0;}
+  .box_top_img{max-height:420px;}
+  	.change_box_bottom img{width: 80%;max-width: 87px;}
+  	.content .container .details .textA #tab p{line-height: 24px;}
+}
+@media only screen and (min-width:320px) and (max-width:470px){
+  .box_top_img img{width: 90%;}
+  .content .container .top h1 a{font-size: 14px;} 
+  .content .container .on h1 a{border-bottom: 5px solid red;}
+  .content .container .top:hover h1 a{border-bottom: 5px solid red;}
+  .textA .peison span i{padding-left: 5%;} 
+  .textA .peison span{margin-right: 0px;}
+  .content .container .details .textA .car img{width: 21%;margin-top: 5px;}
+  .content .container .details .textA .car p:nth-child(2){width: 23%;}
+  .content .container .details .textA .car p{width: 23%;}
+  .color p span{margin-left: 0;}
+  .box_top_img{max-height:346px;}
+  .change_box_bottom img{width: 80%;max-width: 87px;}
+  .content .container .details .textA #tab p{line-height: 24px;}
+  .color p span{margin-left:-8px}
+  .content .container .details .textA .car p:nth-child(2){width: 30%;}
+  .content .container .details .textA .car p{width: 29%;}
+  .content .container .details .textA #tab ul li{margin-left:9%}
+  .content .container .top h1 a{font-size: 12px;}
+  .color p span.on{padding: 1px 7px;}
+  .color p span{margin-left: 4%; padding:2px 8px;cursor: pointer;}
+}
+@media only screen and (min-width:996px) and (max-width:1199px){
+	.change_box_bottom li{margin-left:1.25%;}
+}
+@media only screen and (min-width:768px) and (max-width:995px){
+	.change_box_top img{height: 290px;}
+	.change_box_bottom li:nth-child(4){display: none;}
+	.change_box_bottom li{margin-left: 1.5%;}
+	.text-center ul li:nth-child img{float: right;}
+	.change_box_bottom img{width: 75%;}
+}
+@media only screen and (min-width:394px) and (max-width:767px){
+	.change_box_bottom li{float: none;margin-left:0;display: inline-block;}
+}
+@media only screen and (min-width:320px) and (max-width:393px){
+	.change_box_bottom li{float: none;margin-left:0;display: inline-block;width: 23%;}
+}
+
+

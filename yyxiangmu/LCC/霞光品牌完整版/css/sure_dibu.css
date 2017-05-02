@@ -1,0 +1,6 @@
+.has-footer {bottom: 65px;}
+.bar-footer{padding: 0;height: 0.9rem;background: none;}
+.bar-footer .tab-nav.tabs{background: #535353;color: #fff;height: 0.9rem;top:2px ;display: flex;align-items: center;}
+.tab-item{opacity: 1;}
+.tab-item-active{color: #f2583a;}
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/pro_list.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/pro_list_top.css" />		
+		<title>产品列表</title>
+		
+	</head>
+	<!--ng-controller 指令用于为你的应用添加控制器。在控制器中，你可以编写代码，制作函数和变量，并使用 scope 对象来访问。-->
+	<!--homeController是ng-controller自己定义的名字-->
+	<body ng-controller="pro_listController">
+		<ion-view class="pro_list">
+			<!--ion-hearder-bar 这个是固定在屏幕顶部的一个头部标题栏的用法。-->
+			<ion-header-bar class="head-top">
+				<ul>
+					<li class="item-icon-left item-icon-right">
+						<i class="ion-navicon-round icon item-icon-left" ></i>
+						<!--<div class="search"><input class="ion-ios-search"placeholder="搜索你需要的商品" ng-model = "pro_sreachVal"  ui-sref="pro_search"></div>-->
+						<button class="ion ion-ios-search suo" ng-click="pusearch(vale)" ></button>
+						<input placeholder="搜索你需要的商品" ng-model="vale" ng-click="Ansrarch()" ui-sref="pro_search"/>
+						<i class="ion-qr-scanner icon item-icon-right"></i>
+					</li>
+				</ul>
+			</ion-header-bar>
+			<!--top这是结尾-->
+			<!--<这是自动轮播的代码 要加上ion-content才可以居中-->
+				<div class="box-top" id="box">
+				    		<ul>
+				    			<li>
+				    				<a>默认</a>
+				    			</li>
+				    			<li>
+				    				<a>热销</a>
+				    			</li>
+				    			<li>
+				    				<a class="active">新品</a>
+				    			</li>
+				    			
+				    			<li>
+				    				<a>筛选</a>
+				    			</li>
+				    		</ul>
+				</div>
+				<ion-content class="content">
+				    <div class="box">
+				    	
+				    	
+				    	<div class="box-bottow">
+				    		<!--如果想要两边都显示那么就要两个都要谢row row-wrap-->
+				    		<ul class="row row-wrap" style="display:none;">
+				    			<li class="col col-46" ng-repeat="item in obj.pro_list2">
+				    				<a ui-sref="pro_details"><img ng-src="{{item.img}}"width="100%"/></a>
+				    				<p ui-sref="pro_details">{{item.name}}</p>
+				    				<p><span>{{item.prices}}<i>REB</i></span>
+				    				<a ng-click="pro_addCars($index)"><img src="img/pro_list/pro1.png"/></a></p>
+				    			</li>
+				    		</ul>
+				    		<ul class="row row-wrap" style="display:none;">
+				    			<li class="col col-46" ng-repeat="item in obj.pro_list2">
+				    				<a ui-sref="pro_details"><img ng-src="{{item.img}}"width="100%"/></a>
+				    				<p ui-sref="pro_details">{{item.name}}</p>
+				    				<p><span>{{item.prices}}<i>REB</i></span>
+				    				<a ng-click="pro_addCars($index)"><img src="img/pro_list/pro1.png"/></a></p>
+				    			</li>
+				    		</ul>
+				    		<ul class="row row-wrap">
+				    			<li class="col col-46" ng-repeat="item in pro_list">
+				    				<a ui-sref="pro_details"><img ng-src="{{item.img}}" width="100%"/></a>
+				    				<p ui-sref="pro_details">{{item.name}}</p>
+				    				<p><span>{{item.prices}}<i>REB</i></span>
+				    				<a ng-click="pro_addCars($index)"><img src="img/pro_list/pro1.png"/></a></p>
+				    			</li>
+				    			<!--上拉刷新-->
+				    			<ion-infinite-scroll on-infinite="loadMore()" ng-if="moreBool" distance = "0%">
+							
+		                        </ion-infinite-scroll>
+				    		</ul>
+				    		
+				    		<ul class="row row-wrap" style="display:none;">
+				    			<li class="col col-46" ng-repeat="item in obj.pro_list2">
+				    				<a ui-sref="pro_details"><img ng-src="{{item.img}}"width="100%"/></a>
+				    				<p ui-sref="pro_details">{{item.name}}</p>
+				    				<p><span>{{item.prices}}<i>REB</i></span>
+				    				<a ng-click="pro_addCars($index)"><img src="img/pro_list/pro1.png"/></a></p>
+				    		</ul>
+				    	</div>
+				    </div>
+				  <ion-infinite-scroll ng-if="more" spinner="android" on-infinite="loadMore()" distance="0%">
+				</ion-content>
+				<!--<这是需要自动轮播的代码 要加上ion-content才可以居中end-->
+	
+			    <!--这里是底部的代码-->
+			    <ion-footer-bar>
+				<!--<div class="bar-footer">-->
+				    <ul>
+				   		<li  ui-sref="home">
+				   			<div>
+				   				<i class="ion-home"></i>
+				   				<p>主页</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="prostyle">
+				   			<div>
+				   				<i class="icon ion-ios-settings-strong" ></i>
+				   				<p>分类</p>
+				   			</div>
+				   			
+				   			
+				   		</li>
+				   		<li>
+				   			<div><i class="ion-ios-lightbulb-outline" ></i>
+				   				<p>发现</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="shop_cart">
+				   			<div>
+				   				<i class="icon ion-ios-cart" ></i>
+				   				<p>购物车</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="user">
+				   			<div>
+				   				<i class="ion-person-add" ></i>
+				   				<p>我</p>
+				   			</div>
+				   		</li>
+						
+					</ul>
+			</ion-footer-bar>
+		</ion-view>
+	</body>
+</html>

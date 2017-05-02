@@ -1,0 +1,23 @@
+
+.container{padding:0px;height: 100%;overflow:hiddenwidth: 1200px;margin-top: 60px;}
+.content .container {width: 1200px;height100%;overflow: hidden;border: 1px solid #00FFFF;margin-bottom: 73px;}
+.content .top{height: 34px;width: 100%;background: #00FFFF;}
+.content .top a{text-decoration: none; font-family: "微软雅黑";font-size: 14px;color: #333;float: left;line-height: 34px;margin-left: 20px;}
+.content .top label{float: right;font-weight: normal;}
+.content .top i{font-style: none;font-style: normal;font-family: "微软雅黑";line-height: 34px;color: #333;margin-right: 50px;cursor: pointer;}
+.content .center{width: 1050px;margin: 0 auto;height:100%;overflow: hidden; }
+.content .center .tu{border-bottom:1px solid #00FFFF ;width: 1050px;height: 177px;}
+.content .center .left{width: 665px;height: 177px;float: left;}
+.content .center .left a img{margin-top:48px;margin-left: 30px; display: block;float: left;}
+.content .center .left p a{font-family: "微软雅黑";font-size:16px;float:left;margin-top:65px;margin-left: 30px;color: #333;text-decoration: none;}
+.content .center .left p a:hover{color: red;}
+.content .center .right{width: 385px;height: 177px;float: left;}
+.content .center .right p{margin-top: 30px;}
+.content .center .right p img{padding-left: 12px;}
+.content .center .biaoqing{height: 125px;}
+.content .center .biaoqing label{margin:30px 0px 0px 230px;cursor: pointer;}
+.content .center .pingjia{height: 300px;width: 1200px;}
+.content .center .pingjia span{width: 126px; float: left;margin-left: 80px;background: inherit;border: none;color: black;font-size: 14px;font-family: "微软雅黑";}
+.content .center .pingjia .kuang{outline: none; width: 770px;height:167px;padding: 3px 10px;border: 1px solid#00FFFF;}
+.content .center .pingjia button{outline: none; margin-top: 26px; float:left;margin-left: 865px;padding: 11px 24px;font-family: "微软雅黑";font-size: 14px;color: #FFFFFF;background:#00FFFF;border:none;}
+.content .center .pingjia button:hover{background: red;color: black}

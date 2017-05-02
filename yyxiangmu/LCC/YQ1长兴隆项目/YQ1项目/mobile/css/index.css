@@ -1,0 +1,384 @@
+
+.centent{
+	margin:0 4%;}
+.centent .top h1{
+	padding-top:8%;
+	cursor:pointer;
+	font-weight:normal;
+	text-align:center;
+	}
+.centent .top h1 a{
+	text-decoration:none;
+	font-family:"黑体";
+	color:#31bfa4;
+	font-size:24px;
+	}
+.centent .topA {
+	text-align:center;
+	box-sizing:border-box;
+	}
+.centent .topA img{
+	margin-bottom:6%;
+	margin-top:6%;
+	width:100%;
+   }
+.centent .topB{
+	
+	border-bottom:4px solid #d8d8d8;
+}
+.centent .topB .p{
+	padding-bottom:8%;}
+.centent .topB P{
+	color:#333333;
+	text-indent:2em;
+	font-family:"黑体";
+	font-size:18px;
+	line-height:24px;
+	
+	}
+	
+	
+.centent .news h1{
+	font-weight:normal;
+	text-align:center;
+	margin-top:20px;
+	}
+.centent .news h1 a{
+	font-family:"黑体";
+	font-size:24px;
+	color:#31bfa4;
+	text-decoration:none;
+	}
+	
+.centent .news .pic{
+	width:35%;
+	float:left;
+	padding-top:5%;
+	}
+.centent .news .pic img{ display:block; max-width:100%;}
+
+
+
+/*这里是文字加*/
+.centent .textE{
+	float:left;
+	width:60%;}
+.centent .textE h1{
+	width:100%;
+	margin-left:5%;
+	float:left;
+	font-family:"黑体";
+	font-size:20px;
+	margin-top:8%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	overflow: hidden;
+
+    }
+.centent .textE p{
+	width:100%;
+	margin-top:1%;
+	margin-left:5%;
+	float:left;
+	color:#333333;;
+	font-size:16px;
+	text-indent:2em;
+	font-family:"黑体";
+	line-height:24px;
+	}
+
+
+.centent .textB{
+	border-bottom:4px solid #d8d8d8;
+	clear:both;
+	}
+	
+.centent .textB ul{
+	list-style:none;
+	clear:both;
+	padding-top:4%;
+	margin-bottom:6%;
+	}
+.centent .textB ul li{
+	font-family:"黑体";
+	font-size:18px;
+	line-height:24px;
+	background:url(../imager/news_line_03.jpg) repeat-x center center;
+	clear:both;
+	overflow:hidden;
+	}
+.centent .textB ul li a{
+	float:left;
+	display:block;
+	background:#FFF;
+	}
+.centent .textB ul li span{
+	color:#333333;
+	float:right;
+	display:block;
+	background:#FFF;
+	}
+
+
+
+
+
+
+
+
+
+
+/*产品中心的代码*/
+.centent .product{
+	float:left;
+	list-style:none;
+	}
+.centent .product h1{	
+	font-weight:normal;
+	text-align:center;
+	margin-top:6%;
+	padding-bottom:6%;
+	}
+.centent .product h1 a{
+	font-family:"黑体";
+	font-size:24px;
+	color:#31bfa4;
+	text-decoration:none;
+	}
+/*这里是图片的hover演示样式*/
+.centent .product .pic{
+	border-bottom:4px solid #d8d8d8;
+	}
+.centent .product .pic ul{
+	padding-bottom:8%;
+	clear:both;
+	overflow:hidden;
+	}
+
+.centent .product .pic .box{
+	width:30%;
+	box-sizing:border-box;
+	position:relative;
+	margin-bottom:6%;
+	}
+.box_bottom{
+	width:100%;
+    height:25px;
+	background-color:#8ad1c2;
+	opacity:0.8;
+	position:absolute;
+	bottom:0;
+	text-align:center;
+	line-height:25px;
+	color:#FFF;
+	}	
+
+
+
+/*产品中心的代码*/
+.centent .product li{
+	margin-right:9px;
+	float:left;
+	list-style:none;
+    margin-top:5px;
+    display:block;
+	 border:2px solid #0ee7cc;
+	}
+.centent .product li p {
+	font-family:"黑体";
+	font-size:18px;
+	color:#000;
+	}
+
+.centent .product li a img{
+	 max-width:100%;
+	}
+
+
+
+
+
+
+/*底部的代码*/
+.footer{
+	margin:0 1%;
+	clear:both;
+	overflow:hidden;
+	}
+.footer ul{
+	margin-top:20px;
+	}
+	
+.footer li{
+	font-family:"黑体";
+	font-size:18px;
+	color:#333333;
+	cursor:pointer;
+	float:left;
+	width:20%;
+	list-style:none;
+	text-align:center;
+	}
+
+.footer a{
+	display:block;
+	margin:14px auto 10px;
+	}
+
+.footer li a{ color:#31bfa4; display:block;}
+.footer li a:hover{color:#F00;}
+.footer .on a{
+	color:red;}
+	
+
+@media only screen and (min-width:270px )and (max-width:374px ){
+.centent .top h1 a{
+	text-decoration:none;
+	font-family:"黑体";
+	color:#31bfa4;
+	font-size:17px;
+	}
+.centent .news h1 a{
+	font-family:"黑体";
+	font-size:17px;
+	color:#31bfa4;
+	text-decoration:none;
+	}
+
+.centent .product li p {
+	font-size:13px;
+	font-family:"黑体";
+		}
+.centent .product h1 a{
+	font-size:17px;
+	}
+.centent .topB P{
+	font-size:12px;
+	}
+.centent .textB ul li{
+	font-size:12px;
+	}
+.centent .textE h1{
+	font-size:13px;
+	}
+.centent .textE p{
+	font-size:13px;
+	}
+.footer li{
+	font-size:13px;
+	text-align:center;}
+	
+	}
+@media only screen and (min-width:375px )and (max-width:450px ){
+.centent .top h1 a{
+	text-decoration:none;
+	font-family:"黑体";
+	color:#31bfa4;
+	font-size:19px;
+	}
+.centent .news h1 a{
+	font-family:"黑体";
+	font-size:19px;
+	text-decoration:none;
+	}
+
+.centent .product li p {
+	font-size:16px;
+	font-family:"黑体";
+	}
+.centent .product h1 a{
+	font-size:19px;
+	}
+.centent .topB P{
+	font-size:14px;
+	}
+.centent .textB ul li{
+	font-size:14px;
+	}
+.centent .textE h1{
+	font-size:15px;
+	}
+.centent .textE p{
+	font-size:15px;
+	}
+.footer li{
+	font-size:16px;
+	text-align:center;
+	}
+	
+}
+@media only screen and (min-width:451px )and (max-width:560px ){
+.centent .top h1 a{
+	text-decoration:none;
+	font-family:"黑体";
+	color:#31bfa4;
+	font-size:21px;
+	}
+.centent .news h1 a{
+	font-family:"黑体";
+	font-size:21px;
+	text-decoration:none;
+	}
+
+.centent .product li p {
+	font-size:17px;
+	font-family:"黑体";
+	}
+.centent .product h1 a{
+	font-size:21px;
+	}
+.centent .topB P{
+	font-size:15px;
+	}
+.centent .textB ul li{
+	font-size:14px;
+	}
+.centent .textE h1{
+	font-size:16px
+	;}
+.centent .textE p{
+	font-size:16px;
+	}
+.footer li{
+	font-size:17px;
+	text-align:center;
+	}
+	
+}
+@media only screen and (min-width:561px )and (max-width:620px ){
+.centent .top h1 a{
+	text-decoration:none;
+	font-family:"黑体";
+	color:#31bfa4;
+	font-size:22px;
+	}
+.centent .news h1 a{
+	font-family:"黑体";
+	font-size:23px;
+	text-decoration:none;
+	}
+
+.centent .product li p {
+	font-size:17px;
+	font-family:"黑体";}
+.centent .product h1 a{
+	font-size:23px;
+	}
+.centent .topB P{
+	font-size:15px;
+	}
+.centent .textB ul li{
+	font-size:17px;
+	}
+.centent .textE h1{
+	font-size:17px;
+	}
+.centent .textE p{
+	font-size:17px;
+	}
+.footer li{
+	font-size:17px;
+	text-align:center;
+	}
+	
+}

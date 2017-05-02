@@ -1,0 +1,179 @@
+.top h1{padding-left:5px ;}
+.top h1 a{font-family: "微软雅黑";font-size:36px;color: #FFFFFF;border-left: 10px solid red;padding-left: 5px;text-decoration: none;}
+.top img{float: right;margin-right: 50px;margin-top: 20px;width: 80%;}
+.shop_car{}
+.shop_car p{float: left;color: #FFFFFF;line-height: 18px;font-family: "微软雅黑";font-size: 24px;}
+.shop_car p:nth-child(1){margin-left: 35px;}
+.shop_car p:nth-child(2){margin-left: 123px;}
+.shop_car p:nth-child(3){float: right;}
+.table-responsive{padding: 0px;}
+.shopcar table{border: 1px solid red;margin-top: 30px;text-align: center;}
+.shopcar table tr{text-align: center;}
+.shopcar table thead tr:nth-child(1){background: #68100d;}
+.shopcar table thead tr td{font-family: "微软雅黑";font-size: 14px;color: #FFFFFF;}
+.shopcar table thead tr:nth-child(1) td{font-family: "微软雅黑";font-size: 14px;color: #FFFFFF;padding: 10px 0px;}
+
+.shopcar table tr td i{display: block;background: url(../img/cart_1.png) no-repeat center center;width: 34px;height: 28px;margin: auto;background-size: 100%;cursor: pointer;}
+.shopcar table tr td i.on{background: url(../img/cart_2.png) no-repeat center center;background-size: 100%;}
+.shopcar table tr td:nth-child(1) input{display: none;}
+.shopcar table thead tr:nth-child(1) td:nth-child(2){padding-left: 14%;}
+.shopcar table tbody tr:nth-child(1){border-bottom: 1px solid red;}
+.shopcar table tbody tr td{text-align: center;padding: 30px 0px;}
+.shopcar table tbody tr td img{float: left;display: block;padding-left: 20px;}
+.shopcar table tbody tr td:nth-child(2) img{width: 49%;}
+.shopcar table tbody tr td:nth-child(6) img{padding-left: 45%;}
+.shopcar table tbody tr td p{float: left;margin-left:20px;}
+.shopcar table tbody tr td p:nth-child(3) span{color: #666666;}
+.shopcar table tbody tr td:nth-child(2) p:nth-child(1){color: #595950;}
+.shopcar table tbody tr td:nth-child(2) p{margin-top:20px;margin-right: 20px;}
+
+.shopcar table tbody tr td:nth-child(2) p a{color: #FFFFFF;text-decoration: none;}
+.shopcar table tbody tr td:nth-child(3) span:nth-child(1){float: left;}
+.shopcar table tbody tr td:nth-child(3)span s{color:#666666;	}
+.shopcar table tbody tr td:nth-child(3) p{float: left;clear: both;}
+.shopcar table tbody tr td:nth-child(3) p:nth-child(1){color: #666666;font-family: "微软雅黑";font-size: 14px;}
+.shopcar table tbody tr td:nth-child(3) p:nth-child(2){color: #FFFFFF;font-family: "微软雅黑";font-size: 14px;}
+.shopcar table tbody tr td:nth-child(3) p:nth-child(2) span{float: right;}
+.shopcar table tbody tr td:nth-child(3) p:nth-child(3) span:nth-child(1) {color: #FFFFFF;font-family: "微软雅黑";font-size: 14px;line-height:24px;background: #660603;width: 200%;border-radius: 12px;}
+.shopcar table tbody tr td:nth-child(4) input{text-align: center; width:20px; color: #FFFFFF;background: inherit; border: none;outline: none; }
+.shopcar table tbody tr td:nth-child(4) .prd_subNum{width: 20px;background: #666666;}
+.shopcar table tbody tr td:nth-child(4) .prd_addNum{width: 20px;background: #666666;}
+.shopcar table{font-family: "微软雅黑";}
+
+.shopcar td:last-child img{cursor: pointer;margin:auto;}
+.all_check{cursor: pointer;}
+
+
+.dibu{margin-top: 20px;}
+.dibu p{color: #FFFFFF;font-family: "微软雅黑";font-size: 14px;float: right;margin-right: 40px;}
+.dibu p span{color: red;}
+.dibu p span i {font-style:normal;}
+.jiesuan button{  float: right;outline: none; margin-right: 40px; padding: 5px 10px; font-family:"微软雅黑";font-size: 18px;background: red;border: none;margin-top: 20px;}
+.jiesuan button a{ color: #FFFFFF; cursor:pointer;text-decoration: none;}
+.jiesuan button:hover{background: #1B6D85;}
+@media (min-width:320px) and (max-width:991px){
+	.shopcar table tr:nth-child(1) td:nth-child(2){padding-left:0%;}
+}
+/*这是图片的兼容*/
+@media (min-width:992px) and (max-width:1199px){
+	.top h1 a{font-size: 30px;}
+	.shop_car p{font-size: 22px;}
+	.shop_car p:nth-child(1) {margin-left: 12px;}
+	.shop_car p:nth-child(2) { margin-left:93px;}
+	.shop_car p:nth-child(3) {margin-right: 10px;}
+	.shopcar table tbody tr td:nth-child(2) p{width: 36%;margin:10px 0px 0px 10px;}
+	.shopcar table tr td:nth-child(2) img{width: 38%;}
+	
+}
+@media (min-width:768px) and (max-width:991px){
+.col-sm-12{padding: 0px;}	
+.top h1 a{font-size: 26px;}
+.shop_car p{font-size: 18px;margin-top: -20px;padding-bottom:20px ;}
+.shop_car p:nth-child(1) {margin-left:-10px;}
+.shop_car p:nth-child(2) { margin-left:70px;}
+.shop_car p:nth-child(3) {margin-right: 10px;}
+.shopcar table tbody tr td:nth-child(2) p{width: 36%;margin:10px 0px 0px 10px;}
+}
+
+/*手机版的代码*/
+@media (min-width:320px) and (max-width:474px){
+	.top img{width: 100%;margin-right: 0px;}
+	.shop_car p:nth-child(1){margin-left: 0px;}
+	.shop_car p:nth-child(2){margin-left: 20%;margin-right: 5px;}
+	.shop_car p:nth-child(3){float: right;}
+	.shop_car p{font-size: 16px;line-height: 46px;}
+}
+@media (min-width:320px) and (max-width:456px){
+	
+	.shopcar table tr:nth-child(2) td:nth-child(2) img{width: 80%;}
+	.shopcar table tr:nth-child(3) td:nth-child(2) img{width: 80%;}
+}
+@media (min-width:475px) and (max-width:600px){
+	.top img{width: 100%;margin-right: 0px;}
+	.shop_car p:nth-child(1){margin-left: 0px;}
+	.shop_car p:nth-child(2){margin-left: 30%;margin-right: 5px;}
+	.shop_car p:nth-child(3){float: right;}
+	.shop_car p{font-size: 18px;line-height: 46px;}
+}
+@media (min-width:601px) and (max-width:768px){
+	.top img{width: 100%;margin-right: 0px;}
+	.shop_car p{font-size:20;px;line-height: 46px;}
+	.shop_car p:nth-child(1){margin-left: 0px;}
+	.shop_car p:nth-child(2){margin-left: 30%;margin-right: 5px;}
+	.shop_car p:nth-child(3){float: right;}
+}
+
+
+@media (min-width:320px) and (max-width:768px){
+	
+
+	.col-sm-12, .col-md-12, .col-lg-12{padding: 5px 5px;}
+	.top img{width: 100%;margin-right: 0PX;}
+
+	.shopcar table tr:nth-child(2) td:nth-child(2) p{margin-right:0px}
+	.shopcar table tr:nth-child(3) td:nth-child(2) p{margin-right:0px}
+
+    .shopcar table tbody tr td:nth-child(2) img{width: 80%;}
+ 
+	.table-responsive tr:nth-child(1) td:nth-child(3){width: 10%;}
+
+	.dibu p{margin-right: 0px;}
+	.jiesuan button{clear: both;margin-right: 0px;}
+
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+	 .shopcar table tr td i{width: 20px;height: 20px;}
+}
+@media only screen and (min-width: 432px) and (max-width: 462px) {
+	.shopcar table tbody tr td{padding: 30px 7px;}
+}
+/*这个是那个加减的代码响应的代码*/
+@media (min-width:320px) and (max-width:384px){
+	.shopcar table tbody tr td:nth-child(3){padding: 0px 10px;}
+	.shopcar table tbody tr td:nth-child(2) p{margin-right: 0px;}
+	.shopcar table tbody tr td p{margin-left:0px ;}
+	  .shopcar table tbody tr td p:nth-child(3) span{display: none;}
+.shopcar table tr:nth-child(2) td:nth-child(4) input{width: 20px;}
+.shopcar table tr:nth-child(3) td:nth-child(4) input{width: 20px;}
+
+}
+@media (min-width:385px) and (max-width:414px){
+	.shopcar table tr:nth-child(1) td:nth-child(4) input{width: 47px}
+	.shopcar table tr:nth-child(2) td:nth-child(4) input{width: 47px;}
+	.shopcar table tr:nth-child(3) td:nth-child(4) input{width: 47px;}
+}
+@media (min-width:465px) and (max-width:497px){
+	.shopcar table tr:nth-child(2) td:nth-child(4){padding:0px 15px}
+	.shopcar table tr:nth-child(3) td:nth-child(4){padding:0px 15px}{}
+}
+@media (min-width:451px) and (max-width:768px){
+.shopcar table tr:nth-child(2) td:nth-child(4) input{width: 25px;}
+.shopcar table tr:nth-child(3) td:nth-child(4) input{width: 25px;}
+}
+@media (min-width:415px) and (max-width:438px){
+.shopcar table tr:nth-child(2) td:nth-child(4) input{width: 25px;}
+.shopcar table tr:nth-child(3) td:nth-child(4) input{width: 25px;}
+.shopcar table tr:nth-child(2) td{padding: 30px 5px;}
+}
+
+/*加减法响应end*/
+@media (min-width:1081px) and (max-width:1200px){
+	.navbar-nav > li{margin-top: 0px;margin-right: -18px;}
+	.form-group{margin-top: 32px;margin-right: 0px;}
+}
+@media (max-width:1080px) and (min-width:994px){
+	.form-group{margin-top: 32px;}
+	.navbar-nav > li{margin-right: -20px;margin-top: 0px;}
+}
+@media (max-width:993px) and (min-width:768px){
+		.form-group{margin-top:33px; width: 130px;}
+		.navbar-nav > li{margin-top: 7px;margin-right: -5px;margin-left: -15px;}
+		.navbar-header{margin-top: 5px;}
+}
+@media (min-width:320px) and (max-width:768px){
+	.shopcar table tr:nth-child(2) td p:nth-child(3) span{display: none;}
+	.shopcar table tr:nth-child(3) td p:nth-child(3) span{display: none;}
+}
+
+
+

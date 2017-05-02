@@ -1,0 +1,124 @@
+.content{width: 1200px;height: 100%;margin: 0 auto;}
+.content .container{width: 1200px;padding: 0px;height: 100%;}
+.content .container .c_top{width: 1200px;height:100%;overflow: hidden; }
+.content .container .c_top .left{width: 485px;height:100%;overflow: hidden;float: left;margin-bottom: 30px;}
+.content .container .c_top .left h1{font-family: "微软雅黑";font-size: 18px;color: #dddddd;margin-top: 25px;margin-left: 17px;}
+.content .container .c_top .left h1 span{color: #000000;}
+.content .container .c_top .left h1 span a{color: #000000;text-decoration: none;}
+.content .container .c_top .left h1 span a:hover{color: red;}
+/*first*/
+.change_box{position: relative;}
+.change_box_top img{margin-left: 10px; width: 466px;height: 600px;}
+.change_box_bottom {margin-top: 15px;overflow: hidden;width: 415px;height:100px;margin: 0 auto;}
+.change_box_bottom dl{display:inline-block;overflow: hidden;margin-top: 15px;}
+.change_box_bottom dl dd{float: left;line-height: 100px;padding: 0 8px;}
+.prev,.next{width: 20px;height: 30px;display: inline-block;position: absolute;cursor: pointer;}
+.prev{background: url(../img/p_r1.png) no-repeat;left: 10px;bottom: 26px;}
+.next{background: url(../img/p_r7.png) no-repeat;right: 10px;bottom: 26px;}
+/*end*/
+.content .container .c_top .right{width: 630px;height: 100%;overflow: hidden; float: left;margin-left: 85px;}
+.content .container .c_top .right h2{font-family: "微软雅黑";font-size: 18px;color: #000000;margin-top: 103px;line-height: 34px;}
+.content .container .c_top .right p{font-family: "微软雅黑";font-size: 16px;margin-bottom: 20px;}
+.content .container .c_top .right p span{color: red;font-family: "微软雅黑";margin-left: 20px;}
+.content .container .c_top .right p i{margin-left: 20px;font-style: normal;}
+.content .container .c_top .right p img{margin-left: 20px;}
+.content .container .c_top .right p:nth-child(5) span{color: blue;margin-left: 0px;}
+.content .container .c_top .right ul{list-style: none;display: inline-block;}
+.content .container .c_top .right ul li{float: left;margin-right: 10px;font-family: "微软雅黑";font-size: 14px;padding: 1px; cursor: pointer;}
+.content .container .c_top .right ul li.on{border: 1px solid red;padding: 0px;}
+.content .container .c_top .right ul li:hover{border: 1px solid red;padding: 0px;}
+.content .container .c_top .right ul li:nth-child(1){margin-right: 20px;padding: 0px;}
+.content .container .c_top .right ul li:nth-child(1):hover{border: none;padding: 0px;}
+.content .container .c_top .right dl{margin-top: 20px;overflow: hidden;}
+.content .container .c_top .right dl dd{cursor: pointer; float: left;font-family: "微软雅黑";font-size: 14px;margin-right: 20px;padding: 5px 10px;border: 1px solid #737373;}
+.content .container .c_top .right dl dd:hover{border:  1px solid #00FFFF;}
+.content .container .c_top .right dl .on{border:  1px solid #00FFFF;}
+.content .container .c_top .right dl dd:nth-child(1){border: none;padding: 0px;cursor: none;}
+.shuliang{float: left;margin-top:30px;width: 100%;margin-bottom: 10px;}
+.shuliang p{float: left;width: 75px;}
+.shuliang input{margin-right: 30px; display: block;float: left;height: 28px;width: 40px;text-align: center;outline: none;border: 1px solid #000000 }
+.shuliang button{ float: left;margin: -2px;background: inherit;border: 1px solid #000000;outline: none;height: 15px;}
+.shuliang button img{margin-top: -7px;}
+.shuliang i{float: left;margin-top: -10px;font-style: normal;margin-left: 50px;font-family: "微软雅黑";font-size: 14px;}
+.goumai{float: left;margin-top: 30px;}
+.goumai button{margin-left: 20px; width: 210px;height: 50px;background: #00FFFF;border: none;font-family: "微软雅黑";font-size: 18px;color: #FFFFFF;}
+.goumai button img{padding-right: 30px;}
+.goumai button:hover{background: red;color: black;}
+
+
+.content .container .guanlian{width: 1200px;height: 100%;overflow: hidden;}
+.content .container .guanlian h1{margin: 0px;border-bottom: 2px solid #bae8f4;margin-top: 20px;line-height:60px;margin-bottom: 20px;}
+.content .container .guanlian h1 a{padding: 20px 23px;background: #00FFFF;font-family: "宋体";font-size: 24px;text-decoration: none;}
+.guanlian .ximian ul {list-style: none;}
+.guanlian .ximian ul li{float: left;  width: 213px;height: 100%;overflow: hidden;float: left;margin-right: 33px;text-align: center;}
+.guanlian .ximian ul li .goods{width: 213px;height: 213px;position: relative;text-align: center;margin-bottom: 10px;}
+.guanlian .ximian ul li:nth-child(5){float: right;margin-right: 0px;}
+.guanlian .ximian ul li .goods p{position: absolute;bottom: 0px;margin: 0px;padding: 5px 8.5px;background: #858584;opacity: 0.75;}
+.guanlian .ximian ul li .goods p a{text-decoration: none;font-family: "微软雅黑";font-size: 14px;color: #000000;display: none}
+.guanlian .ximian ul li .goods:hover p a{display: block;}
+.guanlian .ximian ul li i{color: red;font-style: normal;font-family: "宋体";font-size: 18px;}
+/*center*/
+.center{width: 1200px;height: 100%;overflow: hidden;}
+/*center left*/
+.content .container .center .left{width: 182px;height: 100%; overflow:hidden;border: 2px solid #737373;float: left;margin-top: 50px;margin-right: 30px;}
+.content .container .center .left .dian{width: 182px;height: 134px;float: left;}
+.content .container .center .left .dian p{font-family: "微软雅黑";border-bottom: 1px solid #737373;padding-left: 5px;}
+.content .container .center .left .dian a{margin: 0px 3px; display: inline-block;float: left;font-family: "微软雅黑";font-size: 14px;color: black;text-decoration: none; margin-bottom: 20px;}
+.content .container .center .left .dian a input{margin-left: 3px; width: 125px;border: 1px solid #737373;background: inherit;}
+.content .container .center .left .dian span{color: black; font-family: "微软雅黑";font-size: 14px;display: inline-block;}
+.content .container .center .left .dian span input{ margin-left:5px;width: 50px;margin-right: 5px;font-size: 20px;line-height: 14px;height: 25px;border: 1px solid #737373;}
+.content .container .center .left .dian span img{margin-left: 33px; background: black;margin-top: 5px;display: block;cursor: pointer;}
+
+.content .container .center .left .lie{width: 182px;height: 100%;overflow: hidden;float: left;}
+.content .container .center .left .lie ul{margin-top: 0px;}
+.content .container .center .left .lie ul li{margin-top: 46px;}
+.content .container .center .left .lie ul li:last-child{margin-bottom: 150px;}
+.content .container .center .left .lie ul li .jingxuan{height: 100%; overflow:hidden; width: 182px;padding-left: 8px;}
+.content .container .center .left .lie ul li .jingxuan h1{margin-top: 0px;font-family: "微软雅黑";font-size: 18px;}
+.content .container .center .left .lie ul li .jingxuan a img{float: left;}
+.content .container .center .left .lie ul li .jingxuan i{font-style: normal;color: red; font-family: "微软雅黑";font-size: 18px;padding-top: 10px;float: left;width: 100%;}
+.content .container .center .left .lie ul li .jingxuan p a{font-family: "微软雅黑";font-size: 14px;}
+.content .container .center .left .lie ul li .jingxuan p a:hover{color: red;}
+.content .container .center .left .lie ul li .jingxuan a{font-family: "微软雅黑";font-size: 18px;margin-bottom:50px ;color:#000000;text-decoration: none;}
+.content .container .center .left .lie ul li .jingxuan a span{color: #1345c5;}
+
+/*center right*/
+.center .right{margin-top: 30px; width: 988px;float: left;height: 100%;overflow: hidden; }
+.center .right{width: 988px;height: 100%;overflow: hidden;}
+.center .right .g_introduce{border: 1px solid #d0d0d0; }
+.center .right .g_introduce a{text-decoration: none;font-family: "微软雅黑";font-size: 16px;padding: 0px 15px;line-height: 30px;}
+.center .right .g_introduce a img{padding-left: 25px;}
+.center .right .g_introduce .on{color: red;}
+.center .right .g_introduce a:hover{color: red;}
+.center .right .g_introduce .xiang{width: 988px;height: 100%;overflow: hidden;border-top:1px solid #D0D0D0 ;}
+.center .right .g_introduce .xiang i{font-family: "微软雅黑";font-size: 14px;color: #000000;margin-left:20px;font-style: normal;}
+.center .right .g_introduce .xiang i span{color: #3f69c8;}
+.center .right .g_introduce .xiang ul{list-style: none;margin-left:  30px;margin-right: 30px;margin-top: 30px;overflow: hidden}
+.center .right .g_introduce .xiang ul li{margin-right: 65px;float: left;}
+.center .right .g_introduce .xiang ul li p{margin-top: 0px;font-family: "微软雅黑";font-size: 14px;color: #000000}
+.center .right .g_introduce .xiang dl{margin-top: -10px; margin-left: 30px;margin-right: 30px;float: left;font-family: "微软雅黑";font-size: 14px;color: #000000;}
+.center .right .g_introduce .xiang dl dd{float: left;margin-right: 105px;}
+.center .right .g_introduce .xiang dl dd:nth-child(5){float: right;margin-right: 0px;}
+
+
+/*爆款专区*/
+.center .right .baokuang{width: 988px;height: 100%;overflow: hidden;}
+
+.content .container .baokuang h1{margin: 0px;border-bottom: 2px solid #bae8f4;line-height:60px;margin-bottom: 20px;}
+.content .container .baokuang h1 a{padding: 20px 23px;background: #00FFFF;font-family: "宋体";font-size: 24px;text-decoration: none;}
+.baokuang ul {list-style: none;}
+.baokuang ul li{float: left;  width: 213px;height: 100%;overflow: hidden;float: left;margin-right: 33px;text-align: center;}
+.baokuang ul li .goods{width: 213px;height: 213px;position: relative;text-align: center;margin-bottom: 10px;}
+.baokuang ul li:nth-child(4){float: right;margin-right: 0px;}
+.baokuang ul li .goods p{position: absolute;bottom: 0px;margin: 0px;padding: 5px 8.5px;background: #858584;opacity: 0.75;}
+.baokuang ul li .goods p a{text-decoration: none;font-family: "微软雅黑";font-size: 14px;color: #000000;display: none}
+.baokuang ul li .goods:hover p a{display: block;}
+.baokuang ul li i{color: red;font-style: normal;font-family: "宋体";font-size: 18px;}
+.p_center{width: 988px;height: 100%;overflow: hidden;margin-top: 30px;}
+.p_center p{float: left; color: black; padding-left: 10px; width: 988px;background: #8de0f5;height: 32px;line-height: 32px;font-family: "微软雅黑";font-size: 16px;margin-bottom: 20px;margin-top: 10px;}
+.p_center p img{padding-right: 20px;}
+.p_center a img{margin-top: 40px;bottom:50px;}
+.p_center ul {list-style: none;margin-top:40px;}
+.p_center ul li{float: left;width: 324px;text-align: center;overflow: hidden;margin-right:5px ;margin-bottom: 20px;}
+.p_center ul li img{ display:block;overflow: hidden;margin-bottom: 10px;}
+.p_center ul li i{ cursor: pointer; font-style: normal;border:1px solid #D0D0D0;padding: 2px 48px;display: inline-block;overflow: hidden;font-family: "微软雅黑";font-size: 18px;}

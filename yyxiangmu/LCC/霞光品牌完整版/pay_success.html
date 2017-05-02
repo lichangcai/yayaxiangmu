@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/pay_success.css" />
+		<link rel="stylesheet" href="css/pay_success_top.css" />
+		<title>付款成功</title>
+	</head>
+	<!--ng-controller 指令用于为你的应用添加控制器。在控制器中，你可以编写代码，制作函数和变量，并使用 scope 对象来访问。-->
+	<!--homeController是ng-controller自己定义的名字-->
+	<body ng-controller="pay_successController">
+		<ion-view class="pay_success">
+			<!--ion-hearder-bar 这个是固定在屏幕顶部的一个头部标题栏的用法。-->
+			<ion-header-bar class="head-top">
+				<ul>
+					<li class="item-icon-left item-icon-right">
+						<i class="ion-ios-undo-outline icon item-icon-left" ng-click="backs()"></i>
+						<div class="header_center">
+						付款成功
+					   </div>						
+					</li>
+				</ul>
+			</ion-header-bar>
+			<!--top这是结尾-->
+			<!--<这是自动轮播的代码 要加上ion-content才可以居中-->
+				<ion-content class="content">
+					<div class="faliure">
+						<img src="img/pay/pc2.png" /><span>您已支付成功</span>
+					</div>
+					<div class="top">
+						<h1>收货地址</h1>
+						<p>订单号码：4554312123511</p>
+						<p>订单总额：<i>￥328</i></p>
+						<p>配送消息：山西省太原市平阳路高新街</p>
+						<p>张某某 <i>123465789</i></p>
+						<p>发票信息：普通发票（个人）</p>
+					</div>									
+				    <div class="queren">
+				    	<h1>确认订单信息</h1>
+				    	<div class="list">
+							<div class="left">
+								<label>
+									<input type="checkbox" />
+									   <span></span>								
+								</label>
+								<img src="img/pay/pc.jpg" />
+							</div>
+							<div class="right">
+								<h3>深高清专业高倍天文观星望远镜</h3>
+								<p class="p_jia">价格：<i>￥328</i></p>
+								<div class="bottom">
+									<div>
+										<span>数量</span>
+										<div>								
+											<input type="text" value="1" class="kuang"/>								
+										</div>
+									</div>
+									<span>删除</span>
+								</div>
+								<p class="xiao">风格：小清新</p>
+								
+							</div>
+				    	</div>
+				    </div>
+                    <div class="foo">
+									<p><button ui-sref="order">查看订单</button></p>		
+						<p><button ui-sref="pro_list">继续购物</button></p>	
+				</div>
+				</ion-content>
+				
+			    <!--这里是底部的代码-->
+			     <ion-footer-bar>
+				<!--<div class="bar-footer">-->
+				   <ul>
+				   		<li  ui-sref="home">
+				   			<div>
+				   				<i class="ion-home"></i>
+				   				<p>主页</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="prostyle">
+				   			<div>
+				   				<i class="icon ion-ios-settings-strong" ></i>
+				   				<p>分类</p>
+				   			</div>
+				   			
+				   			
+				   		</li>
+				   		<li>
+				   			<div><i class="ion-ios-lightbulb-outline" ></i>
+				   				<p>发现</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="shop_cart">
+				   			<div>
+				   				<i class="icon ion-ios-cart" ></i>
+				   				<p>购物车</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="user">
+				   			<div>
+				   				<i class="ion-person-add" ></i>
+				   				<p>我</p>
+				   			</div>
+				   		</li>
+						
+					</ul>
+			</ion-footer-bar>
+		</ion-view>
+	</body>
+
+</html>

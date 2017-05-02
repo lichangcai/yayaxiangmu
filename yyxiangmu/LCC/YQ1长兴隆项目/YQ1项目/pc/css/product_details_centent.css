@@ -1,0 +1,139 @@
+.centent{
+	height:785px;
+	margin-top:50px;
+	}
+.centent .mg .left{
+	height:670px;
+	width:284px;
+	}
+.centent .mg .left .top{
+	width:240px;
+	height:50px;
+	background:url(../images/news-top.jpg);
+	}
+.centent .mg .left ul{
+	font-family:微软雅黑;
+	display:block;
+	}
+.centent .mg .left .top ul{
+	font-size:18px;
+	padding-top:8px;
+	margin-left:50px;
+	}
+
+.centent .mg .left .topA {
+	height:171px;
+	width:240px;
+	background:url(../images/pro-topA.jpg)
+	}
+.centent .mg .left .topA ul{
+	padding-top:4px;
+	text-align:center;
+	}
+.centent .mg .left .topA ul li{
+	line-height:31px;
+	font-size:14px;
+	}
+
+.centent .mg .left .B{
+	margin-top:19px;
+	float:left;
+	width:240px;
+	height:80px;
+	background:url(../images/us-top1.jpg);	
+	}
+.centent .mg .left .B ul{
+	font-family:微软雅黑;
+	font-size:18px;
+	color:#FFF;
+	margin-left:148px;
+	padding-top:22px;
+	cursor: pointer;
+	}
+.centent .mg .left .contact{
+	width:240px;
+	height:170px;
+	background:#9fded2;
+	float:left;
+	}
+.centent .mg .left .contact ul{
+	font-family:微软雅黑;
+	font-size:12px;
+	margin-left:10px;
+	}
+
+
+
+.centent .mg .right{
+	height:685px;
+	width:916px;
+	}
+/*	border-bottom:2px solid #999;是加下边宽的表达*/
+.centent .mg .right .top{
+	height:28px;
+	border-bottom:2px solid #999;
+	}
+.centent .mg .right .top p{
+	font-family:微软雅黑;
+	line-height:15px;	
+	font-size:12px;
+	cursor: pointer;
+	}
+.centent .mg .right .top p span{
+	color:red;}
+
+.centent .mg .right .center{
+	height:625px;
+	}
+/*中间图片标题的代码*/
+.centent .mg .right .center h1{
+	font-weight:normal;
+	font-family:微软雅黑;
+	font-size:18px;
+	color:#ed1721;
+	text-align:center;
+	padding-top:15px;
+	cursor: pointer;
+	}
+.centent .mg .right .center img{
+	padding-top:25px;
+	display:block;
+	margin:0 auto;
+	padding-bottom:25px;
+	}
+.centent .mg .right .center p{
+	font-family:微软雅黑;
+	font-size:14px;
+	text-indent:2em;
+	line-height:24px;
+	}
+	
+	
+
+/*下面的页码的代码*/
+.centent .mg .right .center ul{
+	*display: inline;
+	zoom:1;
+	display:block;
+	float:right;
+	}
+.centent .mg .right .center ul li{
+	margin-top:25px;
+	font-family:微软雅黑;
+	 font-size:14px;
+	 background-color:#63c9b6;
+	 padding:8px 23px;
+	 display:block;
+	 margin-left:19px;
+	 float:left;
+	 }
+.centent .mg .right .center ul li:hover{
+	background-color:#fb0000;
+	}
+.centent .mg .right .center ul li:hover a{
+    color:#FFF;
+	}
+
+
+
+

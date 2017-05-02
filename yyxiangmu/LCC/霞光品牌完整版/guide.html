@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<style>
+			body{
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+	 .ion-record:before {
+				content: '';
+				width: 12px;
+				height: 12px;
+				background: none;
+				border: 1px solid #650D0D;
+				border-radius: 50%;
+			}
+		.slider-pager-page.active .ion-record:before{
+				background: #650D0D;
+			}
+		  button.button.button-outline {
+				height: 40px;
+				background: #ccb4b4;
+				display: block;
+				width: 182px;
+				font-size: 23px;
+				font-family: "黑体";
+				border: 2px solid #fff;
+				color: #650d0d;
+				border-radius:12px;
+				position: absolute;
+				top: 82%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				-webkit-transform: translate(-50%, -50%);
+				-moz-transform: translate(-50%,-50%);
+				-ms-transform: translate(-50%,-50%);
+			
+			}
+			.slider-pager{bottom: 10%;}
+		</style>
+	</head>
+
+	<body ng-controller="SlideController">
+		<ion-slide-box on-slide-changed="slideHaschanged($index)" class="Guide">
+			<ion-slide>
+				<img src="img/m_guide/m_guide_1.jpg" alt="" width="100%" />
+			</ion-slide>
+			<ion-slide>
+				<img src="img/m_guide/m_guide_2.jpg" alt="" width="100%" />
+			</ion-slide>
+			<ion-slide>
+				<img src="img/m_guide/m_start.jpg" alt="" width="100%" />
+				<button class="button button-outline" ui-sref="register">立即体验 </button>
+			</ion-slide>         
+		</ion-slide-box>
+	</body>
+
+</html>
+	

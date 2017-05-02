@@ -1,0 +1,38 @@
+*{margin:0;padding:0;}
+body,button,input,select,textarea{font:12px/2 Verdana, 宋体, Helvetica, sans-serif;}/*雅黑：\5FAE\8F6F\96C5\9ED1  Verdana, Helvetica, sans-serif*/
+
+h1,h2,h3,h4,h5,h6{font-size:100%;}<!--这是字体的大小的顺序排列的位置，从大到小-->
+address,cite,dfn,em,var{font-style:normal;}<!--font-style:normal表示一种默认值。浏览器显示一个标准的字体样式。-->
+code,kbd,pre,samp{font-family:courier new,courier,monospace;word-wrap: break-word; white-space: normal;}
+small{font-size:12px;}
+<!--list_style:none;是防止那个点的出现。这是公共的样式-->
+ul,ol{list-style:none;}
+a:link,a:visited{color:#000;text-decoration:none;outline: none;}
+a:hover{color:#f00;}<!--触发时产生效果的颜色-->
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+legend{color:#555;}
+fieldset,img{border:0;}
+button,input,select,textarea{font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+
+
+
+.mg{ width:1200px; margin:0 auto;}
+.ov{ overflow:hidden; clear:both;}
+.left{ float:left; display:inline;}
+.right{ float:right; display:inline;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--content属性值:
+    	initial-scale:当页面首次展示，可视区域的缩放级别。取值1.0则页面按照实际尺寸显示，无任何缩放
+    	maximum-scale=1.0,minimum-scale=1.0;可视区域的缩放级别。
+    	maximun-scale=1.0:指用户可将页面放大的属性，1.0是指禁止用户放大到实际尺寸以上
+    	user-scalable:是否可以对页面进行缩放，no是指禁止缩放
+        -->
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/top_common.css" />
+		<link rel="stylesheet" href="css/register.css" />
+		<title>注册</title>
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+	<body>
+	<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+    	<div class="car col-lg-12 col-md-12">
+			<ul>
+				<li><a href="login.html">登录</a></li>
+				<li>/</li>
+				<li class="on"><a href="register.html">注册</a></li>
+				<li><a href="shop_cart.html"><img src="img/cart.png"></a></li>
+				<li><a href="shop_cart.html">购物车</a>（<span>0</span>）</li>
+			</ul> 
+		</div>
+    	<div class="container-fluid">
+    <div class="navbar-header navbar-left">
+    
+      <a href="index.html"><img src="img/logo.png" class="img-responsive logo" title="欢迎来到宋迈品牌商城！" alt="亲，请您刷新在试试！" /></a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-left">
+      	<li><a href="index.html">首页</a></li>
+      	<li><a href="brand_introduction.html">品牌介绍</a></li>
+      	<li><a href="product.html">产品中心</a></li>
+      	<li><a href="news.html">新闻中心</a></li>
+      	<li><a href="contact_us.html">联系我们</a></li>
+      </ul>
+      
+        <div class="form-group icon">
+          <button type="submit"><img src="img/submit.png"/></button>
+          <input type="text"  placeholder="">
+        
+        </div>
+      
+      
+    </div>
+  </div>
+</nav>
+
+ <div class="content">
+   	<div class="container">
+   		<div class="col-lg-7 center col-md-7 col-sm-7 col-xs-12">
+   			<h1> 注册<img src="img/background.png"></h1>
+   			<form class="form-horizontal" role="form" method="get" action="login.html" onsubmit="return checkLogin()" >
+							<div class="form-group">
+								<label for="name" class="col-lg-2 col-sm-2 col-md-2 col-xs-12 control-label">用户名</label>
+								<div class="col-lg-7 col-sm-9 col-md-7 col-xs-12">
+									<input type="text" class="form-control" onblur="checkName(this.value)" id="name">
+									<div id="nameTip" title="温馨提示" data-container="body" data-toggle="popover" data-placement="right" data-content="请输入合法的用户名"></div>
+								</div>
+							</div>
+					
+							<div class="form-group">
+								<label for="password" class="col-lg-2 col-sm-2 col-md-2 col-xs-12 control-label">密码</label>
+								<div class="col-lg-7 col-sm-9 col-md-7 col-xs-12">
+									<input type="password" class="form-control" onblur="checkPassword(this.value)" id="paw">
+									<div id="passwordTip" title="温馨提示" data-container="body" data-toggle="popover" data-placement="right" data-content="请输入合法的密码"></div>
+								</div>
+							</div>
+							<!--密码的强度的代码-->
+							<div class="progress">
+								<div class="progress-bar" style="width: 30%;background:#e71f19; color:black;">
+									<span>弱</span>
+								</div>
+								<div class="progress-bar" style="width: 30%;background: #fff;margin: 0 5%;
+									 color:black;"">
+									<span>中</span>
+							   </div>
+								<div class="progress-bar" style="width: 30%;background: #fff;color:black;"">
+									<span>强</span>
+								</div>
+							</div>
+							<!--end-->
+							
+							<div class="form-group">
+								<label for="" class="col-lg-2 col-sm-2 col-md-2 col-xs-12 control-label">确认密码</label>
+								<div class="col-lg-7 col-sm-9 col-md-7 col-xs-12">
+									<input type="password" class="form-control" id="okpaw">
+									<div id="okpawTip" title="温馨提示" data-container="body" data-toggle="popover" data-placement="right" data-content="两次密码不一致"></div>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label for="email" class="col-lg-2 col-sm-2 col-xs-12 control-label">Email</label>
+								<div class="col-lg-7 col-sm-9 col-xs-12  col-md-7">
+									<input type="text" class="form-control" onblur="checkEmail(this.value)" id="Email">	
+									<div id="emailTip" title="温馨提示" data-container="body" data-toggle="popover" data-placement="right" data-content="请输入合法邮箱地址"></div>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label for="email" class="col-lg-2 col-sm-2 col-md-2 col-xs-12 control-label">手机</label>
+								<div class="col-lg-7 col-sm-9 col-xs-12  col-md-7">
+									<input type="text" class="form-control" id="phone" placeholder="" onblur="checkphone(this.value)" >
+									<div id="phoneTip" title="温馨提示" data-container="body" data-toggle="popover" data-placement="right" data-content="请输入合法手机号"></div>
+								</div>
+								
+							</div>
+							
+							<div class="form-group">
+								<label for="email" class="col-lg-2 col-sm-2 col-xs-12 control-label">所在城市</label>
+								<div class="col-lg-2 col-sm-3  col-md-2 col-xs-4">
+									
+										<select class="form-control" style="float: left;border: none;font-size: 18px;font-family: '微软雅黑';padding: 0px;">
+                        				<option>上海</option>
+                        				<option>上海</option>
+                        				<option>上海</option>
+                        				<option>上海</option>
+                        				<option>上海</option>
+                        			</select>
+								</div>
+								
+								<div class="col-lg-2 col-sm-3 col-md-2 col-xs-4">
+									
+										<select class="form-control" style="float: left;border: none;font-size: 18px;font-family: '微软雅黑';padding: 0px;">
+                        				<option>上海</option>
+                        				<option>上海</option>
+                        				<option>上海</option>
+                        				<option>上海</option>
+                        				<option>上海</option>
+                        			</select>
+								</div>
+								
+								<div class="col-lg-2  col-sm-3 col-md-3 col-xs-4">
+									
+										<select class="form-control" style="float: left;border: none;font-size: 18px;font-family: '微软雅黑';padding: 0px;">
+                        				<option>普陀区</option>
+                        				<option>普陀区</option>
+                        				<option>普陀区</option>
+                        				<option>普陀区</option>
+                        				<option>普陀区</option>
+                        			</select>
+								</div>		
+							</div>
+							
+							<div class="form-group">
+								<label for="email" class="col-lg-2 col-sm-2 col-md-2 col-xs-12 control-label">验证码</label>
+								<div class="col-lg-3 col-sm-3 col-xs-5">
+									<input type="text" class="form-control code" id="code" placeholder="">									
+								</div>
+								<div class="col-lg-4 col-sm-5 col-md-4 col-xs-7">
+									<div style="margin-right: 15px; cursor: pointer;"><img src="img/register.png"/><img src="img/register1.png"/>
+									</div>
+									
+								</div>
+							</div>
+							
+							<div class="form-group">
+								
+								<div class="col-lg-5 col-md-5 col-sm-7 col-xs-7">
+									<div class="checkbox">
+									<label>
+										<input type="checkbox" id="chec"><span>同意协议</span>
+									</label>
+									</div>
+								</div>
+							
+								<div class="col-lg-7 col-sm-7 col-xs-5 zhuce col-sm-5">
+									<button type="submit" class="btn btn-success push" style="">注册</button>
+								</div>
+							</div>
+						</from>
+   		            </div>
+   		<div class="col-lg-5 center_right  col-md-5 col-sm-5 hidden-xs">
+   			<img src="img/logo2.jpg"/>
+   		</div>
+   	</div>
+ </div>
+  <div class="footer">
+	<p>COPYRIGHT (C) 2016WWW.JINLIAN.COM ALL RIGHTS RSERVED</p>
+</div> 		
+
+	</body>
+	<script>
+			var reg2 = /^[A-Za-z0-9]+$/
+	var checkName = function(v){
+		var reg2 = /^[A-Za-z0-9]+$/;
+		if(reg2.test(v)){
+			 $('#nameTip').popover('hide');
+		}else{
+			 $('#nameTip').popover('show');		}
+	}
+	</script>
+
+	<script>
+	
+	 $(function(){
+	 	$("[data-toggle='popover']").popover();
+	 });
+
+		/**
+		 * 进行登录邮箱合法性检查函数 
+		 * admin168@163.com
+		 */
+		var reg1 = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+		var checkEmail = function(v){
+			var reg1 = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+			if(reg1.test(v)){
+				 $('#emailTip').popover('hide');
+			}else{
+				 $('#emailTip').popover('show');
+			}
+		}
+		
+		/*用户名*/
+//		var reg2 = /^[A-Za-z0-9]+$/;
+//			var checkName = function(v){
+//			var reg2 = /^[A-Za-z0-9]+$/;
+//			if(reg2.test(v)){
+//				 $('#nameTip').popover('hide');
+//			}else{
+//				 $('#nameTip').popover('show');
+//			}
+//		}
+		/**
+		 * 进行登录密码的合法性验证函数
+		 * 
+		 */
+		var reg3 = /^[a-z0-9_-]{6,8}$/;
+		var checkPassword = function(v){
+			var reg3 = /^[a-z0-9_-]{6,8}$/;
+			if(reg3.test(v)){
+				 $('#passwordTip').popover('hide');
+			}else{
+				 $('#passwordTip').popover('show');
+			}
+		}
+		 
+		 var reg4 = /^1\d{10}$/;
+		var checkphone = function(v){
+			var reg4 = /^1\d{10}$/;
+			if(reg4.test(v)){
+				 $('#phoneTip').popover('hide');
+			}else{
+				 $('#phoneTip').popover('show');
+			}
+		}
+	
+	
+	$("#okpaw").blur(function(){
+		
+		    var paw = $("#paw").val()
+			var okpaw = $("#okpaw").val()
+			
+			if( paw != okpaw ){
+				 
+				 $('#okpawTip').popover('show');
+			}else{
+				 $('#okpawTip').popover('hide');
+			}
+		
+	}) 
+	
+	var checkLogin = function(){
+			var Email = reg1.test($("#Email").val())
+			var name = reg2.test($("#name").val())
+			var paw1 = reg3.test($("#paw").val())
+			var okpaw1 = $("#okpaw").val()
+		    var paw2 = $("#paw").val()
+			var phone1 = reg4.test($("#phone").val())
+			var code = $("#code").val()
+			console.log(11111)
+			if( !Email || !name || !paw1 || !phone1 || code==" " || paw2 != okpaw1 ){
+				return false;
+			}else if(!$("#chec").is(':checked')){
+				return false;
+			}
+			return true;
+		}
+	/*替换掉框的代码*/	
+	$(".checkbox label").click(function(){
+	
+	if($(this).find("input[type=checkbox]").is(":checked")){
+		$(this).removeClass("on")
+		$(this).find("input").removeAttr("checked")
+		console.log(1222)
+	}else{
+		$(this).addClass("on")
+		$(this).find("input").prop("checked", "checked")
+			console.log(133)
+	}
+})	
+
+      $(".delete").click(function(){      	
+      	$(this).parent("div").find("img").remove()      
+      })
+	</script>
+</html>

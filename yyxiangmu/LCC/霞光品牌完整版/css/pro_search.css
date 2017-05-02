@@ -1,0 +1,45 @@
+.pro_search .content{background: #e3e4e6;}
+.pro_search .has-header{top:0.9rem;}
+.pro_search .p_search{width: 100%;margin: 0 auto;border-bottom: 0.3rem solid #aaa;}
+/*想要垂直居中也可以设置为弹性盒子，display:flex;align-content:center*/
+.pro_search .p_search h2{font-family: "微软雅黑"; font-size: 0.3rem; margin-top: 0.49rem;height: 1rem;width: 94%;line-height: 1rem; display:flex ;align-items: center;padding: 0px;}
+.pro_search .p_search h2 img{margin-left: 0.3rem;margin-right: 0.2rem;font-size: 0.24rem;width: 0.45rem;display:block;}
+.pro_search .p_search ul {list-style: none;}
+.pro_search .p_search ul li{font-family: "微软雅黑";font-size: 0.3rem;margin-bottom: 0.5rem;margin-top: 0.5rem;}
+.pro_search .p_search ul li.active{color: #de8f31;}
+.pro_search .p_search ul li:first-child{margin-left: 0.8rem;}
+.pro_search .p_search ul li:nth-child(2){margin-left: 0.64rem;}
+.pro_search .p_search ul li:nth-child(3){margin-left: 0.8rem;}
+.pro_search .p_search ul li:nth-child(4){margin-left: 0.8rem;}
+.pro_search .p_search ul li:nth-child(5){margin-left: 1.68rem;}
+.pro_search .p_search ul li:nth-child(6){margin-left: 0.8rem;}
+.pro_search .p_search ul li:nth-child(7){margin-left: 0.45rem;}
+.pro_search .p_search ul li:nth-child(8){margin-left: 0.5rem;}
+.pro_search .p_search button{border-radius:0.15rem ;background: #b5b5b5;border: none;bottom: 2rem;
+	             display: flex;width:2.15rem;align-items: center;margin: 0.36rem auto;justify-content:center;height: 0.58rem;font-family: "微软雅黑";font-size: 0.24rem;}
+
+
+.pro_search .history .list li {
+						float: left;
+						background: #d2d2d2;
+						border-radius: 15px;
+						padding: 5px 10px;
+						margin: 0.3rem 0.3rem 0 0;
+						color: #343435;
+						font-size: 0.3rem;
+						line-height: 0.3rem;
+					}
+					
+					.pro_search .history .list {
+						margin-left: 0.25rem;
+					}
+					
+					.pro_search .history h2 {
+						text-align: center;
+						color: #343435;
+						font-size: 0.3rem;
+						border-bottom: 8px solid #e3e2e2;
+						padding-bottom: 0.3rem;
+						height: 100%;
+						overflow: hidden;
+					}

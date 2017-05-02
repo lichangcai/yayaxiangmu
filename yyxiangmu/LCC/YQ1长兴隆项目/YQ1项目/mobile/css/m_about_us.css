@@ -1,0 +1,88 @@
+.top{
+	margin:0 4%;
+	padding-bottom:10%;
+	border-bottom:4px solid #d8d8d8;
+	}
+.top h1{
+	font-weight:normal;
+	color:#31bfa4;
+	text-align:center;
+	padding-top:8%;
+	font-family:"黑体";
+	font-size:24px;
+	padding-bottom:8%;}
+.top .topA {
+	text-align:center;
+	box-sizing:border-box;
+	}
+.top .topA img{
+	margin-bottom:7%;
+	width:100%;
+   }
+
+.top  p{
+	color:#333333;
+	text-indent:2em;
+	font-family:"黑体";
+	font-size:18px;
+	line-height:24px、
+	}
+
+.footer li a{ color:#31bfa4; display:block;}
+.footer li a:hover{color:#F00;}
+.footer .on a{
+	color:red;}
+
+
+
+
+	
+	
+@media only screen and (min-width:270px )and (max-width:374px ){
+	.header h1{
+		font-size:23px;}
+	.nav li a,.top h1{
+		font-size:17px;
+	}	
+    .top  p{
+		font-size:12px;}
+	.footer li{
+		text-align:center;
+		font-size:12px;}
+	}
+@media only screen and (min-width:375px )and (max-width:450px ){
+	.header h1{
+		font-size:25px;}
+     .nav li a,.top h1{
+		font-size:19px;
+	}	
+    .top  p{
+		font-size:13px;}
+	.footer li{
+		text-align:center;
+		font-size:14px;}
+	}
+@media only screen and (min-width:451px )and (max-width:560px ){
+	.header h1{
+		font-size:27px;}
+	.nav li a,.top h1{
+		font-size:21px;
+	}	
+    .top  p{
+		font-size:15px;}
+	.footer li{
+		text-align:center;
+		font-size:15px;}
+	}
+@media only screen and (min-width:561px )and (max-width:620px ){
+	.header h1{
+		font-size:28px;}
+	.nav li a,.top h1{
+		font-size:23px;
+	}	
+    .top  p{
+		font-size:17px;}
+	.footer li{
+		text-align:center;
+		font-size:17px;}
+	}

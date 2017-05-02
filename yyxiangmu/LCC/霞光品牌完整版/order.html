@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/order.css" />
+		<link rel="stylesheet" href="css/order_top.css" />
+		<title>我的订单</title>
+	</head>
+	<!--ng-controller 指令用于为你的应用添加控制器。在控制器中，你可以编写代码，制作函数和变量，并使用 scope 对象来访问。-->
+	<!--homeController是ng-controller自己定义的名字-->
+	<body ng-controller="orderController">
+		<ion-view class="Order">
+			<!--ion-hearder-bar 这个是固定在屏幕顶部的一个头部标题栏的用法。-->
+			<ion-header-bar class="head-top">
+				<ul>
+					<li class="item-icon-left item-icon-right">
+						<i class="ion-ios-undo-outline icon item-icon-left" ng-click="backs()" ></i>
+						<div class="header_center">
+						确认订单
+					   </div>						
+					</li>
+				</ul>
+			</ion-header-bar>
+			<!--top这是结尾-->
+			<!--<这是自动轮播的代码 要加上ion-content才可以居中-->
+				<div class="box-top" id="box">
+				    		<ul>
+				    			<li>
+				    				<a class="active">全部</a>
+				    			</li>
+				    			<li>
+				    				<a>待付款</a>
+				    			</li>
+				    			<li>
+				    				<a>待发货</a>
+				    			</li>
+				    			
+				    			<li>
+				    				<a>待发货</a>
+				    			</li> 
+				    			<li>
+				    				<a>待评价</a>
+				    			</li> 
+				    		</ul>
+				</div>
+				<ion-content class="content">
+					
+				    <!--购物车列表-->
+				    <div class="center">				    					   
+						<ion-list class="list"ng-repeat="item in obj.order">
+							<div class="left">
+								
+								<a ui-sref="pro_details"><img ng-src="{{item.img}}" /></a>
+							</div>
+							<div class="right">
+								
+								<div class="biti">
+									<h3 ui-sref="pro_details">{{item.name}}</h3><a>已发货</a>
+								</div>
+								<p class="p_jia">单价<i>￥{{item.prices}}</i></p>
+								
+								<div class="bottom">
+									<div>
+										<span>数量：</span>
+										<div>										
+											<input type="text" value="{{item.num}}" class="kuang"/>										
+										</div>
+									</div>								
+								</div>
+								<p class="p_jia">风格：小清新</p>
+								<div class="look">
+									<button ui-sref="###">查看物流</button>
+									<span ui-sref="###">确认收货</span>
+								</div>
+								
+								
+							</div>
+						</ion-list>
+					 </div>
+					 <div class="center"style="display: none;">				    					   
+						<ion-list class="list"ng-repeat="item in obj.order">
+							<div class="left">
+								
+								<a ui-sref="pro_details"><img ng-src="{{item.img}}" /></a>
+							</div>
+							<div class="right">
+								
+								<div class="biti">
+									<h3 ui-sref="pro_details">{{item.name}}</h3><a>待付款</a>
+								</div>
+								<p class="p_jia">单价<i>￥{{item.prices}}</i></p>
+								
+								<div class="bottom">
+									<div>
+										<span>数量：</span>
+										<div>										
+											<input type="text" value="{{item.num}}" class="kuang"/>										
+										</div>
+									</div>								
+								</div>
+								<p class="p_jia">风格：小清新</p>
+								<div class="look">
+									<button ui-sref="###">取消付款</button>
+									<span ui-sref="###">返回商家</span>
+								</div>																
+							</div>
+						</ion-list>
+					 </div>
+					 <div class="center"style="display: none;">				    					   
+						<ion-list class="list"ng-repeat="item in obj.order">
+							<div class="left">
+								
+								<a ui-sref="pro_details"><img ng-src="{{item.img}}" /></a>
+							</div>
+							<div class="right">
+								
+								<div class="biti">
+									<h3 ui-sref="pro_details">{{item.name}}</h3><a>已发货</a>
+								</div>
+								<p class="p_jia">单价<i>￥{{item.prices}}</i></p>
+								
+								<div class="bottom">
+									<div>
+										<span>数量：</span>
+										<div>										
+											<input type="text" value="{{item.num}}" class="kuang"/>										
+										</div>
+									</div>								
+								</div>
+								<p class="p_jia">风格：小清新</p>
+								<div class="look">
+									<button ui-sref="###">查看物流</button>
+									<span ui-sref="###">确认收货</span>
+								</div>
+								
+								
+							</div>
+						</ion-list>
+					 </div>
+					 <div class="center"style="display: none;">				    					   
+						<ion-list class="list"ng-repeat="item in obj.order">
+							<div class="left">
+								
+								<a ui-sref="pro_details"><img ng-src="{{item.img}}" /></a>
+							</div>
+							<div class="right">
+								
+								<div class="biti">
+									<h3 ui-sref="pro_details">{{item.name}}</h3><a>待发货</a>
+								</div>
+								<p class="p_jia">单价<i>￥{{item.prices}}</i></p>
+								
+								<div class="bottom">
+									<div>
+										<span>数量：</span>
+										<div>										
+											<input type="text" value="{{item.num}}" class="kuang"/>										
+										</div>
+									</div>								
+								</div>
+								<p class="p_jia">风格：小清新</p>
+								<div class="look">
+									<button ui-sref="###">查看物流</button>
+									<span ui-sref="###">查看商家</span>
+								</div>
+								
+								
+							</div>
+						</ion-list>
+					 </div>
+					 <div class="center"style="display: none;">				    					   
+						<ion-list class="list"ng-repeat="item in obj.order">
+							<div class="left">
+								
+								<a ui-sref="pro_details"><img ng-src="{{item.img}}" /></a>
+							</div>
+							<div class="right">
+								
+								<div class="biti">
+									<h3 ui-sref="pro_details">{{item.name}}</h3><a>已签收</a>
+								</div>
+								<p class="p_jia">单价<i>￥{{item.prices}}</i></p>
+								
+								<div class="bottom">
+									<div>
+										<span>数量：</span>
+										<div>										
+											<input type="text" value="{{item.num}}" class="kuang"/>										
+										</div>
+									</div>								
+								</div>
+								<p class="p_jia">风格：小清新</p>
+								<div class="look">
+									<button ui-sref="###">点击评价</button>
+									<span ui-sref="###">查看详情</span>
+								</div>
+								
+								
+							</div>
+						</ion-list>
+					 </div>					
+				</ion-content>				
+			    <!--这里是底部的代码-->
+			  <ion-footer-bar>
+				<!--<div class="bar-footer">-->
+				    <ul>
+				   		<li  ui-sref="home">
+				   			<div>
+				   				<i class="ion-home"></i>
+				   				<p>主页</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="prostyle">
+				   			<div>
+				   				<i class="icon ion-ios-settings-strong" ></i>
+				   				<p>分类</p>
+				   			</div>
+				   			
+				   			
+				   		</li>
+				   		<li>
+				   			<div><i class="ion-ios-lightbulb-outline" ></i>
+				   				<p>发现</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="shop_cart">
+				   			<div>
+				   				<i class="icon ion-ios-cart" ></i>
+				   				<p>购物车</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="user">
+				   			<div>
+				   				<i class="ion-person-add" ></i>
+				   				<p>我</p>
+				   			</div>
+				   		</li>
+						
+					</ul>
+			</ion-footer-bar>
+		</ion-view>
+	</body>
+</html>
+

@@ -1,0 +1,66 @@
+*{margin:0;padding:0;}
+
+.header{width: 100%;height:100%; overflow: hidden;font-family: "微软雅黑";}
+.header_top{width: 100%;background:#cdcecd;}
+.header .top{width: 1200px;background:#cdcecd;height: 50px;margin: auto;}
+/*这里是最上面的那里的*/
+.top ul{font-family: "微软雅黑";font-size: 18px;list-style: none;float: right;padding-right: 38px;}
+.top ul li{float: left;line-height: 50px;color: #656565;}
+.top ul li a{text-decoration: none;color: #656565;cursor: pointer;}
+.top ul li a:hover{color: red;}
+.top ul li:nth-child(2){margin-left: 40px;}
+.top ul li:nth-child(3){margin-left: 4px;margin-right: 4px;}
+.top ul li:nth-child(5){margin-left:23px;margin-right: 20px;}
+.top ul .on a{color: red;}
+.top ul li:nth-child(6){margin-right: 15px;}
+.top ul li a img{margin-left: 5px;}
+.top ul li dl{z-index: 100;display: none;position: absolute;background: #00FFFF; }
+.top ul li dl dd{padding: 5px 10px;}
+.top ul li:hover dl{display: block;}
+/*这里是输入框的那里的div*/
+.nav{height: 100%;width: 1200px;margin: 0 auto;}
+.nav a img{margin-left: 50px;display: block;float: left;}
+.nav .search{float:left; margin-top: 40px;width: 500px;margin-left:80px;}
+.nav .search .input{height: 30px;border: 2px solid #8cdff4;border-radius: 0px;outline: none;}
+.nav .search .icon{padding: 0px 12px;background: #8cdff4;border-radius: 0px;cursor: pointer;}
+.car{ float: left; height: 44px;width: 200px; margin-left: 86px;margin-top: 26px;border: 2px solid #9fa0a0;}
+.nav .car a img{float: left;margin-left:10px;margin-top: 6px;}
+.nav .car span a{line-height: 44px;font-family: "微软雅黑";font-size: 18px;color: #000000;text-decoration: none;}
+.nav .car span{margin-left:6px; color: black;}
+.nav .car span sup{ font-size: 18px;background:#8cdff4;padding: 0px 8px; text-align: center;border-radius: 11px;margin-right:5px ;}
+.nav .car span a img{float: right;margin-top: 10px;padding-right:8px;}
+/*这是是导航列表的*/
+.nav_lists{border-bottom: 2px solid black;}
+.nav_lists{height: 56px;width: 1200px;margin: 0 auto;margin-top:-10px}
+.nav_lists ul {list-style: none;}
+.nav_lists ul li{float: left;font-family: "微软雅黑";}
+.nav_lists ul li a{font-size: 18px;color: black;padding: 14px 58px;line-height: 56px;text-decoration: none;}
+.nav_lists ul li a:hover{background: #8de0f5;}
+.nav_lists ul .on {background: #8de0f5;}
+/*这一段是下拉的代码*/
+.nav_lists ul li dl{z-index: 100;display: none;position: absolute;}
+.nav_lists ul li:hover dl{display: block;}
+.nav_lists ul li dl{background:#8cdff4;font-family: "微软雅黑";}
+.nav_lists ul li dl dd a{font-size: 18px;padding: 19.2px 58px;}
+.nav_lists ul li dl dd{border-bottom: 1px solid #737373;}
+.nav_lists ul li dl dd a:hover{background: #FFFFFF;padding: 19.2px 58px;}
+
+
+
+
+.footer{height:100%; overflow:hidden;width: 100%;}
+.footer .list{height:100%;overflow: hidden; width:1200px;margin:0 auto;border-top:2px solid black;}
+.footer .list .left{width: 860px;height: 100%;float: left;overflow: hidden;}
+.footer .list .left ul{list-style: none;}
+.footer .list .left ul li{font-family: "微软雅黑"; float: left;margin-left: 130px;margin-right:70px;margin-top: 17px;margin-bottom: 20px;}
+.footer .list .left ul li a{font-size: 18px;color: black;text-decoration: none;}
+.footer .list .left ul li dl{margin-bottom: 20px;}
+.footer .list .left ul li dl dd{margin-top: 20px;}
+.footer .list .left ul li:nth-child(3) dl dd{margin-top: 8px;}
+.footer .list .left ul li dl dd a{font-size: 14px;text-decoration: none;color: #666666;}
+.footer .list .left ul li dl dd a:hover{color: red;}
+.footer .list .right{float: left; width: 340px;height: 186px;}
+.footer .list .right img{margin-top: 10%;margin-left: 44px;}
+.footer .dibu{width:100%;height: 100px;background:#959595;}
+.footer .dibu p:nth-child(1){padding-top: 26px;}
+.footer .dibu p{ font-family: "微软雅黑";  text-align: center; font-size: 12px;color: #FFFFFF;line-height: 24px;}

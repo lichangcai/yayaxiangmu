@@ -1,0 +1,46 @@
+.shop_cart .content{top: 0.9rem;bottom: 1.85rem;}
+
+.shop_cart .content .All{ height: 0.65rem; list-style:none;width: 94%;margin: 0.2rem auto 0;border-bottom: 1px solid #aaa;}
+.shop_cart .content .All li{color: #7c7c7c; font-family: "微软雅黑"; align-items: center;display: flex;font-family: "微软雅黑";font-size: 0.24rem;width: 50%;}
+.shop_cart .content .All li label{margin-left: 0.4rem; font-family: "微软雅黑";font-size: 0.3rem;color: #7c7c7c;}
+.shop_cart .content .All li img{width: 10%;clear: both;right: 0;}
+.shop_cart .content .All li:nth-child(2){justify-content:flex-end}
+.shop_cart .list{ width: 94%;padding: 0px; margin: 0 auto;height: 2.6rem;display: flex;border-bottom: 1px solid #aaa;overflow: hidden;}
+.shop_cart .list .left{width: 40%;height: 100%;margin-left: -0.2rem;display: flex;align-items: center;}
+.shop_cart .list img{border: 1px solid #aaa;border-radius: 10px;margin-left: 0.2rem;width: 58%;}
+.shop_cart .list label{float: left;width: 15px;height: 15px;border-radius: 50%;margin-left: 0.5rem;}
+.shop_cart .list .right{width: 60%; margin-left: 0.1rem;}
+.shop_cart .list .right h3{padding-top: 0.28rem;margin: 0;font-family: "微软雅黑";font-size: 0.24rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.shop_cart .p_jia{ font-family: "微软雅黑";font-size: 0.28rem;margin-top:0.2rem ;}
+.shop_cart .p_jia i{color: red;font-size: 0.24rem;}
+/* justify-content: space-between;排在一个div里面的两边*/
+.shop_cart .bottom{margin-top:0.1rem ; display: flex; justify-content: space-between; align-items: center; font-family: "微软雅黑";font-size: 0.15rem;}
+.shop_cart .bottom div {display: flex;align-items: center;}
+.shop_cart .bottom div span{font-size: 0.28rem;}
+.shop_cart .bottom .date{font-family: "微软雅黑";font-size: 0.28rem;}
+.shop_cart .bottom div div span{font-family: "微软雅黑";font-size: 0.28rem;}
+.shop_cart .bottom div div{display: flex;margin-left: 0.2rem;}
+.shop_cart .bottom div div>button{border: none;background: inherit;font-size: 0.24rem;}
+.shop_cart .bottom div div .kuang{width:0.57rem;text-align: center;height: 0.4rem;border: 1px solid #aaa;font-family: "微软雅黑";font-size: 0.24rem;}
+.shop_cart .xiao{font-family: "微软雅黑";font-size: 0.28rem;margin-top:0.1rem ;}
+/*这是一个元素的*/
+.shop_cart .All label {position: relative;display: flex;align-items: center;}
+.shop_cart .All label  input{visibility: hidden;}
+.shop_cart .All label  span{left: -0.05rem;width: 10px;height: 10px;background:#fff;border-radius: 50%;display: inline-block;position: absolute;
+border: 1px solid #aaa;top:0.05rem}
+.shop_cart .All label  input:checked+span:before{content: "";width: 10px;height: 10px;position: absolute;border-radius: 50%;
+background: #fff;border: 0.05rem solid #707070;top: -0.02rem;margin-left: -0.02rem;}
+
+/**/
+.shop_cart .left label {position: relative;display: flex;align-items: center;}
+.shop_cart .left label input{visibility: hidden;}
+.shop_cart .left label span{width: 10px;height: 10px;background:#fff;border-radius: 50%;display: inline-block;position: absolute;
+border: 1px solid #aaa;left: -0.02rem;}
+.shop_cart .left label input:checked+span:before{content: "";width: 10px;height: 10px;position: absolute;border-radius: 50%;
+background: #fff;border: 0.05rem solid #707070;top: -0.02rem;margin-left: -0.02rem;}
+
+/*底部这个代码*/
+.shop_cart .foot{position: fixed;bottom:1.1rem;background: #C0C0C0;height: 0.9rem;min-height: 0px;}
+.shop_cart .foot{display: flex;}
+.shop_cart .foot p{margin-bottom: 0px; font-family: "微软雅黑";font-size: 0.24rem; padding-left: 0.4rem;  width: 100%;align-items:center ;display: flex;}
+.shop_cart .foot p button{width: 1.8rem; margin-left: 0.9rem;color: #FFFFFF;border: none;background: red;font-family: "微软雅黑";font-size: 0.24rem;margin-bottom: 0.0475rem;}

@@ -1,0 +1,77 @@
+.content .container .center{margin-top: 4%; height: 100%;overflow: hidden;}
+.content .container .center h1 {font-family: "微软雅黑";font-size: 24px;color: #FFFFFF;border-bottom: 1px solid #FFFFFF;}
+.content .container .center span{display: block; font-family: "微软雅黑";font-size: 12px;line-height: 12px;margin-top:0.5% ;}
+.content .container .center h1 img{display: block;margin-left: 1.5%;}
+.content .container .center p{margin-top:-31px;float: right;font-family: "微软雅黑";display:block;font-size: 12px;margin-right: 10px;color: #FFFFFF;}
+.content .container .center p a{color: #FFFFFF;text-decoration: none;}
+/*.content .container .center p a:hover{color: red;}*/
+.contact ul{margin-top: 10%;margin-left:10% ;}
+.contact ul li{ list-style: none;font-family:"微软雅黑";font-size: 14px;color: #FFFFFF;margin-top:5% ;}
+/*地图代码*/
+#dituContent{width:100%;height:375px;border:#ccc solid 1px;}
+
+
+/*新的代码*/
+.form_name{margin-top: 6%;}
+.form_name .left {padding: 0px;}
+.form_name .left input{width: 70%;height: 30px;line-height: 30px;outline: none;padding:0px 10px;border: 2px solid #666666;background: inherit;font-family: "微软雅黑";font-size: 14px;} 
+
+.form_name .right {padding: 0px;}
+.form_name .right input{float: right;margin-right: 20%; width: 70%;height: 30px;line-height: 30px;outline: none;padding:0px 10px;border: 2px solid #666666;background: inherit;font-family: "微软雅黑";font-size: 14px;} 
+
+.form_message {margin-top: 2%;}
+.form_message textarea{border: 2px solid#666666;margin-right: 10%;width: 90%;padding: 1px 10px;height: 200px;background: inherit;font-family: "微软雅黑";font-size: 14px;outline: none;}
+.form_submit {margin-top: 1%;}
+.form_submit .left{padding: 0px;}
+.form_submit .left button{width:30%;line-height: 24px;font-family: "微软雅黑";font-size: 16px;}
+.form_submit .right{padding: 0px;}
+.form_submit .right button{width:30%;line-height: 24px;float: right;margin-right: 20%;font-family: "微软雅黑";font-size: 16px;}
+
+
+
+
+@media only screen and (max-width: 1200px){
+	.container{padding: 0px 5px;}
+}
+
+@media (min-width:1081px) and (max-width:1200px){
+	.navbar-nav > li{margin-top: 0px;margin-right: -18px;}
+	.form-group{margin-top: 32px;margin-right: 0px;}
+}
+@media (max-width:1080px) and (min-width:994px){
+	.form-group{margin-top: 32px;}
+	.navbar-nav > li{margin-right: -20px;margin-top: 0px;}
+}
+@media (max-width:993px) and (min-width:768px){
+		.form-group{margin-top:33px; width: 130px;}
+		.navbar-nav > li{margin-top: 7px;margin-right: -5px;margin-left: -15px;}
+		.navbar-header{margin-top: 5px;}
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+  /*这是一块的转化为顶部的 导航的代码first*/
+  .nav .on a{color: red;border-left: 1px solid transparent;border-right: 1px solid transparent;}
+   .nav li a{color: #FFFFFF;font-size: 22px; padding: 0px;/*margin:18px 22px;*/line-height: 18px; cursor: pointer;text-align: center;}
+   .nav li a{margin-top: 61px;}
+   .nav ul{ padding-left:0%;padding-right:0%;padding-top: 15px;width: 100%;overflow: hidden;}
+   .navbar-nav > li { margin-top: -40px;margin-right: 0px; }
+   .form-group{width: 80%;margin-right: 10%;height: 36px;}
+   .icon button{height: 34px;width:10%}
+   .icon input{height: 34px;font-size: 22px;padding:0px;width: 88%;padding: 0px 5px;}
+   /*end*/
+  /*框的代码*/
+ .kuang{width: 90%;}
+ /*留言框的代码*/
+.form_name .left input{width: 90%; margin-bottom: 20px;}
+.form_name .right input{float: none;width: 154%;} 
+.form_submit .left button{width: 40%;}
+.form_submit .right button{width: 40%;}
+} 
+
+
+
+/*这是手机端消除伪类的代码*/
+@media only screen and (min-width: 768px) {
+	.content .container .center p a:hover{color: red;}
+}

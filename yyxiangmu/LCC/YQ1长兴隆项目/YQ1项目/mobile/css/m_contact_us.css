@@ -1,0 +1,264 @@
+
+.ov{ overflow:hidden; clear:both; margin:0 4%;}
+
+.topD{
+	margin:0 4%;
+	}
+.topD h1{
+	font-weight:normal;
+	color:#31bfa4;
+	text-align:center;
+	padding-top:8%;
+	font-family:"黑体";
+	font-size:24px;
+	padding-bottom:25px;
+	}
+
+
+/*留言的代码*/
+.mag{
+	margin:0 4%;
+	border-bottom:4px solid #d8d8d8;
+	padding-bottom:10%;}
+
+input{
+	border:2px solid #3cc7b0;
+	padding:0 7px;
+	height:50px;
+	width:72%;
+	}
+.mag .username{
+	margin-top:20px;
+	}
+.mag .username label{
+	font-family:"黑体";
+	font-size:24px;
+	color:#333333;
+	}
+	
+/*留言框的代码*/
+.inpu{
+	clear:both;
+	overflow:hidden;
+	margin-top:20px;
+	 font-family:"黑体";
+	 font-size:24px;
+	 }
+.inpu label{
+	color:#333333;
+	float:left;
+	}	
+.inpu textarea{
+	outline:none;
+	border:2px solid #3cc7b0;
+	margin-left:1%;
+	float:left;
+	resize:none;
+	overflow-y:hidden;
+	padding:0 7px;
+	height:86px;
+	width:73%;
+	}
+.inp{
+	overflow:hidden;}
+.inp input{
+	outline:none;
+	float:left;
+	margin-left:9%;
+	margin-top:20px;
+	height:64px;
+	width:40%;
+	padding:0 10px;
+	font-family:"黑体";
+	font-size:18px;
+	color:#999999;
+	}
+.inp img{
+	margin-left:20px;
+	margin-top:20px;
+	float:left;
+	}
+.submit{
+	overflow:hidden;
+	}
+.submit input{
+	text-align:center;
+	background:#3cc7b0;
+	float:left;
+	margin-left:9%;
+	margin-top:20px;
+	height:64px;
+	width:30%;
+	padding:0 7px;
+	font-family:"黑体";
+	font-size:24px;
+	color:#fdfefe;
+	cursor:pointer;
+	}
+
+.contact{
+	padding-bottom:10%;
+    border-bottom:4px solid #d8d8d8;
+	}
+.contact_us{
+	margin:0 4%;}
+.contact_us h1{
+	font-weight:normal;
+	text-align:center;
+	font-family:"黑体";
+	font-size:24px;
+	margin-top:20px;
+	color:#3cc7b0;
+	}
+.contact_us ul{
+		margin-top:10px;}
+.contact_us ul li{
+	font-family:"黑体";
+	font-size:18px;
+	line-height:30px;
+	color:#333333;
+	}
+
+
+@media only screen and (min-width:270px )and (max-width:374px ){
+.header h1{
+		font-size:23px;}
+.nav li a,.topD h1{
+		font-size:17px;
+	}		
+.mag .username label{
+	font-size:17px;
+	}
+.inpu{
+		margin-left:2%;
+	font-size:17px;
+	}
+.inp input{
+	font-family:"黑体";
+	margin-left:13%;
+	width:33%;
+	font-size:12px;
+	}
+.inp img{
+	margin-left:2%;
+	}
+.submit input{
+	margin-left:12%;
+	font-size:17px;
+	width:33%;}
+.contact_us h1{
+	font-size:17px;
+	}
+.contact_us ul li{
+	font-size:14px;}
+.footer li{
+		text-align:center;
+		font-size:12px;
+		}	
+	}	
+@media only screen and (min-width:375px )and (max-width:450px ){
+.header h1{
+		font-size:25px;}
+.nav li a,.topD h1{
+		font-size:19px;
+	}
+.mag .username label{
+	font-size:19px;
+	}
+.inpu{
+	font-size:19px;
+	}
+.inp input{
+	font-family:"黑体";
+	margin-left:10%;
+	width:30%;
+	font-size:14px;
+	}
+.inp img{
+	margin-left:2%;
+	}
+.submit input{
+	font-size:19px;
+	width:33%;}
+.contact_us h1{
+	font-size:19px;
+	}
+.contact_us ul li{
+	font-size:15px;}
+.footer li{
+		text-align:center;
+		font-size:15px;
+		}	
+}	
+@media only screen and (min-width:451px )and (max-width:560px ){
+.header h1{
+		font-size:27px;}
+.nav li a,.topD h1{
+		font-size:21px;
+	}
+.mag .username label{
+	font-size:21px;
+	}
+.inpu{
+	font-size:21px;
+	}
+.inp input{
+	font-family:"黑体";
+	margin-left:10%;
+	width:30%;
+	font-size:16px;
+	}
+.inp img{
+	margin-left:2%;
+	}
+.submit input{
+	font-size:21px;
+	width:33%;}
+.contact_us h1{
+	font-size:21px;
+	}
+.contact_us ul li{
+	font-size:16px;}
+.footer li{
+		text-align:center;
+		font-size:15px;
+		}
+}	
+@media only screen and (min-width:561px )and (max-width:620px ){
+.header h1{
+		font-size:29px;}
+.nav li a,.topD h1{
+		font-size:23px;
+	}
+.mag .username label{
+	font-size:23px;
+	}
+.inpu{
+	font-size:23px;
+	}
+.inp input{
+	font-family:"黑体";
+	margin-left:10%;
+	width:30%;
+	font-size:17px;
+	}
+.inp img{
+	margin-left:2%;
+	}
+.submit input{
+	font-size:23px;
+	width:33%;}
+.contact_us h1{
+	font-size:23px;
+	}
+.contact_us ul li{
+	font-size:17px;}
+.footer li{
+		text-align:center;
+		font-size:17px;
+		}	
+
+}
+	
+	
+	

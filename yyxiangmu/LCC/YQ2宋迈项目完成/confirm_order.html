@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!--content属性值:
+    	initial-scale:当页面首次展示，可视区域的缩放级别。取值1.0则页面按照实际尺寸显示，无任何缩放
+    	maximum-scale=1.0,minimum-scale=1.0;可视区域的缩放级别。
+    	maximun-scale=1.0:指用户可将页面放大的属性，1.0是指禁止用户放大到实际尺寸以上
+    	user-scalable:是否可以对页面进行缩放， no是指禁止缩放
+        -->
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/address_common.css" />
+		<link rel="stylesheet" href="css/confirm_order.css" />
+		
+		<title>确认订单</title>
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/confirm_order.js"></script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+			
+    	<div class="car col-lg-12 col-md-12 ">
+			<div class="dropdown  car_right">
+				<button type="button" class="btn dropdown-toggle user" id="dropdownMenu1"  data-toggle="dropdown">
+					CCC
+					<span><img src="img/address.png"/></span>
+				</button>
+					<ul class="dropdown-menu xiala" role="menu" aria-labelledby="dropdownMenu1">
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="user.html">会员中心</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="order.html">我的订单</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="order_details.html">订单详情</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="address.html">收货地址</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="shop_cart.html">购物车</a></li>
+						
+					</ul>
+					<span><a href="shop_cart.html"><img src="img/cart.png"></a><a href="shop_cart.html">购物车</a><i>( 0 )</i> </span>
+			</div>
+    	</div>
+    	
+    	
+    	
+				<div class="container-fluid">
+					<div class="navbar-header navbar-left">
+						
+						<a href="index.html"><img src="img/logo.png" class="img-responsive logo" title="欢迎来到宋迈品牌商城！" alt="亲，请您刷新在试试！" /></a>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+					</div>
+
+					
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-left">
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li>
+								<a href="brand_introduction.html">品牌介绍</a>
+							</li>
+							<li>
+								<a href="product.html">产品中心</a>
+							</li>
+							<li>
+								<a href="news.html">新闻中心</a>
+							</li>
+							<li>
+								<a href="contact_us.html">联系我们</a>
+							</li>
+						</ul>
+
+						<div class="form-group icon">
+							<button type="submit"><img src="img/submit.png"/></button>
+							<input type="text" placeholder="">
+
+						</div>
+
+					</div>
+					
+				</div>
+				
+		</nav>
+
+		<div class="concent">
+			<div class="container">
+
+				<div class="col-lg-12 col-md-12 top col-sm-12 col-xs-12">
+					<div class="col-lg-6 col-md-6 col-sm-6 ">
+						<h1><a>确认订单</a></h1>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<img src="img/confirm_order.png" />
+					</div>
+				</div>
+				<div class="col-lg-12 co1-md-12 col-sm-12 shop_car">
+					<div class="col-lg-6 col-md-6 col-sm-6 ">
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<p>购物车</p>
+						<p>确认订单</p>
+						<p>完成订单</p>
+					</div>
+				</div>
+
+				<div class=" col-lg-12 shopcar">
+					<table >
+						<tr>
+							<td colspan="6">1.商品清单</td>
+						</tr>
+						<tr style="text-align: center;">
+							<td width="5%"><input type="checkbox" id="checkAll" checked="checked"></td>
+							<td width="30%">商品信息</td>
+							<td width="8%">单价</td>
+							<td>数量</td>
+							<td width="20%">折扣</td>
+							<td width="10%">小计</td>
+						</tr>
+						<tr>
+							<td width="5%"><input type="checkbox" checked="checked"></td>
+							<td width="33%">
+								<a href="pro_details.html">
+									<img src="img/shopcar.jpg" class="img-responsive" />
+								</a>
+								<p><a href="pro_details.html">2插口 1USB插孔插座 </a></p>
+								<p><span>白色</span> </p>
+							</td>
+							<td width="12%">
+								<p>￥<s>598.00</s></p>
+								<p>￥<span>498.00</span></p>
+								<p><span>特价</span></p>
+							</td>
+							<td>
+								<input class="prd_subNum" type="button" id="" value="-" />
+								<input class="count_num" type="text" value="1"/>
+								<input class="prd_addNum" type="button" id="" value="+" />
+							</td>
+							<td>已省￥<span>10.00</span><br/>商城会员</td>
+							<td>￥<span>498.00</span></td>
+						</tr>
+
+						<td colspan="6">2.支付方式</td>
+						</tr>
+						<tr>
+							<td colspan="6" style="padding: 20px 0px 20px 20px;">
+								<span>你常用的支付方式</span>
+								<label>
+   	  					<input type="radio" name="rid" id="" value="" checked/>
+   	  					<img src="img/confirm.png">
+   	  				</label>
+								<label>
+   	  					<input type="radio" name="rid" id="" value="" />
+   	  					<img src="img/confirm.png">
+   	  				</label>
+								<label>
+   	  					<input type="radio" name="rid" id="" value="" />
+   	  					<img src="img/confirm.png">
+   	  				</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="6">
+								<label style="display: block;"> 
+   	  					<input type="radio" name="rie" id="" value="" />
+   	  					<span>支付平台</span>
+   	  					<i>支付宝/财付通</i>
+   	  				</label>
+								<label>
+   	  					<input type="radio" name="rie" id="" value=""/>
+   	  					<span>网上支付</span>
+   	  					<i>网上各种银行都支持</i>
+   	  				</label>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-lg-12 left">
+					<p>收货信息</p>
+					<span>寄送往：上海市普陀区春之声大厦</span>
+					<label>收件人:某某某</label>
+					<label>手机：13912354689</label>
+				</div>
+				<div class="col-lg-8 right">
+					<p>共<span id="numder">1</span>件商品，邮费<span>￥0</span>，商品应付总额<span id="total">￥498.00</span></p>
+				</div>
+				<div class=" col-lg-12 di">
+					<label>发票信息：</label><input type="text" placeholder="填写发票，默认你的名字" class="invoice" onfocus="inputFocus(this,this.defaultValue)" onblur="inputBlur(this,this.defaultValue)" />
+					<button type="button" class="btn btn-primary btn-lg din" data-toggle="modal"    data-target="#myModal"><a href="pay_finish.html">确认订单</a></button>
+					
+				</div>
+
+			</div>
+		</div>
+
+		<div class="footer">
+			<p>COPYRIGHT (C) 2016WWW.JINLIAN.COM ALL RIGHTS RSERVED</p>
+		</div>
+		<!--输入框的点击消失文字的代码-->
+		</script>
+		<script type="text/javascript">
+			var inputFocus = function(element, value) {
+				if(element.value == value) {
+					element.value = "";
+				}
+			}
+			var inputBlur = function(element, value) {
+				if(element.value == "") {
+					element.value = value;
+				}
+			}
+			$(function() {
+				$('#myModal').modal({
+					keyboard: false;
+				})
+			});
+		</script>
+		
+	</body>
+
+</html>

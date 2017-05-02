@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/home.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/top.css" />
+	 
+		<title>主页</title>
+	</head>
+	<!--ng-controller 指令用于为你的应用添加控制器。在控制器中，你可以编写代码，制作函数和变量，并使用 scope 对象来访问。-->
+	<!--homeController是ng-controller自己定义的名字-->
+	<body ng-controller="homeController">
+		<ion-view class="Home">
+			<!--ion-hearder-bar 这个是固定在屏幕顶部的一个头部标题栏的用法。-->
+			<ion-header-bar class="head-top">
+				<ul>
+					<li class="item-icon-left item-icon-right">
+						<i class="ion-navicon-round icon item-icon-left" ></i>
+						<button class="ion ion-ios-search suo" ng-click="pusearch(vale)" ></button>
+						<input placeholder="搜索你需要的商品" ng-model="vale" ng-click="Insrarch()" ui-sref="pro_search"/>
+						<i class="ion-qr-scanner icon item-icon-right"></i>
+					</li>
+				</ul>
+			</ion-header-bar>
+			<!--top这是结尾-->
+			<!--<这是自动轮播的代码 要加上ion-content才可以居中-->
+				<ion-content class="content">
+					<!--ion-slide-box轮播的代码的盒子-->
+					<ion-slide-box auto-play="true" does-continue="true" class="lunbo">
+						<ion-slide>
+							<img src="img/m_guide/banner1.jpg" alt="" width="100%">
+						</ion-slide>
+						<ion-slide>
+							<img src="img/m_guide/banner2.jpg" alt="" width="100%">
+						</ion-slide>
+						<ion-slide>
+							<img src="img/m_guide/banner3.jpg" alt="" width="100%">
+						</ion-slide>					
+					</ion-slide-box>
+					<!--这是那四个图标的代码开始-->
+						<div class="content_div">
+							<!--这里是四个图标那里-->
+							<!--row是那个ioncs里面的，一定要用的如果是从后台获取数据的话-->
+							<ul class="row title">
+								<li class="col col-25" ng-repeat="item in obj.title" >
+									<div ui-sref="pro_details">
+										<img ng-src="{{item.img}}" width="100%"/>
+									</div>
+									<p ui-sref="pro_details">{{item.title}}</p>
+								</li>
+						    </ul>
+						</div>
+						<!--四个图标的结束的那块的div-->
+					    <!--新品推荐的开始-->
+						<div class="New_Products">
+							<div class="title">
+								<h1>新品推荐</h1>
+							</div>
+						
+							<ul class="row row-wrap">
+								<li  class="col col-47" ng-repeat="item in obj.facilityArr"ui-sref="pro_details">
+									<img ng-src="{{item.img}}" width="100%"/>
+									<p ui-sref="pro_details">{{item.name}}</p>
+									<p ui-sref="pro_details"><span>{{item.prices}}<i>REB</i></span></p>
+								</li>
+							</ul>
+						</div>
+					<!--新品推荐的结束-->
+				<!--典范开始model-->
+					<div class="model">
+						
+						<ul class="row row-wrap">
+							<li class="col col-50" ng-repeat="item in obj.modelArr"ui-sref="pro_details">
+								<img ng-src="{{item.img}}" width="100%"/>
+							</li>
+						</ul>
+					</div>
+					<!--军用系列-->
+					<div class="webbing">
+						<div class="title">
+							<h1>军用系列</h1>
+						</div>
+						<div class="pic">
+							<ul>
+								<li ui-sref="pro_details"><img src="img/m_guide/news_p9.jpg"width="100%"/ ></li>
+								<li ui-sref="pro_details"><img src="img/m_guide/news_p10.jpg"width="100%"/ ></li>
+								<li ui-sref="pro_details"><img src="img/m_guide/news_p11.jpg"width="100%"/ ></li>
+							</ul>
+						</div>
+					</div>
+					<!--每月新品-->
+					<div class="m_news">
+						<div class="title">
+						   <h1>每月新品</h1>
+						   <div class="n_pic">
+						   	   <ul>
+						   	   	  <li><img src="img/m_guide/news_p12.jpg" width="100%"/></li>
+						   	   	  <li><img src="img/m_guide/news_p13.jpg" width="100%"/></li>
+						   	   	  <li><img src="img/m_guide/news_p14.jpg" width="100%"/></li>
+						   	   	  <li>美是一种平衡<br/>月球岩石砊一目了然</li>
+						   	   	  <li><img src="img/m_guide/news_p15.jpg" width="100%"/></li>
+						   	   	  <li><img src="img/m_guide/news_p16.jpg" width="100%"/></li>
+						   	   </ul>
+						   </div>
+						</div>
+					</div>
+				</ion-content>
+				<!--<这是需要自动轮播的代码 要加上ion-content才可以居中end-->
+			    <!--这里是底部的代码-->	    
+			<ion-footer-bar>
+				<!--<div class="bar-footer">-->
+				   <ul>
+				   		<li  ui-sref="home">
+				   			<div>
+				   				<i class="ion-home"></i>
+				   				<p>主页</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="prostyle">
+				   			<div>
+				   				<i class="icon ion-ios-settings-strong" ></i>
+				   				<p>分类</p>
+				   			</div>
+				   			
+				   			
+				   		</li>
+				   		<li>
+				   			<div><i class="ion-ios-lightbulb-outline" ></i>
+				   				<p>发现</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="shop_cart">
+				   			<div>
+				   				<i class="icon ion-ios-cart" ></i>
+				   				<p>购物车</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="user">
+				   			<div>
+				   				<i class="ion-person-add" ></i>
+				   				<p>我</p>
+				   			</div>
+				   		</li>
+						
+					</ul>
+			</ion-footer-bar>
+		</ion-view>
+	</body>
+	
+</html>

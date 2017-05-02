@@ -1,0 +1,397 @@
+.header{
+	width: 100%;
+	}
+.header .top{
+	height: 120px;
+	overflow: hidden;
+	}
+.header .logo{
+	float: left;
+	margin-left: 25px;
+	margin-top:10px;
+	}
+.header .logo a{
+	display: block;
+	}
+.header .logo img{
+	display: block;
+	}
+.logo_right{
+	float: right;
+	margin: 22px 30px 0 0;
+	}
+.logo_right .search{
+	border:2px solid red;
+	margin-right:120px;
+	width: 334px;
+	height:41px;
+	overflow: hidden;
+	/*background: url(../images/kuang.jpg) no-repeat;margin-top:19px;*/
+	}/*这里是加上logo-right那里的margin：22px，加上margin-top的19px;就是搜索框那里到顶部的 41px;*/
+.logo_right .search .text{
+	width: 250px;
+	padding: 0 10px;
+	height: 41px;
+	line-height: 41px;
+	background: none;
+	border: none;
+	outline: none;
+	color: #a6acab;
+	font-family: '微软雅黑';
+	font-size: 18px;
+	float: left;
+	}
+.logo_right .search .submit{
+	float: right;
+	width: 50px;
+	height: 41px;
+	border:none;
+	border-left:1px solid red;
+	background: url(../images/search.jpg) no-repeat center;
+	 cursor: pointer;
+	outline: none;
+	 }
+
+
+.header .navbar{
+	height: 36px;
+	width: 100%;
+	background: #31bfa4;
+	text-align:center;
+	}/**/
+.header .navbar ul{
+	display: inline-block;
+	*display: inline;
+	zoom:1;
+	margin-left:-28px;
+	}
+.header .navbar li{
+	margin:0 37px;
+	float:left;
+	line-height:36px;
+	font-family: '微软雅黑';
+	font-size: 14px;
+	padding-right:1px;
+	position: relative;
+	z-index:10; 
+	list-style:none;
+	}
+.header .navbar li.on>a{
+	width:102px;
+	color:#ffffff;
+	background: #fe0000;
+	}/*这是触碰到那里触发的颜色，比如首页那里*/
+.header .navbar li:hover >a{
+	display:block;	
+	background: #fe0000;
+	color:#FFF;
+	}
+
+.header .navbar li>a{
+	display: block;
+	color: #020000;
+	width:102px;
+	}
+	
+
+.header .navbar dl{
+	position: absolute;
+	width: 100%;
+	display: none;
+	background:#069000;
+	 }
+.header .navbar dd a{
+	display: block;
+	color: #ffffff;
+	}
+.header .navbar li:hover dl{
+	display: block;
+	}
+.header .navbar dd a:hover{
+	background: #ffffff;
+	color: #069000;
+	}
+
+
+
+ul{
+	list-style: none;
+	}
+.inner_banner{
+	width:100%;
+	height:500px;
+	position:relative;
+	overflow:hidden;
+	}
+.inner_banner .bd{
+	height:500px;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	left:0;
+	}
+.inner_banner .bd li{
+	height:500px;
+	overflow:hidden; 
+	width:100%;
+	float:left;
+	position:relative;
+	}
+.inner_banner .bd li a{
+	position:absolute;
+	width:1920px;
+	height:500px;
+	left:50%;
+	margin-left:-960px;
+	}
+.inner_banner .bd li img{
+	display:block;
+	}
+.inner_banner .hd{
+	position:absolute;
+	width:100%;
+	bottom:25px;
+	text-align:center;
+	}
+.inner_banner .hd ul{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	}
+.inner_banner .hd li{
+	width:39px;
+	height:39px;
+	background:url(../images/list-3.png) no-repeat;
+	margin: 0 9px;
+    cursor:pointer; 
+	float: left;
+	}
+.inner_banner .hd li.on{
+	background:url(../images/list-4.png) no-repeat;
+	}
+.inner_banner .hd li:hover{
+	background:url(../images/list-4.png) no-repeat;
+	}
+	
+	
+
+.index_about{
+	height:100%;
+	overflow:hidden;
+	}
+.index_title{
+	cursor: pointer;
+	width: 100%;
+	padding: 20px 0;
+	margin-top:41px;
+	}
+.index_title h2{
+	font-family: '微软雅黑';
+	font-size: 24px;
+	color: #ed1721;
+	text-align: center;
+	padding: 20px 0 20px 85px;
+	font-weight: normal;
+	}
+.index_title h2 span{
+	font-family:Arial;
+	font-size: 18px;
+	margin-left:5px;
+	}
+	
+.index_about .pic{
+	float:left;
+	width:367px;
+	}
+<!--块节元display:block;-->
+.index_about .pic img{
+	display:block;
+	}
+.index_about .textA{
+	float:right;
+	width:680px;
+	font-family:微软雅黑;
+	}
+.index_about .textA p{
+	text-indent:2em;
+	font-size:14px;
+	line-hight:24px;
+	}
+.index_about .textA a{
+	color:#333333;
+	padding-right:30px;
+	float:right;
+	font-size:14px;
+	}
+.index_about .textA a:hover{
+	color:red;}
+
+<!--新闻中心的文字 ->
+.index_news .pic{
+	float:left;
+	width:356px;
+	}
+<!--块节元display:block;-->
+.index_news .pic img{
+	display:block;
+	}
+.index_news .textB{
+	float:right;
+	font-family:微软雅黑;
+	width:800px;
+	}
+.index_news .textB h1 a{
+	line-height:24px;
+	float:left;	
+	padding-bottom:20px;
+	font-weight:normal;
+	font-size:18px;
+	color:#fe0000;
+	}
+
+.index_news .textB P{
+	font-family:"微软雅黑";
+	float:left;
+	font-size:14px;
+	line-height:24px;
+	text-indent:2em;
+	}
+.index_news .textB h2 a{
+	margin-top:10px;
+	font-weight:normal;
+	font-family:微软雅黑;
+	font-size:14px;
+	float:right;
+	color:#333333;
+	padding-right:30px;
+	}
+.index_news .textB h2 a:hover{
+	color:red;}
+	
+	
+	
+	
+	
+<!--新闻中心的列表-->
+.news{
+	width:100%;
+	height:100%;
+	overflow:hidden
+	margin-top:31px;
+	text-align:center;
+	}
+/*cursor: pointer;是手指状态*/
+.line ul{
+	color:#333333;
+	font-family:"微软雅黑";
+	font-size:14px;
+	margin-top:40px;
+	color:#333333;
+	}
+.line ul li{ background:url(../images/news_line.jpg) repeat-x center center; display:block; clear:both; overflow:hidden;
+      line-height:29px;}
+
+.line a{
+	padding-left:50px;
+	padding-right:5px;
+	float:left; background:#FFF; }
+.line a img{padding-right:7px; padding-bottom:4px;}
+
+.line span{
+	float:right;
+	background:#FFF;
+	padding-right:30px;
+	padding-left:4px;}
+
+.line ul li:hover{ color:#F00; background:url(../images/index_line1_03.jpg)repeat-x center center; }
+.line ul li:hover a{color:#F00; background:#FFF;}
+
+.line p a{
+	float:right;
+	padding-right:40px;
+	font-family:"微软雅黑";
+	font-size:14px;
+	color:#333333;
+	padding-top:34px;
+	}
+.line p a:hover{
+	color:red;}
+
+
+
+
+
+
+
+/*产品中心*/
+.product{
+	cursor: pointer;
+	height:100%;
+	overflow:hidden
+	margin-top:79px;
+	}
+.product h2{
+	font-family: '微软雅黑';
+	font-size: 24px;
+	color: #f80712;
+	margin-left:555px;
+	/*text-align: center;*/
+	font-weight:normal;
+	}
+.product h2 span{
+	font-family:Arial;
+	font-size: 18px;
+	margin-left:5px;
+	}
+.product .list{
+	clear: both;
+	padding: 10px 0;
+	margin-top:15px;
+	}
+.product .list ul{
+	margin-right: -85px;
+	}
+.product .list li:hover a{
+	color:red;}
+.product .list li{width: 343px;float: left;margin-right:85px; list-style:none; margin-bottom:20px;}
+
+.product .list .pic{width: 343px; clear:both;}
+.product .list.pic a{display: block;}
+.product .list .pic img{display: block;width: 339px;height: 240px;border:2px solid #9af8e9;}
+
+.product .list .text{font-family: '微软雅黑';text-align: center; padding-bottom:10px; width:343px; clear:both;}
+.product .list .text h3{font-size: 18px;font-weight: normal;padding-top:32px; }
+.product .list .text h3 a{color:#333333; display:block;}
+.product .list ul li:hover h3 a{color: red; }
+.product .list ul li:hover img{color:#F00;border:2px solid #F00;color: red; }
+
+
+
+.footer{
+	height:112px;
+	background:#0b5b4d;
+	}
+
+.footer .footer-right{
+	float:right;
+	}
+.footer .footer-right img{
+	margin-right:109px;
+	margin-top:16.5px;
+	cursor: pointer;
+	}
+.footer .footer-left{float:left;margin-top:25px;} 
+.footer .footer-left p{
+	margin-left:183px;
+    cursor: pointer;
+    color:#b4d2cc;
+    font-family:"微软雅黑";
+    font-size:14px;
+    line-height:24px;
+	}
+
+.footer .footer-left p a{
+	text-decoration:underline;
+	color:#6eaef6;
+	cursor: pointer;
+	}

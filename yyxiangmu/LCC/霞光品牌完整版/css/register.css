@@ -1,0 +1,37 @@
+.register .ion-content{background: transparent no-repeat center;}
+body .register{background: url(../img/register/bg.jpg)no-repeat center;}
+.register .pane, .view{background: transparent;}
+.register .bar-header.has-tabs-top, .tabs-top .bar-header{background: transparent;}
+.register .bar-footer{background: transparent;}
+.register .content{background: transparent;}
+
+.register .ma{position: relative;font-size: 0.24rem;float: right; bottom: 0.65rem;}
+
+
+
+.register form.top_pic{width: 6rem;margin: 1.5rem auto 0;box-shadow: -2px -2px 6px #000;border:1px solid #aaa;border-radius: 2px;margin-bottom: 0.2rem;overflow: hidden;}
+.register .top_pic{width: 100%;margin-top: 2.18rem;}
+.register .top_pic label{ height: 0.6rem; width:5.8rem;display: flex;justify-content: center;align-items: center; margin: 0 auto;border-bottom:1px solid #aaa ;margin-top: 0.2rem;}
+.register .top_pic label:last-child{margin-bottom: 0.5rem;}
+.register .top_pic label input{position: relative; width: 5.3rem;font-family: "微软雅黑";font-size: 0.24rem;color: black;background: inherit;float: left;}
+
+.register .top_pic label img{width: 5%;}
+.register .xieyi{width:5.6rem;height:0.4rem;display: flex;align-items: center;margin: 0 auto;justify-content: space-between;}
+.register .xieyi label{font-family: "微软雅黑";font-size: 0.28rem;color: #6D6A6B;display: flex;align-items: center;}
+.register .xieyi label input{margin-right: 0.1rem;height: 0.3rem;width: 0.4rem;}
+.register .xieyi label:nth-child(2){margin-left:2.5rem;}
+
+.register .login{ width: 5rem; margin: 0.5rem auto 0;display: flex;justify-content: center;align-items: center;border-radius: 5px;}
+.register .login button{font-family: "微软雅黑";font-size: 0.3rem;color: #fff;border: none;width: 5rem;height: 0.65rem;border-radius: 5px;background: #666666;}
+.register .sure{ width: 5rem; margin: 0.5rem auto 0;display: flex;justify-content: center;align-items: center;border-radius: 5px;}
+.register .sure button{font-family: "微软雅黑";font-size: 0.3rem;color: #fff;border: none;
+            background: inherit;width: 5rem;height: 0.65rem;border-radius: 5px;background: inherit;border: 1px solid #6D6A6B;color: black;}            
+.register .ma{position: relative;font-size: 0.24rem;float: right; bottom: 0.65rem;}
+
+
+/*p标签*/
+.register p{margin-bottom: 0px;}
+.register .registers.content .top_pic p{font-size: 0.28rem;color: black;text-align: center;width: 100%;margin-top: 0.2rem;}
+.register .registers.content .top_pic .code button{position: absolute;top: 0px;right:0;width:2rem; font-size:0.28rem}
+.register .registers.content .top_pic .code{position: relative;}
+.register .registers.content ::;;c label:nth-child(3){position: absolute;}

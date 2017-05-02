@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/pro_search.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/search_top.css" />
+		<title>产品搜索</title>
+	</head>
+	<!--ng-controller 指令用于为你的应用添加控制器。在控制器中，你可以编写代码，制作函数和变量，并使用 scope 对象来访问。-->
+	<!--homeController是ng-controller自己定义的名字-->
+
+	<body ng-controller="pro_searchController">
+		<ion-view class="pro_search">
+			<!--ion-hearder-bar 这个是固定在屏幕顶部的一个头部标题栏的用法。-->
+			<ion-header-bar class="head-top">
+				<ul>
+					<li class="item-icon-left item-icon-right">
+						<i class="ion-ios-arrow-back icon item-icon-left" ng-click="backs()" ></i>
+						<!--	<input class="ion ion-ios-search" placeholder="搜索商品" ng-model = "sreachVal" style="background: url(img/p_search/p_search0.png) left 10px center no-repeat ;background-size:8%;padding-left: 12%;"/>-->
+						<button class="ion ion-ios-search" ng-click="pusearch(vale)"></button>
+						<input placeholder="搜索商品" ng-model="vale" id="input"/>
+						<i class=" icon item-icon-right searh" ng-click="canle()">取消</i>
+					</li>
+				</ul>
+			</ion-header-bar>
+			<ion-content class="contents">
+				<div class="p_search">
+					<h2><img src="img/p_search/p_search.png"/>热门搜索</h2>
+					<ul class="row row-wrap all">
+						<li ui-sref="pro_list">单筒望远镜</li>
+						<li ui-sref="pro_list">军用望远镜</li>
+						<li ui-sref="pro_list">夜视仪</li>
+						<li ui-sref="pro_list">望远镜 高清</li>
+						<li class="active" ui-sref="pro_list">天文望远镜</li>
+						<li ui-sref="pro_list">指能针</li>
+						<li ui-sref="pro_list">望远镜 高倍</li>
+						<li ui-sref="pro_list">夜视望远镜</li>
+					</ul>
+					<button type="button" ng-click="clean()">清空搜索记录</button>
+				</div>
+				<div class="history">
+					<ul class="list">
+						<li ng-repeat="x in historySear">{{x}}</li>
+					</ul>
+				</div>
+
+			</ion-content>
+
+			<!--这里是底部的代码-->
+			 <ion-footer-bar>
+				<!--<div class="bar-footer">-->
+				    <ul>
+				   		<li  ui-sref="home">
+				   			<div>
+				   				<i class="ion-home"></i>
+				   				<p>主页</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="prostyle">
+				   			<div>
+				   				<i class="icon ion-ios-settings-strong" ></i>
+				   				<p>分类</p>
+				   			</div>
+				   			
+				   			
+				   		</li>
+				   		<li>
+				   			<div><i class="ion-ios-lightbulb-outline" ></i>
+				   				<p>发现</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="shop_cart">
+				   			<div>
+				   				<i class="icon ion-ios-cart" ></i>
+				   				<p>购物车</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="user">
+				   			<div>
+				   				<i class="ion-person-add" ></i>
+				   				<p>我</p>
+				   			</div>
+				   		</li>
+						
+					</ul>
+			</ion-footer-bar>
+		</ion-view>
+	</body>
+
+</html>

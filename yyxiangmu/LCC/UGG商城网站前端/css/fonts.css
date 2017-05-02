@@ -1,0 +1,28 @@
+/*@font-face {
+    font-family: "ZHSCNM";
+    src: url("../font/张海山草泥马体.eot");
+    src: url("../font/张海山草泥马体.eot?#iefix") format("embedded-opentype"),
+     	 url("../font/张海山草泥马体.ttf") format("ttf"),
+     	 url("../font/张海山草泥马体.woff") format("truetype"),
+     	 url("../font/张海山草泥马体.svg#ZHSCNM") format("svg");
+}*/
+@font-face {
+    font-family: "ZHSCNM";
+    src: url('../fonts/张海山草泥马体.eot');
+    src: url('../fonts/张海山草泥马体.eot?#iefix') format('embedded-opentype'),
+     	 url('../fonts/张海山草泥马体.woff') format('woff'),
+     	 url('../fonts/张海山草泥马体.ttf') format('truetype'),
+     	 url('../fonts/张海山草泥马体.svg#ZHSCNM') format('svg');
+}
+
+ /*@font-face {
+    font-family: "myfont";
+    src: url('../fonts/张海山草泥马体.eot');
+    src: url('../fonts/张海山草泥马体.eot?#iefix') format('embedded-opentype'),
+     	 url('../fonts/张海山草泥马体.woff') format('woff'),
+     	 url('../fonts/张海山草泥马体.ttf') format('truetype'),
+     	 url('../fonts/张海山草泥马体.svg#张海山草泥马体') format('svg');
+}*/
+
+
+

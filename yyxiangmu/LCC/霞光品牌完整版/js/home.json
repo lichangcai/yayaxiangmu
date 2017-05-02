@@ -1,0 +1,83 @@
+{
+"title" :[
+{"img" : "img/m_guide/home1.png","title" : "双筒"},
+{"img" : "img/m_guide/home2.png","title" : "高清数码"},
+{"img" : "img/m_guide/home3.png","title" : "星星猎人"},
+{"img" : "img/m_guide/home4.png","title" : "军标防水"}
+],
+"facilityArr" :[
+{"img" : "img/m_guide/news_p1.jpg" ,"name" : "星星猎人150倍 天文望远镜","prices":"34"},
+{"img" : "img/m_guide/news_p2.jpg" ,"name" : "连续变倍高清高倍单筒望远镜","prices":"34"},
+{"img" : "img/m_guide/news_p3.jpg" ,"name" : "双筒望远镜 军工品质","prices":"34"},
+{"img" : "img/m_guide/news_p4.jpg" ,"name" : "连续变倍高清高倍单筒望远镜","prices":"34"}
+],
+"modelArr" :[
+{"img" : "img/m_guide/news_p5.jpg"},
+{"img" : "img/m_guide/news_p6.jpg"},
+{"img" : "img/m_guide/news_p7.jpg"},
+{"img" : "img/m_guide/news_p8.jpg"}
+],
+"pro_list" :[
+{"img": "img/pro_list/pro.jpg","name" : "热卖高清数码录像望远镜","prices":"328","price":"34","pic" :"img/pro_list/pro1.png","id":"1","checked":false},
+{"img" : "img/pro_list/pro1.jpg","name" : "高倍高清夜视防水","prices":"328","price":"34","pic" :"img/pro_list/pro1.png","id":"2","checked":false},
+{"img" : "img/pro_list/pro2.jpg","name" : "正品小太阳望远镜 ","prices":"328","price":"34","pic" :"img/pro_list/pro1.png","id":"3","checked":false},
+{"img" : "img/pro_list/pro3.jpg","name" : "天文望远镜","prices":"328","price":"34","pic" :"img/pro_list/pro1.png","id":"4","checked":false},
+{"img" : "img/pro_list/pro4.jpg","name" : "变倍数码望远镜","prices":"328","price":"34","pic" :"img/pro_list/pro1.png","id":"5","checked":false},
+{"img" : "img/pro_list/pro5.jpg","name" : "清新手绘手工陶瓷","prices":"328","price":"34","pic" :"img/pro_list/pro1.png","id":"6","checked":false}
+],
+"shop_cart" :[
+{"img" : "img/shop_cart/pic.jpg" , "name" : "深高清专业高倍天文观星望远镜","prices":"328","unmber" : "1"},
+{"img" : "img/shop_cart/pic.jpg" , "name" : "深高清专业高倍天文观星望远镜","prices":"328","unmber" : "1"}
+],
+"sure_order" :[
+ {"img" : "img/sure_order/s_pic1.jpg","name":"深高清专业高倍天文观星望远镜","num":"1","prices" : "328"}
+ ],
+ "pro_list1" :[
+ {"img" : "img/pro_list/pro4.jpg","name" : "变倍数码望远镜","prices":"34","pic" :"img/pro_list/pro1.png","id":"1","checked":false},
+{"img" : "img/pro_list/pro5.jpg","name" : "清新手绘手工陶瓷","prices":"34","pic" :"img/pro_list/pro1.png","id":"2","checked":false},
+{"img" : "img/pro_list/pro.jpg","name" : "热卖高清数码录像望远镜","prices":"34","pic" :"img/pro_list/pro1.png","id":"3","checked":false},
+{"img" : "img/pro_list/pro1.jpg","name" : "高倍高清夜视防水","prices":"34","pic" :"img/pro_list/pro1.png","id":"4","checked":false},
+{"img" : "img/pro_list/pro2.jpg","name" : "正品小太阳望远镜 ","prices":"34","pic" :"img/pro_list/pro1.png","id":"5","checked":false},
+{"img" : "img/pro_list/pro3.jpg","name" : "天文望远镜","prices":"34","pic" :"img/pro_list/pro1.png","id":"6","checked":false},
+ {"img" : "img/pro_list/pro4.jpg","name" : "变倍数码望远镜","prices":"34","pic" :"img/pro_list/pro1.png","id":"7","checked":false},
+{"img" : "img/pro_list/pro5.jpg","name" : "清新手绘手工陶瓷","prices":"34","pic" :"img/pro_list/pro1.png","id":"8","checked":false},
+{"img" : "img/pro_list/pro.jpg","name" : "热卖高清数码录像望远镜","prices":"34","pic" :"img/pro_list/pro1.png","id":"9","checked":false},
+{"img" : "img/pro_list/pro1.jpg","name" : "高倍高清夜视防水","prices":"34","pic" :"img/pro_list/pro1.png","id":"10","checked":false},
+{"img" : "img/pro_list/pro2.jpg","name" : "正品小太阳望远镜 ","prices":"34","pic" :"img/pro_list/pro1.png","id":"11","checked":false},
+{"img" : "img/pro_list/pro3.jpg","name" : "天文望远镜","prices":"34","pic" :"img/pro_list/pro1.png","id":"12","checked":false},
+ {"img" : "img/pro_list/pro4.jpg","name" : "变倍数码望远镜","prices":"34","pic" :"img/pro_list/pro1.png","id":"13","checked":false},
+{"img" : "img/pro_list/pro5.jpg","name" : "清新手绘手工陶瓷","prices":"34","pic" :"img/pro_list/pro1.png","id":"14","checked":false},
+{"img" : "img/pro_list/pro.jpg","name" : "热卖高清数码录像望远镜","prices":"34","pic" :"img/pro_list/pro1.png","id":"15","checked":false},
+{"img" : "img/pro_list/pro1.jpg","name" : "高倍高清夜视防水","prices":"34","pic" :"img/pro_list/pro1.png","id":"15","checked":false},
+{"img" : "img/pro_list/pro2.jpg","name" : "正品小太阳望远镜 ","prices":"34","pic" :"img/pro_list/pro1.png","id":"16","checked":false},
+{"img" : "img/pro_list/pro3.jpg","name" : "天文望远镜","prices":"34","pic" :"img/pro_list/pro1.png","id":"17","checked":false}
+],
+ "pro_list2" :[
+{"img" : "img/pro_list/pro5.jpg","name" : "清新手绘手工陶瓷","prices":"34","pic" :"img/pro_list/pro1.png"},
+{"img" : "img/pro_list/pro2.jpg","name" : "正品小太阳望远镜 ","prices":"34","pic" :"img/pro_list/pro1.png"}
+
+],
+"order" :[
+ {"img" : "img/sure_order/s_pic1.jpg","name":"深高清专业高倍天文观星望远镜","num":"1","prices" : "328"},
+ {"img" : "img/sure_order/s_pic1.jpg","name":"深高清专业高倍天文观星望远镜","num":"1","prices" : "328"},
+ {"img" : "img/sure_order/s_pic1.jpg","name":"深高清专业高倍天文观星望远镜","num":"1","prices" : "328"},
+ {"img" : "img/sure_order/s_pic1.jpg","name":"深高清专业高倍天文观星望远镜","num":"1","prices" : "328"}
+ ],
+ "user":[
+ {"img":"img/user/tx4.png","name":"待付款"},
+ {"img":"img/user/tx5.png","name":"待发货"},
+ {"img":"img/user/tx6.png","name":"待收货"},
+ {"img":"img/user/tx7.png","name":"待评价"},
+ {"img":"img/user/tx8.png","name":"退款/售后"}
+ ],
+ "c_list":[
+ {"img":"img/user/tx9.png","name":"我的地址"},
+ {"img":"img/user/tx10.png","name":"我的足迹"},
+ {"img":"img/user/tx11.png","name":"我的会员"}
+ ],
+ "b_list":[
+ {"img":"img/user/tx9.png","name":"我的地址"},
+ {"img":"img/user/tx10.png","name":"我的足迹"}
+ ]
+}
+

@@ -1,0 +1,104 @@
+.content .container .center{margin-top: 4%; height: 100%;overflow: hidden;}
+.content .container .center h1 {font-family: "微软雅黑";font-size: 30px;color: #FFFFFF;border-bottom: 1px solid #FFFFFF;}
+.content .container .center span{display: block; font-family: "微软雅黑";font-size: 14px;line-height: 12px;margin-top:0.5% ;}
+.content .container .center h1 img{display: block;margin-left: 1.5%;}
+.content .container .center p{margin-top:-30px;float: right;font-family: "微软雅黑";display:block;font-size: 12px;margin-right: 10px;color: #FFFFFF;}
+.content .container .center p a{color: #FFFFFF;text-decoration: none;}
+/*.content .container .center p a:hover{color: red;}*/
+.content .container .top h1{text-align: center; display: block;}
+.content .container .top h1 a{text-decoration: none;font-family: "微软雅黑";font-size: 16px;color:#FFFFFF;padding-bottom: 5px;}
+
+
+.list{margin-top:5% ;height: 100%;overflow: hidden; }
+.topA{width: 100%;}
+.topA ul{float: left; list-style: none;}
+/*圆的获取方式，border-radius是半径，要转化为块截元素*/
+.topA ul li{}
+.topA i{margin-top:5%; float: left; height: 20px;width: 20px;border-radius:10px ;border: 1px solid red;display: block; }
+.topA .on{background: red;}
+.topA .on a img{background: red;}
+/*.top i:hover{background: red;}*/
+.topA h3{margin-left:6%;font-family:"微软雅黑";font-size: 36px;color: #FFFFFF;float: left;}
+.topA a img{margin-top: 20px;float: right;margin-right: 1%;padding:6px 12px;}
+/*这是圆点的伪类*/
+/*.topA:hover a img{background: red;paddingtext-align: center;display:block;cursor:pointer;}*/
+/*.topA:hover i{background: red;cursor:pointer;}*/
+.text{clear: both;padding-bottom: 50px;}
+.text span{float: left;margin-left: 10%;font-family: "微软雅黑";font-size: 14px;color: #FFFFFF;border-bottom: 1px solid red;/*padding-bottom:2px;*/}
+.text h1 a{clear: both;margin-left:11% ;font-family: "微软雅黑";font-size: 18px;color: #FFFFFF;padding-top: 2%;display: block;text-decoration: none;}
+.text h1 a:hover{color: red;}
+.text p{margin-left: 10%;line-height: 24px;margin-top:2%;color: #FFFFFF;font-family: "微软雅黑";font-size: 14px;margin-right: 1%;}
+.text p img{padding-left: 64px;}
+/*.text img{margin-left: 70%;margin-top: -10%;cursor: pointer;}*/
+
+/*翻页那里的*/
+.number{text-align: center;}
+.number ul{display:inline-block;margin-top: 5%;}
+.number ul li{text-decoration: none;list-style: none;font-family:微软雅黑;font-size:14px;float:left;}
+.number ul li a{color:#333333;text-decoration: none;}
+.number ul li .on{color:#FFF;background:#F00;}
+.number ul li a{padding:6px 10px;background:#FFFFFF;margin:10px 10px;}
+/*.number ul li a:hover{text-decoration: none;background:#fb0000;color:#FFF;}*/
+
+
+@media only screen and (max-width: 1200px){
+	.navbar-nav > li{margin-top: -40px;margin-right: -32px;}
+	.form-group{margin-top: 10px;margin-right: 10px;}
+}
+
+@media (min-width:1081px) and (max-width:1200px){
+	.navbar-nav > li{margin-top: 0px;margin-right: -18px;}
+	.form-group{margin-top: 32px;margin-right: 0px;}
+}
+@media (max-width:1080px) and (min-width:994px){
+	.form-group{margin-top: 32px;}
+	.navbar-nav > li{margin-right: -20px;margin-top: 0px;}
+}
+@media (max-width:993px) and (min-width:768px){
+		.form-group{margin-top:33px; width: 130px;}
+		.navbar-nav > li{margin-top: 7px;margin-right: -5px;margin-left: -15px;}
+		.navbar-header{margin-top: 5px;}
+}
+
+
+@media(min-width:380px) and (max-width: 768px) {
+   .content .container .pic .list .box img{margin: 0 auto;}
+   .nav .on a{color: red;border-left: 1px solid transparent;border-right: 1px solid transparent;}
+   .nav li a{color: #FFFFFF;font-size: 22px; padding: 0px;/*margin:18px 22px;*/line-height: 18px; cursor: pointer;text-align: center;}
+   .nav li a{margin-top: 61px;}
+   .nav ul{ padding-left:0%;padding-right:0%;padding-top: 15px;width: 100%;overflow: hidden;}
+   .navbar-nav > li { margin-top: -40px;margin-right: 0px; }
+   .form-group{width: 80%;margin-right: 10%;height: 36px;}
+   .icon button{height: 34px;width:10%}
+   .icon input{height: 34px;font-size: 22px;padding:0px;width: 88%;padding: 0px 5px;}
+   .content .container .pic .list .box p:nth-child(1){display: none;}
+   .content .container .pic .list .box p:nth-child(2){width: 100%; padding-left: 0px;text-align: center;}
+	}
+	
+@media(min-width:380px) and (max-width:480px){
+	  .topA i{margin-top: 8%;}
+}	
+@media(min-width:320px) and (max-width: 380px){
+	.nav .on a{color: red;border-left: 1px solid transparent;border-right: 1px solid transparent;}
+   .nav li a{color: #FFFFFF;font-size: 22px; padding: 0px;/*margin:18px 22px;*/line-height: 18px; cursor: pointer;text-align: center;}
+   .nav li a{margin-top: 61px;}
+   .nav ul{ padding-left:0%;padding-right:0%;padding-top: 15px;width: 100%;overflow: hidden;}
+   .navbar-nav > li { margin-top: -40px;margin-right: 0px; }
+   .form-group{width: 80%;margin-right: 10%;height: 36px;}
+   .icon button{height: 34px;width:10%}
+   .icon input{height: 34px;font-size: 22px;padding:0px;width: 88%;padding: 0px 5px;}
+   .content .container .top h1 a{text-decoration: none;font-family: "微软雅黑";font-size: 12px;color:#FFFFFF;padding-bottom: 5px;}
+   .content .container .center h1{font-size: 24px;}
+   .topA i{margin-top: 11%;}
+}	
+
+
+@media only screen and (min-width: 768px) {
+	.content .container .on h1 a {border-bottom: 10px solid red;}
+	.topA:hover a img{background: red;paddingtext-align: center;display:block;cursor:pointer;}
+	.topA:hover i{background: red;cursor:pointer;}
+	.nav li a:hover{color: red;border-left: 1px solid red;border-right: 1px solid red;}
+	.content .container .center p a:hover{color: red;}
+	.content .container .top:hover h1 a{color: red;border-bottom: 10px solid red;}
+	.number ul li a:hover{text-decoration: none;background:#fb0000;color:#FFF;}
+}

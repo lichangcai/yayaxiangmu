@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/pay.css" />
+		<link rel="stylesheet" href="css/pay_top.css" />
+		<title>支付</title>
+	</head>
+	<!--ng-controller 指令用于为你的应用添加控制器。在控制器中，你可以编写代码，制作函数和变量，并使用 scope 对象来访问。-->
+	<!--homeController是ng-controller自己定义的名字-->
+	<body ng-controller="payController">
+		<ion-view class="pay">
+			<!--ion-hearder-bar 这个是固定在屏幕顶部的一个头部标题栏的用法。-->
+			<ion-header-bar class="head-top">
+				<ul>
+					<li class="item-icon-left item-icon-right">
+						<i class="ion-ios-undo-outline icon item-icon-left"ng-click="backs()" ></i>
+						<div class="header_center">
+						支付
+					   </div>						
+					</li>
+				</ul>
+			</ion-header-bar>
+			<!--top这是结尾-->
+			<!--<这是自动轮播的代码 要加上ion-content才可以居中-->
+				<ion-content class="content">
+					<div class="top">
+						<h1>收货地址</h1>
+						<p>订单号码：4554312123511</p>
+						<p>订单总额：<i>￥328</i></p>
+						<p>配送消息：山西省太原市平阳路高新街</p>
+						<p>张某某 <i>123465789</i></p>
+						<p>发票信息：普通发票（个人）</p>
+					</div>
+					<div class="way">
+						<h2>确认付款方式</h2>
+						<label>
+							<p class="active">
+								<input type="radio"name="df" />
+								<span></span>
+								中国储蓄银行<i>xxx369</i><i>储蓄|快捷</i>							    
+							</p>
+						</label>
+						<label>
+							<p>
+								<input type="radio" name="df"/>
+								<span></span>
+								蚂蚁花呗<i>（推荐）</i>								
+							</p>
+						</label>
+						<label>
+							<p>						
+								<input type="radio" name="df"/>
+								<span></span>支付宝						
+							</p>
+						</label>
+					</div>
+					<div class="fan">
+						<button>其他支付方式</button>
+						<button>添加银行卡/快捷</button>						
+					</div>	
+					<div class="anquan">					   
+					   <p>
+					   	 <img src="img/pro_details/pc.png"/>你在安全环境支付  请放心！
+					   </p>						
+					</div>
+					<p class="zhi">支付密码：</p>
+					<div class="input_list">
+						<input type="password" id="password1" class="input_pass" maxlength="1" ng-keyup="ceshi()" ng-focus="jiaodian(0)"/>
+						<input type="password" id="password2" class="input_pass" maxlength="1" ng-keyup="ceshi()" ng-focus="jiaodian(0)"/>
+						<input type="password" id="password3" class="input_pass" maxlength="1" ng-keyup="ceshi()" ng-focus="jiaodian(0)"/>
+						<input type="password" id="password4" class="input_pass" maxlength="1" ng-keyup="ceshi()" ng-focus="jiaodian(0)"/>
+						<input type="password" id="password5" class="input_pass" maxlength="1" ng-keyup="ceshi()" ng-focus="jiaodian(0)"/>
+						<input type="password" id="password6" class="input_pass" maxlength="1" ng-keyup="ceshi()" ng-focus="jiaodian(0)"/>
+					</div>
+				    <p class="mi">请输入六位密码<i>忘记密码</i></p>
+				    <div class="queren">
+				    	<h1>确认订单信息</h1>
+				    	<div class="list">
+							<div class="left">
+								<label>
+									<input type="checkbox" />
+									   <span></span>								
+								</label>
+								<a ui-sref="pro_details"><img src="img/pay/pc.jpg" /></a>
+							</div>
+							<div class="right">
+								<h3 ui-sref="pro_details">深高清专业高倍天文观星望远镜</h3>
+								<p class="p_jia">价格：<i>￥328</i></p>
+								<div class="bottom">
+									<div>
+										<span>数量</span>
+										<div>								
+											<input type="text" value="1" class="kuang"/>								
+										</div>
+									</div>
+									<span>删除</span>
+								</div>
+								<p class="xiao">风格：小清新</p>
+								
+							</div>
+				    	</div>
+				    </div>
+                    <div class="foo">
+						<p>合计：<i>328</i>元 </p>							
+						<p><button ng-click="showPopup()">立即支付</button></p>	
+				</div>
+				</ion-content>
+				
+			    <!--这里是底部的代码-->
+			    <ion-footer-bar>
+				<!--<div class="bar-footer">-->
+				    <ul>
+				   		<li  ui-sref="home">
+				   			<div>
+				   				<i class="ion-home"></i>
+				   				<p>主页</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="prostyle">
+				   			<div>
+				   				<i class="icon ion-ios-settings-strong" ></i>
+				   				<p>分类</p>
+				   			</div>
+				   			
+				   			
+				   		</li>
+				   		<li>
+				   			<div><i class="ion-ios-lightbulb-outline" ></i>
+				   				<p>发现</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="shop_cart">
+				   			<div>
+				   				<i class="icon ion-ios-cart" ></i>
+				   				<p>购物车</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="user">
+				   			<div>
+				   				<i class="ion-person-add" ></i>
+				   				<p>我</p>
+				   			</div>
+				   		</li>
+						
+					</ul>
+			</ion-footer-bar>
+		</ion-view>
+	</body>
+
+</html>

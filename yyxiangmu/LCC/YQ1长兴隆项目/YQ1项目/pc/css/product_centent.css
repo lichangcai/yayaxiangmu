@@ -1,0 +1,308 @@
+.centent{
+	margin-bottom:50px;
+	height:100%;
+	overflow:hidden;
+	margin-top:53px;
+	}
+
+/*左边的样式*/
+.centent .mg .left{
+	height:100%;
+	overflow:hidden;
+	width:284px;
+	}
+.centent .mg .left .top{
+	width:240px;
+	height:100%;
+	overflow:hidden;
+	background:url(../images/news-top.jpg);
+	}
+.centent .mg .left .top h3{
+	line-height:50px;
+	font-family:微软雅黑;
+	font-size:18px;
+	margin-left:50px;
+	color:#333333;
+	font-weight:normal;
+	}
+.centent .mg .left .topA {
+    height:100%;
+	overflow:hidden;
+	width:240px;
+	background:url(../images/pro-topA.jpg)
+	}
+.centent .mg .left .topA ul{
+	padding-top:4px;
+	text-align:center;
+	}
+.centent .mg .left .topA ul li a{
+	font-family:微软雅黑;
+	color:#333333;
+	line-height:31px;
+	font-size:14px;
+	}
+.centent .mg .left .topA ul li a:hover{
+	text-decoration:underline;
+	color:red;
+	}	
+.centent .mg .left .topA ul li .on{
+	color:#F00;
+	text-decoration:underline;
+	}
+	
+.centent .left img{
+	margin-top:20px;
+	float:left;
+	width:240px;
+	height:100%;
+	overflow:hidden;
+	}
+.centent .mg .left .contact{
+	width:240px;
+	height:170px;
+	background:#9fded2;
+	float:left;
+	}
+.centent .mg .left .contact ul{
+	color:#333333px;
+	font-family:微软雅黑;
+	font-size:12px;
+	margin-left:10px;
+	}
+.centent .mg .left .contact ul li{
+	color:#333333;}
+
+
+
+
+.centent .mg .right{
+	overflow:hidden;
+	height:100%;
+	width:916px;
+	}
+	.centent .mg .right .top{
+	height:28px;
+	border-bottom:2px solid #999;
+	}
+.centent .mg .right .top p{
+	color:#333333;
+	font-family:微软雅黑;
+	font-size:12px;
+	line-height:15px;
+    }
+.centent .mg .right .top p span{
+	color:red;}
+.centent .mg .right .top-A{
+	height:100%;
+	overflow:hidden;
+	}
+.centent .mg .right .top-A p{
+	font-family:微软雅黑;
+	font-size:18px;
+	text-align:center;
+	padding-top:20px;
+	color:red;
+	cursor: pointer;
+	}
+
+
+
+
+	
+/*margin-bottom:20px是表示距离底部20px*/
+.centent .mg .right .pic{
+	margin-bottom:40px;
+	float:left;
+	width:265px;
+	height:100%;
+	overflow:hidden;
+	
+}
+.centent .mg .right .pic img{
+	display: block;
+	width: 234px;
+	height: 154px;
+	border:2px solid #9af8e9;
+	}
+/*图片的公共样式*/
+
+.centent .mg .right .ov:hover .pic img{
+	border:2px solid red;
+}
+.centent .mg .right .ov:hover .textA h1 a{
+	color:red;
+}
+
+.centent .mg .right .textA{
+	width:651px;
+	float:right;
+	font-family:微软雅黑;
+	}
+.centent .mg .right .textA h1{
+	line-height:24px;
+	font-size:14px;
+	}
+.centent .mg .right .textA h1 a{
+	color:#333333;
+	}
+.centent .mg .right .textA h1 a:hover{
+	color:#fc0404;
+	}
+.centent .mg .right .textA P{
+	text-indent:2em;
+	font-size:12px;
+	}
+.centent .mg .right .textA h2{
+	float:right;
+	}
+.centent .mg .right .textA h2 a{
+	color:#333333;
+	}
+.centent .mg .right .textA h2 a:hover{
+	color:#fc0404;
+	}
+
+
+
+
+.number{
+	margin-top:20px;
+	text-align:center;
+}
+.number ul{
+	display:inline-block;
+}
+
+.number ul li{
+	font-family:微软雅黑;
+	font-size:14px;
+	float:left	
+}
+.number ul li a{
+	color:#333333;}
+.number ul li .on{
+	color:#FFF;
+	background:#F00;}
+.number ul li a{
+	padding:12px;
+	background:#9fded2;
+	margin:10px 12px;
+}
+
+.number ul li a:hover{
+	background:#fb0000;
+	color:#FFF;
+}	
+.number ul li input{
+	outline:none;
+	border:2px solid #999999;
+	padding:5px;
+	margin-top:-25px;
+	width:50px;
+	height:26px;
+}
+/*.centent .mg .right .number{
+	padding-top:20px;
+	height:44px;
+	text-align:center;
+	}
+.centent .mg .right .number ul{
+	display: inline-block;
+	*display: inline;
+	zoom:1;
+	text-align:center;
+	list-style:none;
+	}
+.centent .mg .right .number ul li{
+	font-family:微软雅黑;
+	font-size:14px;
+	float:left;
+	line-height:44px;
+	margin-left:16px;
+    }
+.centent .mg .right .number ul li a{
+	color:#333333;
+	}
+.centent .mg .right .number ul li div{
+	background:#9fded2;
+	padding:0 13px;
+	height:44px;
+	}
+.centent .mg .right .number ul li span{
+	height:44px;
+	padding:12px 17px;
+	background:#9fded2;
+	}
+.centent .mg .right .number ul li .input{
+	background:#FFF;
+	width:125px;
+	}
+.centent .mg .right .number ul li .input .kuang{
+	background:#FFF;
+	width:60px;
+	height:42px;
+	}
+.centent .mg .right .number ul li .line{
+	background:#FFF;
+	}
+.centent .mg .right .number ul li div a{
+	display:block;
+	}
+.centent .mg .right .number li .kuang{
+	padding:0 5px;
+	height:30px;
+	width:60px;
+	border:2px solid #999999;
+	}
+.centent .mg .right .number li :hover{
+	cursor:pointer;
+	background:#fb0000;
+   }
+.centent .mg .right .number li:hover a{
+	color:#FFF;}*/	
+/*.centent .mg .right .number{
+	height:44px;
+	text-align:center;
+	}
+.centent .mg .right .number ul{
+	display: inline-block;
+	*display: inline;
+	zoom:1;
+	text-align:center;
+	list-style:none;
+	}
+.centent .mg .right .number ul li{
+	font-family:微软雅黑;
+	font-size:14px;
+	float:left;
+	line-height:44px;
+	margin-left:16px;
+    }
+.centent .mg .right .number ul li div{
+	background:#096;
+	width:40px;
+	height:40px;
+	}
+.centent .mg .right .number ul li .input{
+	background:#FFF;
+	width:125px;
+	}
+.centent .mg .right .number ul li .input .kuang{
+	background:#FFF;
+	}
+.centent .mg .right .number ul li .line{
+	background:#FFF;
+	}
+.centent .mg .right .number ul li div a{
+	display:block;
+	}
+.centent .mg .right .number li .kuang{
+	height:30px;
+	width:60px;
+	border:2px solid #666;
+	}
+.centent .mg .right .number li :hover{
+	background:#fb0000;
+   }
+.centent .mg .right .number li a:hover{
+	color:#FFF;}*/

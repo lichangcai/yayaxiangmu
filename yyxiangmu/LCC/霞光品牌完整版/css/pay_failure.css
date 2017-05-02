@@ -1,0 +1,54 @@
+
+.pay_failure .faliure{height: 1.1rem;display: flex;align-items: center;justify-content: center;border-bottom: 1px solid #A0A0A0;}
+.pay_failure .faliure img{width: 5%;margin-right: 0.4rem;}
+.pay_failure .faliure span{font-family: "微软雅黑";font-size: 0.3rem;}
+.pay_failure .top{overflow: hidden; padding-left: 3%;padding-top:0.2rem;border-bottom: 1px solid #aaa;padding-bottom: 0.5rem;}
+.pay_failure .top h1{margin: 0px;font-size: 0.28rem;}
+.pay_failure .top p{margin-left: 1.5rem;font-family: "微软雅黑";font-size: 0.28rem;padding: 0.17rem 0;}
+.pay_failure .top p:nth-child(3) i{color: red;}
+.pay_failure .top p:nth-child(5){margin-left: 2.9rem;}
+.pay_failure .top p:nth-child(5) i{padding-left: 0.6rem;}
+
+.pay_failure .queren{width: 100%; margin-bottom: 0.5rem;}
+.pay_failure .queren h1{margin-bottom: 0px; font-family: "微软雅黑";font-size: 0.28rem;padding-left: 0.45rem;padding: 0.18rem 0; 
+  padding-left: 3%;}
+.pay_failure .queren .cart{ height: 2.3rem;width: 100%;background: #eeeeee;}
+.pay_failure .list{ width: 100%;padding: 0px; margin: 0 auto;height:3.5;rem;background: #EAE8E8;
+           display: flex;overflow: hidden;}
+.pay_failure .list .left{width: 40%;height: 100%;margin-left: -0.2rem;display: flex;align-items: center;height: 3.5rem;}
+.pay_failure .list img{border: 1px solid #aaa;border-radius: 10px;margin-left: 0.2rem;width: 58%;}
+.pay_failure .list label{float: left;width: 15px;height: 15px;border-radius: 50%;margin-left: 0.5rem;}
+.pay_failure .list .right{color: #969696; width: 60%; margin-left: 0.1rem;height: 3.5rem;}
+.pay_failure .list .right h3{padding-top: 0.28rem;margin: 0;font-family: "微软雅黑";font-size: 0.28rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.pay_failure .p_jia{ font-family: "微软雅黑";font-size: 0.28rem;margin-top:0.2rem ;}
+.pay_failure .p_jia i{color: red;font-size: 0.28rem;}
+/* justify-content: space-between;排在一个div里面的两边*/
+.pay_failure .bottom{margin-top:0.2rem ; display: flex; justify-content: space-between; align-items: center; font-family: "微软雅黑";font-size: 0.15rem;}
+.pay_failure .bottom div {display: flex;align-items: center;}
+.pay_failure .bottom span{font-size: 0.28rem;padding-right:1.5% ;width: 1rem;}
+.pay_failure .bottom div span{font-size: 0.28rem;font-family: "微软雅黑";}
+.pay_failure .bottom div div span{font-family: "微软雅黑";font-size: 0.28rem;}
+.pay_failure .bottom div div{display: flex;margin-left: 0.2rem;}
+.pay_failure .bottom div div>button{border: none;background: inherit;font-size: 0.28rem;}
+.pay_failure .bottom div div .kuang{width:0.57rem;text-align: center;height: 0.45rem;border: 1px solid #aaa; font-family: "微软雅黑";font-size: 0.24rem;}
+.pay_failure .xiao{font-family: "微软雅黑";font-size: 0.28rem;margin-top:0.2rem ;}
+/*做一个为元素*/
+.pay_failure .list label {position: relative;display: flex;align-items: center;}
+.pay_failure .list label  input{visibility: hidden;}
+.pay_failure .list label  span{width: 0.2rem;height: 0.2rem;background:#fff;border-radius: 50%;display: inline-block;position: absolute;
+border: 1px solid #aaa;margin-left: -0.01rem;}
+.pay_failure .list label  input:checked+span:before{content: "";width: 0.2rem;height: 0.2rem;position: absolute;border-radius: 50%;
+background: #fff;border: 0.05rem solid #707070;top: -0.01rem;margin-left: -0.01rem;}
+/*end*/
+
+
+.pay_failure .foo{display: flex;width: 100%;margin-top: 0.5rem; padding: 0 3%;margin-bottom: 0.9rem;height: 2.5rem;border-top: 1px solid #AAAAAA;}
+.pay_failure .foo p:nth-child(1) i{color: red;}
+.pay_failure .foo p{margin-bottom: 0px; font-family: "微软雅黑";font-size: 0.28rem;   width: 100%;align-items:center ; display: flex;}
+.pay_failure .foo p button{ width: 1.5rem;height:0.5rem;color: #FFFFFF;border: none;background: red;font-family: "微软雅黑";font-size: 0.24rem;margin-left: 1rem;color: #fff;background: #535353;}
+.pay_failure .has-footer{ margin-bottom: 0.2rem;}
+.pay_failure .bar-footer{height: 0.95rem;background: #535353;color: #fff;min-height: 50px;}
+.pay_failure .bar-footer ul{width:100%;display: flex;}
+.pay_failure .bar-footer ul li{width:20%;text-align: center;font-size: 0.32rem;display: flex;align-content: center;justify-content: center;}
+.pay_failure .bar-footer ul li div i:before{font-size: 0.5rem;}
+.pay_failure .bar-footer ul li p {font-size: 0.24rem;line-height: 0.35rem;}

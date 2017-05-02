@@ -1,0 +1,7 @@
+.shop_cart .head-top{height:0.9rem;width: 100%;background: #707070;display: flex;align-items: center;}
+.shop_cart .item-icon-left{margin-left:0rem;padding-left: 0.5rem;}
+/*这是一个图标的样式代码*/
+.shop_cart .ion-ios-undo-outline{color: #fff}
+.shop_cart .item-icon-left .icon:before, .item-icon-right .icon:before{font-size: 0.7rem;margin-left: -0.2rem;}
+.shop_cart .header_center{width: 5.7rem;font-size: 0.26rem;color: #e4dfde;text-align: center;font-family: "微软雅黑";}
+

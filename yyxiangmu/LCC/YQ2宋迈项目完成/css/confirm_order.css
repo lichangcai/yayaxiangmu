@@ -1,0 +1,189 @@
+body{font-family: "微软雅黑";}
+	.top h1{padding-left:5px ;}
+.top h1 a{text-decoration: none; font-family: "微软雅黑";font-size:36px;color: #FFFFFF;border-left: 10px solid red;padding-left: 5px;}
+.top img{float: right;margin-right: 50px;margin-top: 20px;width: 80%;}
+.shop_car{}
+.shop_car p{float: left;color: #FFFFFF;line-height: 18px;font-family: "微软雅黑";font-size: 24px;}
+.shop_car p:nth-child(1){margin-left: 35px;}
+.shop_car p:nth-child(2){margin-left: 100px;}
+.shop_car p:nth-child(3){float: right;}
+
+.shopcar table{border: 1px solid red;}
+.shopcar table tr:nth-child(1) td{color: #FFFFFF; font-family: "微软雅黑";font-size: 14px;padding: 10px 0px;padding-left: 10px;}
+.shopcar table tr:nth-child(2) td:nth-child(2){padding-left: 8%;}
+
+.shopcar table tr:nth-child(2){background: #68100d;}
+.shopcar table tr:nth-child(2) td{padding: 5px 0px;color: #FFFFFF;font-family: "微软雅黑";font-size: 14px;}
+.shopcar table tr:nth-child(2) td:nth-child(1) #checkAll{cursor: pointer;}
+.shopcar table tr:nth-child(3){border-bottom: 1px solid red;}
+.shopcar table tr:nth-child(3) td:nth-child(1) input{cursor: pointer;}
+.shopcar table tr:nth-child(3) td{text-align: center;padding: 30px 0px;}
+.shopcar table tr:nth-child(3) td img{float: left;display: block;}
+.shopcar table tr:nth-child(3) td p{float: left;margin-left:20px;}
+.shopcar table tr:nth-child(3) td p:nth-child(3) span{color: #666666;font-family: "微软雅黑";}
+.shopcar table tr:nth-child(3) td:nth-child(2) p:nth-child(1){color: #595950;}
+.shopcar table tr:nth-child(3) td:nth-child(2) p {color: #FFFFFF;margin-top:20px;margin-right: 20px;
+font-family: "微软雅黑";}
+.shopcar table tr:nth-child(3) td:nth-child(2) p a{color: #FFFFFF;text-decoration: none;}
+
+.shopcar table tr:nth-child(3) td:nth-child(3) span:nth-child(1){float:none;}
+.shopcar table tr:nth-child(3) td:nth-child(3)span s{color:#666666;	}
+.shopcar table tr:nth-child(3) td:nth-child(3) p{float: left;clear: both;}
+.shopcar table tr:nth-child(3) td:nth-child(3) p:nth-child(1){color: #666666;font-family: "微软雅黑";font-size: 14px;}
+.shopcar table tr:nth-child(3) td:nth-child(3) p:nth-child(2){color: #FFFFFF;font-family: "微软雅黑";font-size: 14px;}
+.shopcar table tr:nth-child(3) td:nth-child(3) p:nth-child(3) span:nth-child(1) {color: #FFFFFF;font-family: "微软雅黑";font-size: 14px;line-height:24px;height: 24px;float:left;background: #660603;width: 200%;border-radius: 12px;}
+.shopcar table tr:nth-child(3) td:nth-child(4){text-align: center;}
+.shopcar table tr:nth-child(3) td:nth-child(4) span{color:#fff;}
+.shopcar table tr:nth-child(3) td:nth-child(4) input{text-align: center; width:20px; color: #FFFFFF;background: inherit; border: none;outline: none; }
+.shopcar table tr:nth-child(3) td:nth-child(4) .prd_subNum{width: 20px;background: #666666;}
+.shopcar table tr:nth-child(3) td:nth-child(4) .prd_addNum{width: 20px;background: #666666;}
+
+.shopcar table tr:nth-child(3) td:nth-child(5){font-size: 14px;}
+.shopcar table tr:nth-child(3) td:nth-child(6){color: #FFFFFF;font-size: 14px;}
+
+.shopcar table tr:nth-child(4){border-bottom: 1px solid red;}
+.shopcar table tr:nth-child(4) td{color: #FFFFFF; font-family: "微软雅黑";font-size: 14px;padding: 10px 0px;padding-left: 10px;}
+
+.shopcar table tr:nth-child(5) span{color: #FFFFFF;font-family: "微软雅黑";font-size: 14px}
+.shopcar table tr:nth-child(5) label{border: 1px solid #666666;padding: 3px 15px;margin-left: 30px; cursor: pointer;}
+.shopcar table tr:nth-child(6) label{font-family: "微软雅黑";font-size: 14px;padding: 10px 60px; cursor: pointer;}
+.shopcar table tr:nth-child(6) label span{padding-left: 10px;color: #FFFFFF;}
+.shopcar table tr:nth-child(6) label i{padding-left: 20px;font-style:normal}
+.left{height: 100%;overflow: hidden; width:340px;border:1px solid red;margin-left: 16px;margin-top: 20px;}
+.left p{float: left;font-family: "微软雅黑";font-size: 24px;color: #FFFFFF;width: 100%;}
+.left span{color: #FFFFFF;font-family: "微软雅黑";font-size: 14px;}
+.left label{color: #FFFFFF;font-family: "微软雅黑";font-size: 14px;margin-right: 20px;margin-top: 10px;font-weight:normal}
+.right{margin-top: 20px;}
+.right p{color: #FFFFFF;font-family: "微软雅黑";font-size: 14px;display: block;float: right;}
+.right p span{color: red;}
+.di {margin-top: 20px;color: #666666;}
+.di input{color: #FFFFFF;font-size: 14px;}
+
+label{font-weight: normal;font-family: "微软雅黑";color: #FFFFFF;font-size: 14px;}
+.invoice{outline: none; background: inherit;font-family: "微软雅黑";color: #666666;font-size: 14px;padding: 5px 5px;width: 350px;border: 1px solid #666666;}
+.din{float: right;border-radius: 0px;background: red;border: none;font-family: "微软雅黑";font-size: 18px;margin-right: 50px;}
+.di button a{font-family: "微软雅黑";font-size: 18px;color: #FFFFFF;text-decoration: none;}
+
+@media (min-width:320px) and (max-width:991px){
+	
+
+.shopcar table tr:nth-child(2) td:nth-child(2){padding-left: 0%;}
+}
+
+/*这是图片的兼容*/
+@media (min-width:1200px){
+	.shop_car p:nth-child(1) {margin-left: 12px;}
+	.shop_car p:nth-child(2) { margin-left:140px;}
+	.shop_car p:nth-child(3) {margin-right: 10px;}
+}
+@media (min-width:1000px) and (max-width:1200px){
+	.top h1 a{font-size: 30px;}
+	.shop_car p{font-size: 22px;}
+	.shop_car p:nth-child(1) {margin-left: 12px;}
+	.shop_car p:nth-child(2) { margin-left:93px;}
+	.shop_car p:nth-child(3) {margin-right: 10px;}
+}
+@media (min-width:768px) and (max-width:1000px){
+	
+.top h1 a{font-size: 26px;}
+.shop_car p{font-size: 18px;margin-top: -20px;padding-bottom:20px ;}
+.shop_car p:nth-child(1) {margin-left:-10px;}
+.shop_car p:nth-child(2) { margin-left:70px;}
+.shop_car p:nth-child(3) {margin-right: 10px;}
+}
+
+/*手机版的代码*/
+@media (min-width:320px) and (max-width:474px){
+	.top img{width: 100%;margin-right: 0px;}
+	.shop_car p:nth-child(1){margin-left: 0px;}
+	.shop_car p:nth-child(2){margin-left: 20%;margin-right: 5px;}
+	.shop_car p:nth-child(3){float: right;}
+	.shop_car p{font-size: 16px;line-height: 46px;}
+	
+	.shopcar table tr:nth-child(3) td:nth-child(3){font-size: 12px;}
+	.shopcar table tr:nth-child(3) td:nth-child(6){font-size: 12px;}
+	.invoice{width: 90%;}
+
+}
+@media (min-width:320px) and (max-width:520px){
+	.shopcar table tr td:nth-child(4) {padding:0px 5% ;}
+	
+}
+
+@media (min-width:475px) and (max-width:600px){
+	.top img{width: 100%;margin-right: 0px;}
+	.shop_car p:nth-child(1){margin-left: 0px;}
+	.shop_car p:nth-child(2){margin-left: 30%;margin-right: 5px;}
+	.shop_car p:nth-child(3){float: right;}
+	.shop_car p{font-size: 18px;line-height: 46px;}
+}
+@media (min-width:601px) and (max-width:768px){
+	.top img{width: 100%;margin-right: 0px;}
+	.shop_car p{font-size:20;px;line-height: 46px;}
+	.shop_car p:nth-child(1){margin-left: 0px;}
+	.shop_car p:nth-child(2){margin-left: 30%;margin-right: 5px;}
+	.shop_car p:nth-child(3){float: right;}
+}	
+/*end*/
+@media (min-width:320px) and (max-width:768px){
+	.col-sm-12, .col-md-12, .col-lg-12{padding: 5px 5px;}
+	.right p{float: none;}
+	.left label{font-size: 13px;}
+	.left span{font-size: 13px;}
+	.din{margin-top: 10px;}
+	table tr:nth-child(2) td:nth-child(5){width:30%}
+	
+}
+@media (min-width:768px) and (max-width:1199px){
+	.right p{float: none;}
+	.shopcar table tr:nth-child(3) td img{width: 33%;}
+}
+
+@media (min-width:768px) and (max-width:991px){
+	.shopcar table tr:nth-child(3) td img{width: 72%;}
+}
+@media (min-width:1081px) and (max-width:1200px){
+	.navbar-nav > li{margin-top: 0px;margin-right: -18px;}
+	.form-group{margin-top: 32px;margin-right: 0px;}
+}
+@media (max-width:1080px) and (min-width:994px){
+	.form-group{margin-top: 32px;}
+	.navbar-nav > li{margin-right: -20px;margin-top: 0px;}
+}
+@media (max-width:993px) and (min-width:768px){
+		.form-group{margin-top:33px; width: 130px;}
+		.navbar-nav > li{margin-top: 7px;margin-right: -5px;margin-left: -15px;}
+		.navbar-header{margin-top: 5px;}
+		.shopcar table tr:nth-child(5) label{margin-left:7px;margin-right: 17px;}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+	.shopcar table tr:nth-child(5) span{display: block;}
+	.left{width: 80%;}
+	.shopcar table tr:nth-child(5) label{margin-left: 0;padding: 3px 4px;margin-top: 10px;}
+	.shopcar table tr:nth-child(5) label img{width: 50%;}
+	.shopcar table tr:nth-child(6) label{padding: 10px 23px;}
+	
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+	.shopcar table tr:nth-child(3) td img{width: 85%;margin-top:10px ;}
+	.shopcar table tr:nth-child(3) td:nth-child(2) p{margin-right: 0;}
+	.shopcar table tr:nth-child(3) td p{margin-left: 0;}
+	.shopcar table tr:nth-child(3) td{padding: 0;}
+	.shopcar table tr:nth-child(3) td:nth-child(3) p:nth-child(1){font-size: 12px;}
+	.shopcar table tr:nth-child(3) td:nth-child(3) p:nth-child(2){font-size: 12px;}
+	.shopcar table tr:nth-child(3) td:nth-child(3) p:nth-child(3) span:nth-child(1){font-size: 12px;}
+	
+	.shopcar table tr:nth-child(3) td:nth-child(4){margin-right: -10px;padding: 10px;}
+	.shopcar table tr:nth-child(3) td:nth-child(5){padding:0 5px;}
+	.shopcar table tr:nth-child(3) td:nth-child(2) p a{width: 80%;margin-top: 10px;font-size: 12px;}
+	.shopcar table tr:nth-child(5) label{padding: 3px 1px;}
+	.left{width: 93%;}
+	.din{margin-right: 0px;}
+	.right p{font-size: 13px;}
+	.invoice{width: 100%;}
+	
+}
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+	table tr:nth-child(2) td:nth-child(5){width: 17%;}
+}

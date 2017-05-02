@@ -1,0 +1,86 @@
+.content .container img{max-width: 100%;}
+.content .container .center{margin-top: 4%; height: 100%;overflow: hidden;}
+.content .container .center h1 {font-family: "微软雅黑";font-size: 30px;color: #FFFFFF;border-bottom: 1px solid #FFFFFF;}
+.content .container .center span{display: block; font-family: "微软雅黑";font-size: 12px;line-height: 12px;margin-top:0.5% ;}
+.content .container .center h1 img{display: block;margin-left: 1.5%;}
+.content .container .center p{margin-top:-30px;float: right;font-family: "微软雅黑";display:block;font-size: 12px;margin-right: 10px;color: #FFFFFF}
+.content .container .center p a{color:#FFFFFF;text-decoration: none;}
+.content .container .center p a:hover{color: red;}
+.content .container .pic h2{text-align: center; display: block;}
+.content .container .pic h2 a{text-decoration: none;font-family: "微软雅黑";font-size: 16px;color:#FFFFFF;padding-bottom: 5px;}
+.content .container .pic .list:hover h2 a{color: red;border-bottom: 10px solid red;}
+.content .container .pic .list .box{ margin-top:30%; /*width: 275px;height: 385px;*/background: red;position: relative;}
+.content .container .pic .list .box img{float: left;width: 100%;}
+.content .container .pic .list .box .text{position: relative;bottom: 30px;}
+.content .container .pic .list .box p{ /*position: absolute;*/height: 30px;float: left;margin: 0;padding-left:10px ;}
+
+.content .container .pic .list .box p:nth-child(1){width: 60%;background: #c2bcbc;height: 30px;font-family: "微软雅黑";}
+.content .container .pic .list .box p:nth-child(1) a{color: #FFFFFF;text-decoration:none;line-height: 30px;display: block;}
+.content .container .pic .list .box p:nth-child(2){width: 40%;background: red;font-family: "微软雅黑";}
+.content .container .pic .list .box p:nth-child(2) a{color: #FFFFFF;text-decoration: none;line-height: 30px;display: inline-block;font-family: "微软雅黑";}
+.content .container .pic .list:hover .box p:nth-child(1){background: #db4944;}
+/*翻页那里的*/
+.number{text-align: center;}
+.number ul{display:inline-block;margin-top: 5%;}
+.number ul li{text-decoration: none;list-style: none;font-family:微软雅黑;font-size:14px;float:left;}
+.number ul li a{color:#333333;}
+.number ul li .on{color:#FFF;background:#F00;}
+.number ul li a{padding:6px 10px;background:#FFFFFF;margin:10px 10px;}
+.number ul li a:hover{text-decoration: none;background:#fb0000;color:#FFF;}
+
+
+
+
+@media only screen and (max-width: 1200px){
+	.navbar-nav > li{margin-top: -40px;margin-right: -32px;}
+	.form-group{margin-top: 10px;margin-right: 10px;}
+}
+
+@media (min-width:1081px) and (max-width:1200px){
+	 .content .container .pic .list .box p:nth-child(1){width: 50%;}
+	  .content .container .pic .list .box p:nth-child(2){width: 50%;}
+	.navbar-nav > li{margin-top: 0px;margin-right: -18px;}
+	.form-group{margin-top: 32px;margin-right: 0px;}
+}
+@media (max-width:1080px) and (min-width:994px){
+	 .content .container .pic .list .box p:nth-child(1){width: 50%;}
+	  .content .container .pic .list .box p:nth-child(2){width: 50%;float: left;}
+	.form-group{margin-top: 32px;}
+	.navbar-nav > li{margin-right: -20px;margin-top: 0px;}
+}
+
+
+@media (max-width:993px) and (min-width:768px){
+	.content .container .pic .list .box p:nth-child(1){display: none;}
+	  .content .container .pic .list .box p:nth-child(2){width: 100%;float: left;text-align: center;padding-left: 0px;}
+		.form-group{margin-top:33px; width: 130px;}
+		.navbar-nav > li{margin-top: 7px;margin-right: -5px;margin-left: -15px;}
+		.navbar-header{margin-top: 5px;}
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+   .content .container .pic .list .box img{margin: 0 auto;}
+   .nav .on a{color: red;border-left: 1px solid transparent;border-right: 1px solid transparent;}
+   .nav li a{color: #FFFFFF;font-size: 22px; padding: 0px;/*margin:18px 22px;*/line-height: 18px; cursor: pointer;text-align: center;}
+   .nav li a:hover{color:none;border: none;}
+   .nav li a{margin-top: 61px;}
+   .nav ul{ padding-left:0%;padding-right:0%;padding-top: 15px;width: 100%;overflow: hidden;}
+   .navbar-nav > li { margin-top: -40px;margin-right: 0px; }
+   .form-group{width: 80%;margin-right: 10%;height: 36px;}
+   .icon button{height: 34px;width:10%}
+   .icon input{height: 34px;font-size: 22px;width: 88%;padding: 0px 5px;}
+   .content .container .pic .list .box p:nth-child(1){display: none;}
+   .content .container .pic .list .box p:nth-child(2){width: 100%; padding-left: 0px;text-align: center;}
+   .number ul li a {padding: 6px 9px;}/*这是行页 的*/
+  body{padding: 0px 5px;}
+    
+  
+}
+@media only screen and (min-width: 320px) and (max-width:375px){
+	.content .container .pic h2 a{font-size: 14px;}
+	.number ul li a{margin: 10px 9px;}
+}	
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+}

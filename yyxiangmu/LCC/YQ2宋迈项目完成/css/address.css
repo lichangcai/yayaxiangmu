@@ -1,0 +1,202 @@
+
+.left .meau{margin-left:0%;background: #68100d;height:100% ;overflow: hidden;padding: 0px;}
+.left .meau h1{margin-top: 20px;text-align: center;}
+.left .meau h1 a{font-family: "微软雅黑";font-size:24px;color: #FFFFFF;text-decoration: none;cursor: pointer;/*padding-left: 30px;*/}
+
+
+
+/*letter-spacing:10px;字体的间距*/
+.left .stop{margin-left:0%;height:100% ;overflow: hidden;}
+.left .stop h2{padding-top: 3px;text-align: center;}
+.left .stop h2 a{line-height: 54px; text-decoration: none;cursor:pointer; font-family: "微软雅黑";font-size:24px;color: #FFFFFF;letter-spacing:37px;}
+
+
+.left .stop h2{background:#830d09;}
+.left .stopA,.left .stop{padding: 0;background: #68100d;}
+.left .stopA ul{list-style: none;}
+.left .stopA ul li{padding-left:20px;font-family: "微软雅黑";font-size: 14px;margin-top:4px;line-height: 40px;}
+.left .stopA ul li a{color: #FFFFFF;text-decoration: none;display: block;padding-left: 30px;}
+.left .stopA img{float: right;line-height: 40px;margin-top:16px;padding-right: 56px;}
+.left .stopA ul .on{background: #f51b13;}
+/*.left .stopA ul li:hover{background: #f51b13;}*/
+.left .stopA,.left .stop{padding: 0;}
+/*right*/
+.right .text{height:100%;border: 1px solid red;padding-left: 20px;overflow: hidden;padding: 0px;}
+.right .text .top{border-bottom:1px solid red ;height: 38PX;}
+.right .text .top p{float: left;font-family: "微软雅黑";color:#FFFFFF;font-size: 14px;line-height: 38PX;}
+.right .text .top p span a{color: red;}
+.right .text .top p a{color: #FFFFFF;}
+/*.right .text .top p a:hover{color: red;text-decoration: none;}*/
+.right .text .details {border-bottom: 1px solid red;padding: 0px;}
+.right .text .details p{padding:10px;margin:10px 0px 0px 0px;color: #FFFFFF; float: left;font-family: "微软雅黑";font-size: 24px;background:#e71f19;}
+.topF p{float: left;font-family: "微软雅黑";font-size: 18px;color: #FFFFFF;margin-top: 42px;padding-bottom: 40px;}
+
+
+
+label{font-family: "微软雅黑";margin-left: 30px;font-size: 14px;color: #FFFFFF;padding-bottom: 50px;font-weight: normal;padding: 0px;}
+.box{padding:0px 0px 10% 0px;}
+select{width: 100px;margin-right: 50px;color: black;margin-left: 12px;margin-right: 119px;outline: none;}
+option{width: 100px;display: block;color: red;text-align: center;}
+.input-group-addon{background: inherit; border:none;vertical-align: top;color: #FFFFFF;font-family: "微软雅黑";font-size: 14px;}
+textarea{outline: none;padding: 0px 5px;font-family: "微软雅黑";font-size: 14PX;color: #FFFFFF;resize:none; width: 80%;height: 200px; background: inherit;" onfocus="inputFocus(this,this.defaultValue)" onblur="inputBlur(this,this.defaultValue)}
+
+.input_g{margin-top: 38px;}
+.input_g label{font-weight: normal;padding-bottom: 18px;color: #FFFFFF;}
+.input_g span{margin-right: 10px;}
+.input_g input{margin-right:114px;margin-bottom: 50px;width: 150px;font-family: "微软雅黑";font-size: 14px;color:black;outline: none;padding: 0px 4px;}
+.input_g label:nth-child(2){padding-left: 40px;}
+.input-group-addon:first-child{width: 100px;border: none;background: inherit;}
+
+.kuang2{margin-top: 3%; width: 70%;height: 190px;outline: none;background: inherit;
+        border: 2px solid #828282 ; padding:0 10px ;}	
+/*.message{color: #FFFFFF;clear:both;font-family: "微软雅黑";font-size: 14px;color: #FFFFFF;margin-left:15px ;}*/
+.message .kuang2{margin-left: 15px;}
+h1{font-family: "微软雅黑";font-size: 18px;color: #FFFFFF;}
+.address{margin-top:30px;text-align: center;color: #FFFFFF;font-family: "微软雅黑";font-size: 14px;padding-bottom: 60px;}
+.address table{margin-left: 50px;}
+.address table tr:nth-child(1){background: #f51b13;height:50px;}
+.address table tr:nth-child(2){background: #68100d;height:50px;}
+
+
+/*这是图标最小的1200px的代码*/
+@media only screen and (min-width:1200px){
+	.left .meau img{padding-left: 10%;}
+	.left .stop h2 a img{padding-right: 5%;}
+	.left .stopA img{padding-right: 19%;}
+}
+
+@media (min-width:992px) and (max-width:1200px){
+	.navbar-nav > li{margin-right: -16px;}
+	.left .meau h1 a{font-size: 20px;}
+	.left .stopA, .left .stop{overflow: hidden;}
+	.left .meau img{padding-left: 10px;}
+	.left .stopA img{padding-right: 20%;}
+	
+    .right .text .details p{float: none;    width: 120px;}
+	select {margin-right:65px;}
+	.topF p{padding-left: 13px;}
+	.input_g input{margin-right:7px;}
+	
+	.address table{margin-left:0px;}
+	
+	}
+@media (min-width:768px) and (max-width:992px){
+	.left .meau h1 a{font-size: 22px;}
+	.left .meau h1 a img{display: none;}
+	.left .stopA, .left .stop{overflow: hidden;}
+	.left .stop h2 a{text-align: center;font-size: 20px;margin-left: 20%;}
+	.left .stop h2 a img{display: none;}
+	.left .stopA, .left .stop{overflow: hidden;}
+	.left .meau h1{text-align: center;}
+	.left .stopA ul li a{padding-left:0px ;}
+	
+	label{margin-left: 19px;}
+	select{width: 104px;margin-right: 0px;}
+	.input-group-addon:first-child{padding-left: 0px;width: 79px;}
+	textarea{width: 95%;height: 150px;}
+	
+
+
+
+	.input_g label{padding-bottom: 0px;}
+	.input_g label:nth-child(2){padding-left: 0px;}
+	.input_g input{width: 230px;margin-right: 0px;height: 30px;}
+	.address table{margin-left: 0px;}
+	.address{font-size: 10px;}
+	select{margin-right: 23px;}
+	}
+	/*这里是左边的代码*/
+@media (min-width:320px) and (max-width:768px){
+	.left .stop h2 img{padding-right:5%;}
+	.left .stopA, .left .stop{overflow: hidden;}
+	.left .meau h1{text-align: center;}
+	.left .meau img{padding-left: 11%;}
+	.left .stopA img{padding-right: 26%;}
+	
+	
+	.right .text .top{height:64px ;}
+	.right .text .top p {line-height: 60px;font-size:16px;}
+	.right .text .details p{float: none; width: 105px;font-size: 20px;}
+	
+	
+}
+/*end*/
+@media (min-width:545px) and (max-width:768px){
+	 select{margin-right: -2px;}
+	textarea{height: 150px;}
+	
+}
+
+@media (min-width:414px) and (max-width:544px){
+	select{width: 65px;margin-right: 10px;}
+	textarea{width: 100%;height: 150px;}
+	
+}
+
+@media (min-width:320px) and (max-width:413px){
+	
+label{margin-left: 6px;font-size: 12px;}
+select{width: 67px;margin-right: 0px;margin-left: 0px;}
+.di{padding: 0px;}
+}
+@media (min-width:320px) and (max-width:768px){
+.input-group{padding: 0px;}	
+.input_g label:nth-child(2){padding-left: 0px;}
+.input_g input{width: 100%;}
+.address{padding: 0px;}
+.address table{margin-left: 0px;}
+.address table td{font-size: 12px;}
+
+/*body*/
+.col-lg-3, .col-md-3, .col-sm-3{padding: 0px 5px;}
+div.col-lg-9, right.col-sm-9.col-md-9.col-xs-12{padding: 0px 5px;}
+.col-lg-12 {padding: 0px 5px;}
+
+}
+
+
+@media only screen and (min-width: 768px) {
+	
+	.left .stopA ul li:hover{background: #f51b13;}
+	.right .text .top p a:hover{color: red;text-decoration: none;}
+}
+
+
+
+
+
+@media (min-width:768px) and (max-width: 992px) {
+	.left .stopA img{padding-right: 24px;
+	.left .meau img{padding-left:0px;display: none;}
+	.left .meau h1{text-align: center;}
+    .left .meau h1 a{font-size: 22px;}
+    .left .stop img{padding-right: 10%;display: none;}
+    .left .stopA ul li a{padding-left:0px ;}
+     .left .stop h2{text-align: center;}
+    .left .stop h2 a{font-size: 18px;}
+}
+
+
+
+
+
+
+
+@media (min-width:768px) and (max-width: 992px) {
+.input_g label:nth-child(1) span{padding-right: 15px;}
+.input_g label:nth-child(3) span{padding-right: 14px;}
+}
+/*这里是那个992-1200px的代码*/
+@media (min-width:1081px) and (max-width:1200px){
+	.navbar-nav > li{margin-top: 0px;margin-right: -18px;}
+	.form-group{margin-top: 32px;margin-right: 0px;}
+}
+@media (max-width:1080px) and (min-width:993px){
+	.form-group{margin-top: 32px;}
+	.navbar-nav > li{margin-right: -20px;margin-top: 0px;}
+}
+@media (max-width:992px) and (min-width:768px){
+		.form-group{margin-top:33px; width: 130px;}
+		.navbar-nav > li{margin-top: 7px;margin-right: -5px;margin-left: -15px;}
+		.navbar-header{margin-top: 5px;}
+}

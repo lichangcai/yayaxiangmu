@@ -1,0 +1,50 @@
+.content {width: 1200px;height: 100%;overflow: hidden;margin: 0 auto;}
+.content .container {width: 1200px;padding: 0px;}
+.content .container .top{height: 100%;overflow:hidden;width: 1200px;margin-top: 46px;margin-bottom: 28px;text-align: center;}
+.content .container .top img{margin-top:31px ;}
+.content .container .top p{font-family: "微软雅黑";font-size: 12px;color: #000000;margin-top: 10px;margin-bottom: 26px;}
+.content .container .top p i{font-style: normal;}
+.content .container .top p i:nth-child(2){padding-left:11.5% ;margin-right: 11.5%;font-family: "微软雅黑";font-size: 12px;font-style: normal;}
+.content .container .list_top{height:100%; overflow: hidden; width: 1200px;border-bottom: 1px solid #a0a0a0;margin-bottom: 23px;}
+.content .container .list_top h1{font-size: 20px;font-family: "微软雅黑";color: #000000;margin-left: 20px;margin-bottom: 35px;}
+.content .container .hedui{height: 100%;overflow: hidden; width: 1200px;margin-bottom: 27px;border-bottom:1px solid #333333 ;}
+.content .container .hedui i{font-family: "微软雅黑";font-size: 18px;color: #000000;margin-left: 20px;font-style: normal;}
+.content .container .hedui i:nth-child(2){float: right;margin-right: 76px;}
+.content .container .hedui i:nth-child(2) a{text-decoration: none;color: #61cae5;}
+.content .container .hedui ul{list-style: none;margin-top: 28px; }
+.content .container .hedui ul li{float: left;margin-left: 54px;font-family: "微软雅黑";font-size: 14px;color: #000000;margin-bottom: 35px;}
+.content .container .hedui ul li:nth-child(1){padding: 2px 25px;border: 1px solid #00FFFF;}
+.content .container .hedui ul li:nth-child(5){padding: 5px 15px;background: #61cae5;}
+.content .container .hedui ul li span{font-style: normal;padding-left: 50px;}
+.content .container .fangshi{height: 100px;width: 1200px;margin-bottom: 23px;}
+.content .container .fangshi h1{font-family: "微软雅黑";font-size: 20px;color: #000000;margin-left: 20px;}
+.content .container .fangshi ul{list-style: none;margin-top: 25px;}
+.content .container .fangshi ul li{float: left;margin-left: 60px;font-family: "微软雅黑";font-size: 14px;border: 1px solid #333333;padding: 2px 15px;color: #000000;cursor: pointer;}
+.content .container .fangshi ul .on {border: 1px solid #61cae5;}
+.content .container .fangshi ul li:hover{border: 1px solid #61cae5;}
+.content .container .fangshi ul li:nth-child(5) a{text-decoration: none;color: #000000;}
+.content .container .fangshi ul li:nth-child(5) a:hover{color: red;}
+.content .container .fangshi ul li:nth-child(5){border: none;}
+.content .container .qingdan{height:100%;overflow: hidden; width: 1200px;}
+.content .container .qingdan .left{height: 100%;overflow: hidden;width: 600px;float: left;}
+.content .container .qingdan .left h1{font-size: 20px;font-family: "微软雅黑";color: #000000;margin-left: 20px;}
+.content .container .qingdan .left p{margin-left: 60px;color: #000000;font-family: "微软雅黑";font-size: 14px;margin-top: 15px;}
+.content .container .qingdan .left p:nth-child(3){padding: 2px 8px;border: 1px solid #00FFFF;display: inline-block;}
+.content .container .qingdan .left ul{list-style: none;margin-top: 80px;margin-bottom: 50px;}
+.content .container .qingdan .left ul li{float: left;margin-left: 20px;}
+.content .container .qingdan .left ul li a{text-decoration: none;font-family: "微软雅黑";font-size: 14px;color: #000000;}
+.content .container .qingdan .left ul li a:hover{color: #00FFFF;}
+.content .container .qingdan .left ul .on a{color: #00FFFF;}
+.content .container .qingdan .right{height: 100%;overflow: hidden; width: 600px;float: left;}
+.content .container .qingdan .right span{width: 100%;display: inline-block;}
+.content .container .qingdan .right span i{margin-left: 50px; font-style: normal;font-family: "微软雅黑";float: right;}
+.content .container .qingdan .right span i a{font-size: 14px;color: #00FFFF;text-decoration: none;}
+.content .container .qingdan .right span i a:hover{color: red;}
+.content .container .qingdan .right .di{width: 300px;height: 100%; overflow: hidden; float: right; margin-top: 201px;}
+.content .container .qingdan .right .di p{font-family: "微软雅黑";font-size: 14px;color: #000000;}
+.content .container .qingdan .right .di p i{font-style: normal;color: red;}
+.content .container .qingdan .right .di button{border: none;padding: 5px 34px;margin-left: 40px;background: #61cae5;margin-bottom: 25px;}
+.content .container .qingdan .right .di button a{color: #FFFFFF;font-family: "微软雅黑";font-size: 18px;text-decoration: none;}
+/*.content .container .qingdan .right .di p{float: right;margin-right: 72px; margin-top: 200px;font-family: "微软雅黑";font-size: 14px;color: #000000;}
+.content .container .qingdan .right p i{}
+.content .container .qingdan .right button{width: 100%;}*/

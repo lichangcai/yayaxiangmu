@@ -1,0 +1,29 @@
+.content {width: 1200px;height: 100%;margin: 0 auto;padding: 0px;overflow: hidden;margin-bottom: 60px;}
+.content .container{padding: 0px;height: 576px;width: 1200px;}
+.content .container .left{width: 553px;height: 576px;padding: 0px;float:left ;}
+.content .container .left .nrong{width: 300px;height: 192px;;margin-top: 200px;margin-left: 100px;}
+.content .container .left  .nrong .tup{width: 180px;float: left;}
+.content .container .left  .nrong .tup p{font-family: "微软雅黑";font-size: 14px;padding-bottom: 40px;}
+.content .container .left  .nrong .tup p img{float:left;padding-right: 20px;}
+.content .container .left  .nrong .che a img{padding-top: 50px;}
+.content .container .right{width: 647px;height: 100%; overflow:hidden;float: left;}
+.content .container .right img{float: left;margin-top: 41px;}
+.content .container .right .center{width: 468px;height:427px;float: left;margin:81px 0px 0px 97px ;border: 2px solid #8de0f5;}
+.content .container .right .center .top{width: 404px;height: 42px;margin: 0 auto;border-bottom: 1px solid #8de0f5;}
+.content .container .right .center .top p{line-height: 42px;font-family: "微软雅黑";font-size: 14px;}
+.content .container .right .center label{margin-top: 20px;}
+.content .container .right .center label span{width: 76px;font-family: "微软雅黑";font-size: 14px; font-weight: normal;  margin-left: 49px; display: inline-block;}
+.content .container .right .center label input{width: 248px;height: 20px;border: 1px solid #8de0f5;padding: 0px 7px;outline: none;}
+.content .container .right .center .xiamian{margin-top:30px; font-family: "微软雅黑";font-size: 14px;vertical-align: middle;}
+.content .container .right .center .xiamian input{margin-left: 50px;margin-right: 20px;width: 30px;vertical-align: middle;margin-top: -5px;}
+.content .container .right .center .xiamian label{margin-top: 0;cursor: pointer;}
+.content .container .right .center .xiamian i{font-style: normal;float: right;margin-right: 90px;font-family: "微软雅黑";font-size: 14px;color: black}
+.content .container .right .center .xiamian i a{color: black;text-decoration: none;}
+.content .container .right .center .xiamian i a:hover{color: red;}
+.content .container .right .center .xiamian button{margin-top: 20px; background:#8de0f5;border: none;outline: none;  color: #FFFFFF;  padding: 5px 10px;display: block;width: 72%;float: right;margin-right: 82px;font-family: "微软雅黑";font-size: 24px;}
+.content .container .right .center .fangshi{float: left;margin-left: 40px;margin-top: 24px;margin-bottom: 23px;}
+.content .container .right .center .fangshi i{display: inline-block;font-style: normal;margin-right:16px ;font-family: "微软雅黑";font-size: 14px;line-height: 30px;}
+.content .container .right .center .fangshi i a {color: black;text-decoration: none;}
+.content .container .right .center .fangshi i a:hover{color: red;}
+.content .container .right .center .fangshi i img{margin-top: 0px;padding-right: 20px;}
+.content .container .right .center label p{visibility: hidden;font-size: 12px;line-height: 12px;margin-left: 150px;}

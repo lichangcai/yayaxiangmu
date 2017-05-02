@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/user.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/user_top.css" />
+		<title>会员中心</title>
+	</head>
+	<!--ng-controller 指令用于为你的应用添加控制器。在控制器中，你可以编写代码，制作函数和变量，并使用 scope 对象来访问。-->
+	<!--homeController是ng-controller自己定义的名字-->
+	<body ng-controller="userController">
+		<ion-view class="User">
+			<!--ion-hearder-bar 这个是固定在屏幕顶部的一个头部标题栏的用法。-->
+			<ion-header-bar class="head-top">
+				<ul>
+					<li class="item-icon-left item-icon-right">
+						<i class="ion-ios-undo-outline icon item-icon-left" ng-click="backs()" ></i>
+						<div class="header_center">
+						个人中心
+					   </div>			
+						<i class="ion-qr-scanner icon item-icon-right"></i>
+					</li>
+				</ul>
+			</ion-header-bar>
+			<!--top这是结尾-->
+			<!--<这是自动轮播的代码 要加上ion-content才可以居中-->
+				<ion-content class="content" >
+					<div class="user">
+					        <div class="top">
+					        	<div class="left" ng-click="dianji()">
+					        		 <img src="img/user/tx.png">
+					        	</div>
+					        	<div class="right">
+					        		 <p>我心飞翔<img src="img/user/tx1.png"></p>
+					        		 <p>账号：<span id="haoma">  8888888888</span><i>资料 ＞ </i></p>
+					        		 <p><img src="img/user/tx2.png">钻石会员 ＞</p>
+					        	</div>
+					        </div> 
+					        <div class="foo">
+					        	<ul>
+					        		<li>
+					        			<p>6</p>
+					        			<p>
+					        				收藏
+					        			</p>
+					        		</li>
+					        		<li>
+					        			<p>5</p>
+					        			<p>
+					        				 关注
+					        			</p>
+					        		</li>
+					        		<li>
+					        			<p>2</p>
+					        			<p>
+					        			   消息 
+					        			</p>
+					        		</li>
+					        	</ul>
+					        </div>
+					</div>
+					<div class="order">
+						<div class="left" ui-sref="order">
+							<img src="img/user/tx3.png" />我的订单
+						</div>
+						<div class="right">
+							<p ui-sref="order">
+							查看全部订单  ＞								
+							</p>
+
+						</div>
+					</div>
+					<div class="top_list">
+						<ul>
+							<li ng-repeat="item in obj.user">
+								<p><img ng-src="{{item.img}}"/></p>
+								<p>{{item.name}}</p>
+							</li>							
+						</ul>
+					</div>
+					<div class="c_list">
+						<ul>
+							<li ng-repeat="item in obj.c_list">
+								<span><img ng-src="{{item.img}}"/>{{item.name}}</span>
+								<span> > </span>
+							</li>
+						</ul>
+					</div>
+					<div class="b_list">
+						<ul>
+							<li ng-repeat="item in obj.b_list">
+								<span><img ng-src="{{item.img}}"/>{{item.name}}</span>
+								<span> > </span>
+							</li>
+						</ul>
+					</div>
+					
+				</ion-content>
+				
+			    <!--这里是底部的代码-->
+			  <ion-footer-bar>
+				<!--<div class="bar-footer">-->
+				     <ul>
+				   		<li  ui-sref="home">
+				   			<div>
+				   				<i class="ion-home"></i>
+				   				<p>主页</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="prostyle">
+				   			<div>
+				   				<i class="icon ion-ios-settings-strong" ></i>
+				   				<p>分类</p>
+				   			</div>
+				   			
+				   			
+				   		</li>
+				   		<li>
+				   			<div><i class="ion-ios-lightbulb-outline" ></i>
+				   				<p>发现</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="shop_cart">
+				   			<div>
+				   				<i class="icon ion-ios-cart" ></i>
+				   				<p>购物车</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="user">
+				   			<div>
+				   				<i class="ion-person-add" ></i>
+				   				<p>我</p>
+				   			</div>
+				   		</li>
+						
+					</ul>
+			</ion-footer-bar>
+		</ion-view>
+	</body>
+
+</html>

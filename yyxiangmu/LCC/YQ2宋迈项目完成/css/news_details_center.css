@@ -1,0 +1,88 @@
+.content .container .center{margin-top: 4%; height: 100%;overflow: hidden;}
+.content .container .center h1 {font-family: "微软雅黑";font-size: 24px;color: #FFFFFF;border-bottom: 1px solid #FFFFFF;}
+.content .container .center span{display: block; font-family: "微软雅黑";font-size: 12px;line-height: 12px;margin-top:0.5% ;}
+.content .container .center h1 img{display: block;margin-left: 1.5%;}
+.content .container .center p{margin-top:-31px;float: right;font-family: "微软雅黑";display:block;font-size: 12px;margin-right: 10px;color: #FFFFFF;}
+.content .container .center p a{color: #FFFFFF;text-decoration: none;}
+/*.content .container .center p a:hover{color: red;}*/
+.content .container .top h1{text-align: center; display: block;padding-bottom: 20%;}
+.content .container .top h1 a{text-decoration: none;font-family: "微软雅黑";font-size: 16px;color:#FFFFFF;padding-bottom: 5px;}
+.content .container .on h1 a {color: red;}
+/*.content .container .top:hover h1 a{color: red;border-bottom: 10px solid red;}*/
+.text{margin-top: 10%;}
+.text h1{text-align: center; font-family: "微软雅黑";font-size: 18px;color: #FFFFFF;padding-bottom: 2%;}
+.text p{float: left; text-indent: 2em;font-family: "微软雅黑";font-size: 14px;color: #FFFFFF;line-height: 24px;}
+.tu{text-align: center;}
+.text .tu img{margin-top: 3%;margin-bottom: 3%;max-width: 100%;}
+.text p img{margin-left:2% ;}
+/*.bottom h2 a{margin-left:4%;color: #FFFFFF;font-family: "微软雅黑";font-size: 18px;float: left; text-decoration: none;}
+.bottom h2 a span{color: #FFFFFF;font-family: "微软雅黑";font-size: 14px;}*/
+.left{float: left;padding: 0px;}
+.left p{color: #FFFFFF;float: left;}
+.left p a{color: #FFFFFF;font-family: "微软雅黑";font-size: 18px;text-decoration: none;}
+.left p a span{font-size: 14px;}
+.left p a:hover{color: red;}
+.right{float: right;padding: 0px;}
+.right p{color: #FFFFFF;float: right;}
+.right p a {color: #FFFFFF;font-family: "微软雅黑"; font-size: 14px;text-decoration: none;}
+.right p a span{font-size: 18px;}
+.right p a:hover{color: red;}
+.right .on a{color: red;}
+/*.bottom h3{margin-right: 1%;}
+.bottom h3 a{color: #FFFFFF;font-family: "微软雅黑";font-size: 14px;float: right; text-decoration: none;}
+.bottom h3 span{color: #FFFFFF;font-family: "微软雅黑";font-size: 18px;}*/
+
+
+@media only screen and (max-width: 1200px){
+	.navbar-nav > li{margin-top: -40px;margin-right: -32px;}
+	.form-group{margin-top: 10px;margin-right: 10px;}
+}
+
+@media (min-width:1081px) and (max-width:1200px){
+	.navbar-nav > li{margin-top: 0px;margin-right: -18px;}
+	.form-group{margin-top: 32px;margin-right: 0px;}
+}
+@media (max-width:1080px) and (min-width:994px){
+	.form-group{margin-top: 32px;}
+	.navbar-nav > li{margin-right: -20px;margin-top: 0px;}
+}
+@media (max-width:993px) and (min-width:768px){
+		.form-group{margin-top:33px; width: 130px;}
+		.navbar-nav > li{margin-top: 7px;margin-right: -5px;margin-left: -15px;}
+		.navbar-header{margin-top: 5px;}
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+	.text h1{font-size: 16px;margin: 5px 0;}
+	.text p{margin-left: 10px;margin-right: 10px;font-size: 13px;}
+
+   /*.nav .on a{color: red;border-left: 1px solid transparent;border-right: 1px solid transparent;}
+   
+   .nav li a{margin-top: 61px;}
+   .nav ul{ padding-left:0%;padding-right:0%;padding-top: 15px;width: 100%;overflow: hidden;}
+   .navbar-nav > li { margin-top: -40px;margin-right: 0px; }
+   .form-group{margin-top:-212px; width: 130px;}*/
+  .nav .on a{color: red;border-left: 1px solid transparent;border-right: 1px solid transparent;}
+   .nav li a{color: #FFFFFF;font-size: 22px; padding: 0px;/*margin:18px 22px;*/line-height: 18px; cursor: pointer;text-align: center;}
+   .nav li a{margin-top: 61px;}
+   .nav ul{ padding-left:0%;padding-right:0%;padding-top: 15px;width: 100%;overflow: hidden;}
+   .navbar-nav > li { margin-top: -40px;margin-right: 0px; }
+   .form-group{width: 80%;margin-right: 10%;height: 36px;}
+   .icon button{height: 34px;width:10%}
+   .icon input{height: 34px;font-size: 22px;padding:0px;width: 88%;padding: 0px 5px;}
+   
+}
+@media (min-width:320px) and (max-width:375px){
+	.text h1{font-size: 14px;}
+	.content .container .top h1 a{font-size: 12px;}
+}
+@media only screen and (min-width: 768px) {
+.content .container .center p a:hover{color: red;}
+.bottom h2 a:hover{color: red;}
+.bottom h2 a:hover{color: red;}
+.content .container .top:hover h1 a{color: red;border-bottom: 10px solid red;}
+.bottom h3 a span:hover{color: red;}
+.bottom h2 a span:hover{color: red;}
+.content .container .on h1 a {color: red;border-bottom: 10px solid red;}
+}

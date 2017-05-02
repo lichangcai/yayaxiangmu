@@ -1,0 +1,64 @@
+.Home .head-top{height:0.9rem;width: 100%;background: #aaaaaa;display: flex;align-items: center;}
+.Home .ion-navicon-round:before{font-size:0.8rem;}
+.Home .item-icon-left{margin-left:0rem;padding-left: 0.5rem;}
+.Home .item-icon-right{padding-right:0.6rem;}
+.Home .item-icon-right .icon{right:0rem;padding-left: 0.2rem;padding-right:0.3rem;font-size: 0.6rem;}
+.Home .bar button{line-height: 0px;height: 0.58rem; border-radius:8px;background: inherit;border: 1px solid #e3e3e3;}
+.Home .head-top .ion-ios-search{font-size: 0.3rem;color: #cecbcb;}
+.Home .ion-ios-search:before{color: #fff;font-size: 0.5rem;}
+.Home button{text-align: left;display: flex;align-items: center;}
+/*这里设置圆点的*/
+.Home .slider-pager .slider-pager-page{width: 0.5rem;font-size: 0.3rem;}
+.Home .ion-record:before{color: #5280b2;}
+/*end*/
+.Home .lunbo img{display:block ;}
+.Home .content{top:0.9rem;}
+.Home .content_div{background:#cedae7;}
+.Home .row{padding: 0px;}
+.Home .title p{text-align: center; font-family: "微软雅黑";color: #8b8f93;}
+/*新品推荐那里的*/
+.Home div.title{height: 0.8rem;width: 100%;}
+/*这个圆点是要弹性盒子做出来的代码如下*/
+/*display: flex;align-items: center;justify-content: center;*/
+.Home div.title h1{font-size: 0.38rem;font-family: "微软雅黑";text-align: center;
+            line-height: 0.8rem;border-bottom: 1px solid #aaaaaa;display: flex;align-items: center;justify-content: center;color: #aaaaaa;
+            margin: 0px;}
+.Home div.title h1:before{content:" ";width: 0.2rem;height: 0.2rem;border-radius: 50%;border: 0.01rem solid #aaaaaa; background: inherit;display: block;margin-right: 0.15rem;}
+/*设备那里的css样式*/
+.Home .New_Products>ul{width: 94%;margin: 0 auto;}
+.Home .New_Products>ul>li{margin-bottom: 0.16rem;margin-top:10px}
+/*.New_Products>ul>li:nth-child(even)这里even是代表双数的，odd是代码单数的*/
+.Home .New_Products>ul>li:nth-child(even){margin-left: 6%;}
+.Home .New_Products>ul>li img{border: 1px solid #aaa;margin: 0 auto;}
+.Home .col-47{flex: 0 0 47%;max-width: 47%;padding: 0;}
+.Home .New_Products>ul>li P{width: 100%;}
+.Home .New_Products>ul>li P:nth-child(2){display: inline-block; font-family: "微软雅黑";font-size: 0.22rem;color: #aaa;margin-top: 0.1rem;border-bottom: 1px solid #aaa;
+padding-bottom: 0.1rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.Home .New_Products>ul>li p:nth-child(3) span{font-family: "微软雅黑";font-size: 0.22rem;color: red;}
+.Home .New_Products>ul>li p:nth-child(3) span i{color: #aaa;font-size: 0.15rem;}
+/*典范开始*/
+.Home .model{width: 100%;overflow: hidden;background: url(../img/m_guide/home1-1.jpg) no-repeat center left,#f0f2f2;background-size: 35%;}
+.Home .model>ul{margin-left: 38%;width: 60%;}
+.Home .model>ul li{width: 48%;}
+/*军用系列*/
+.Home .webbing{width: 100%;overflow: hidden;}
+.Home .webbing .title h1{color: #aaa;border-bottom: none;}
+.Home .webbing .pic{overflow: hidden;width: 100%;margin: 0 auto;height: 100%;background: #f0f2f2;}
+.Home .webbing .pic ul{list-style: none;margin-bottom: 0.12rem;width: 100%;height: 100%;overflow: hidden;}
+.Home .webbing .pic>ul>li{float: left;margin-left: 0.2rem;margin-top: 0.2rem;width: 34.5%}
+.Home .webbing .pic>ul>li:first-child{width :56%;margin-right: 0.05rem;}
+
+.Home .webbing .pic>ul>li:nth-child(3){margin-top: 0.13rem;}
+/*每月新品*/
+.Home .m_news .title h1{border-bottom: none;}
+.Home .m_news .n_pic ul{list-style: none;width: 94%;margin: 0 auto;}
+.Home .m_news .n_pic ul li{float: left;border: 0.01rem solid #aaa; margin-right: 0.22rem;margin-bottom: 0.08rem;}
+.Home .m_news .n_pic ul li:first-child{width: 30%;margin-top: 0.1rem;border: none;}
+.Home .m_news .n_pic ul li:nth-child(2){width: 30%;}
+.Home .m_news .n_pic ul li:nth-child(3){width: 30%;}
+.Home .m_news .n_pic ul li:nth-child(4){width: 30%;height: 1rem;display: flex;align-items: center;justify-content: center;border: none;font-family: "微软雅黑";font-size: 0.28rem;margin-bottom: 0.35rem;}
+.Home .m_news .n_pic ul li:nth-child(5){width: 60%;}
+.Home .m_news .n_pic ul li:last-child{width: 30%;float: right;margin-top: -1.13rem;border: none;}
+/*end*/
+
+

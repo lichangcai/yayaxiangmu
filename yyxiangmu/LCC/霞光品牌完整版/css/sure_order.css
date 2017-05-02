@@ -1,0 +1,31 @@
+.sure_order .content{top: 0.9rem;bottom: 0.9rem;}
+/*收货地址那里*/
+.sure_order .content .address{display: flex;align-items: center; width: 94%;height: 1.2rem;margin: 0 auto;}
+.sure_order .content .address img{width: 7%;margin-left: 0.2rem;}
+.sure_order .content .address span{font-family: "微软雅黑";font-size: 0.28rem;margin-left: 0.2rem;color: #707070;}
+.sure_order .content .address i{margin-left: 0.35rem;}
+/*end*/
+.sure_order .list{ background: #eeeeee; width: 94%;padding: 0px; margin: 0 auto;height: 3.6rem;display: flex;align-items: center}
+.sure_order .list .left{width: 40%;height: 100%;margin-left: -0.2rem;display: flex;align-items: center;}
+.sure_order .list img{border-radius: 10px;margin-left: 0.2rem;width: 90%;}
+.sure_order .list label{float: left;width: 15px;height: 15px;border-radius: 50%;margin-left: 0.5rem;}
+.sure_order .list .right{width: 60%; margin-left: 0.1rem;}
+.sure_order .list .right h3{margin-bottom: 0.2rem;font-family: "微软雅黑";font-size: 0.28rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+
+.sure_order .p_jia{ font-family: "微软雅黑";font-size: 0.28rem;color: #707070;margin-bottom: 0.1rem;}
+.sure_order .p_jia i{color: red;font-size: 0.28rem;}
+/* justify-content: space-between;排在一个div里面的两边*/
+.sure_order .bottom{ color: #707070; display: flex; justify-content: space-between; align-items: center; font-family: "微软雅黑";font-size: 0.15rem;margin-bottom: 0.1rem;}
+.sure_order .bottom div {display: flex;align-items: center;}
+.sure_order .bottom div span{font-size: 0.28rem;font-family: "微软雅黑";}
+.sure_order .bottom div div span{font-family: "微软雅黑";font-size: 0.28rem;}
+.sure_order .bottom div div{display: flex;margin-left: 0.2rem;}
+.sure_order .bottom div div .kuang{width:0.57rem;text-align: center;height: 0.45rem;border: 1px solid #aaa;font-family: "微软雅黑";font-size: 0.28rem;}
+
+
+
+/*底布的代码*/
+.end{padding: 0px;background:inherit;height: 0.9rem;}
+.fo{width: 100%;height:0.9rem;background:#7A7B78;display: flex;align-items: center;}
+.fo p{font-family: "微软雅黑";font-size: 0.28rem;text-align:left;margin: 0px 0.2rem;color: #F1F2F3;}
+.fo button{background:red ;font-family: "微软雅黑";font-size: 0.28rem;color: #fff;margin-left: 1.7rem;width: 2.1rem;border: none;}

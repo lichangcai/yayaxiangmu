@@ -1,0 +1,115 @@
+/**************头部样式******************/
+
+
+a{
+	text-decoration:none;
+	color:#333333;}
+
+*{margin: 0; padding: 0;}
+li{
+	list-style:none;
+	}
+.header{
+	text-align:center;
+    height:88px;
+	color:#8edcd0;
+	}
+.header h1{
+	font-weight:normal;
+	text-align: center;
+	position: relative; 
+	font-family:"黑体"; 
+	font-size:30px;
+    line-height:88px;
+	}
+.header a{
+	position:absolute;
+	top:10px;
+	left:15px;
+	}
+
+
+/**********************导航栏********************/
+.centent{
+	background:#98dfd1;
+	overflow:auto;
+	}
+.nav{
+	text-align:center;
+	margin:0 4%;
+/*	padding:32px 0 20px 0;*/
+	}
+.nav li{
+	line-height:52px;
+	margin:auto;
+	text-align:center;
+	width:50%;
+	float:left;
+	}
+.nav li a{
+	font-weight:normal;
+	text-decoration:none;
+	text-align:center;
+	 font-size:24px;
+	 font-family: "黑体";
+	 color:#085e51;
+	 }
+.nav .on a{
+	color:#f90a02;}
+.nav li a:hover{
+	color:#f90a02;
+	}
+	
+	
+	
+	
+	
+	
+/*这是轮播图的代码*/	
+.index_banner{width: 100%;position: relative;clear: both;overflow: hidden;}
+.index_banner #bd ul li{text-align: center;position:absolute;}
+.index_banner #bd ul li img{max-width: 100%;display: block;margin: 0 auto; }
+.index_banner #hd{text-align:center;width: 100%;bottom:4px; position:absolute;}
+.index_banner #hd ul{display: inline-block;*display: inline;*zoom:1;}
+.index_banner #hd ul li{width:16px;height:16px;border-radius:8px;background: #2b9888;float: left;margin: 0 4px;}
+.index_banner #hd li.on{background: #ff0000;}
+
+
+
+
+
+
+
+
+/*底部的代码*/
+.footer{
+	margin:0 1%;
+	clear:both;
+	overflow:hidden;
+	}
+.footer ul{
+	margin-top:20px;
+	}
+	
+.footer li{
+	font-family:"黑体";
+	font-size:18px;
+	cursor:pointer;
+	float:left;
+	width:20%;
+	list-style:none;
+	text-align:center;
+	}
+
+.footer a{
+	display:block;
+	margin:14px auto 10px;
+	}
+/*.footer li a :hover{
+	color:#F00;}*/
+		
+
+.footer li a{ color:#31bfa4; display:block;}
+.footer li a:hover{color:#F00;}
+.footer .on a{
+	color:red;}

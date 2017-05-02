@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--content属性值:
+    	initial-scale:当页面首次展示，可视区域的缩放级别。取值1.0则页面按照实际尺寸显示，无任何缩放
+    	maximum-scale=1.0,minimum-scale=1.0;可视区域的缩放级别。
+    	maximun-scale=1.0:指用户可将页面放大的属性，1.0是指禁止用户放大到实际尺寸以上
+    	user-scalable:是否可以对页面进行缩放，no是指禁止缩放
+        -->
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/top_common.css" />
+		<link rel="stylesheet" href="css/pro_details_center.css" />
+		<title>产品中心详情</title>
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/pro_details.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+    	<div class="car col-lg-12 col-md-12">
+			<ul>
+				<li><a href="login.html">登录</a></li>
+				<li>/</li>
+				<li><a href="register.html">注册</a></li>
+				<li><img src="img/cart.png"></li>
+				<li><a href="shop_cart.html">购物车</a>（<span>0</span>）</li>
+			</ul> 
+		</div>
+    	<div class="container-fluid">
+    <div class="navbar-header navbar-left">
+   
+      <a href="index.html"><img src="img/logo.png" class="img-responsive" title="欢迎来到宋迈品牌商城！" alt="亲，请您刷新在试试！" /></a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+
+ 
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-left">
+      	<li><a href="index.html">首页</a></li>
+      	<li><a href="brand_introduction.html">品牌介绍</a></li>
+      	<li class="on"><a href="product.html">产品中心</a></li>
+      	<li><a href="news.html">新闻中心</a></li>
+      	<li><a href="contact_us.html">联系我们</a></li>
+      </ul>
+      
+        <div class="form-group icon">
+          <button type="submit"><img src="img/submit.png"/></button>
+          <input type="text">
+        
+        </div>
+    </div>
+  </div>
+</nav>
+
+<!--中心内容-->
+<div class="content">
+	<div class="container">
+		<div class="center col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<h1>产品中心<span>product center</span><img src="img/background.png"></h1>
+			<p><a href="index.html">首页</a>><a href="product.html">产品中心</a>>宋迈智能插座</p>
+		</div>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-sm-12 col-xs-12">
+			<div class="col-sm-3 col-md-3 col-lg-3 col-xs-6 top on">
+				<h1><a href="###">宋迈智能插座</a></h1>
+			</div>
+			<div class="col-sm-3 col-md-3 col-lg-3 col-xs-6 top">
+				<h1><a href="###">宋迈立式创意插座</a></h1>
+			</div>
+			<div class="col-sm-3 col-md-3 col-lg-3 col-xs-6 top">
+				<h1><a href="###">宋迈USB充电转换插座</a></h1>
+			</div>
+			<div class="col-sm-3 col-md-3 col-lg-3 col-xs-6 top">
+				<h1><a href="###">宋迈大功率插座</a></h1>
+			</div>
+		</div>
+		
+	<div class="details">
+		<div class="col-md-5 col-lg-5 col-sm-5 col-xs-12 text">
+	          			<div class="change_box">
+                           <div class="change_box_top text-center"> 
+                             	<img src="img/p_img2.jpg" />
+                           </div>
+                            <div class="change_box_bottom text-center">
+                              <ul>
+                                 <li><img img_num="0" src="img/p_img3.jpg" /></li>
+                                 <li><img img_num="1" src="img/pro.jpg" /></li>
+                                 <li><img img_num="2" src="img/p_img3.jpg" /></li>
+                                 <li><img img_num="3" src="img/pro.jpg" /></li>
+                               </ul> 
+                            </div>
+                        </div>
+	          			<script>
+	          				$(function(){
+	          					$(".change_box_bottom li").click(function(){
+	          						var a = $(this).index();
+	          						var img = $(this).find("img").attr("src");
+	          						$(".change_box_top").find("img").attr("src",img);
+	          					})
+	          				})
+	          			</script>
+		</div>
+		
+		<div class=" col-lg-7 col-md-7 col-sm-7  col-xs-12  textA">
+			<div class="top col-lg-12 col-md-12 col-xs-12 ">
+				<h1>SM-U00系列</h1>
+				<p>
+					兼有USB充电和一般的电器充电。过载保护,防浪涌。当电流超过2500W时,
+				插座会自动断电,保护电器 防雷保护。雷电天气下,全面抵御电流冲击,为您
+				的电器保驾护航。每层都设有独立开关,确保用电安全,节电环保。安全无忧
+				。人体工程学设计,插头凹槽在插拔插头过程中不易碰触插头金属片而避免发
+				生触电。
+				</p>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 price">
+				<p>价格:<i>499元</i></p>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12  col-xs-12 color">
+				<p>颜色分类：
+					<span class="on">白色</span>
+					<span>黑色</span>
+					<span>蓝白</span>
+					<span>红色</span>
+				</p>
+			</div>
+			
+			<div class="peison">
+				<p>配送</p>
+				<div class="btn-group group">
+					<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"style="background: inherit; border:0px;">
+						北京至上海 
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu menu" role="menu">
+						<li><a href="#">上海</a></li>
+						<li><a href="#">上海</a></li>
+						<li><a href="#">上海</a></li>
+						<li><a href="#">上海</a></li>
+					</ul>
+               </div>
+               <span>快递费￥15块<i>卖家承诺48小时发货</i></span>
+			</div>
+			
+			
+			
+			<div class="number col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+				<p>数量</p>
+              
+					<div>
+					    <button type="button" class="prd_subNum" id="reduce">-</button>
+						<input type="text" id="prd_num" value="1" class="prd_num" maxlength="3">
+						<button type="button" class="prd_addNum" id="add">+</button>
+				    </div>
+				    <div>
+						<span>{库存量13567件}</span>
+					</div>
+			</div>
+			
+			
+			
+			<div class="car">
+				<p><a href="shop_cart.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="color:#FFFFFF; margin-right: 4px;">
+					    </span>加入购物车
+					</a></p>
+					<p><a href="###"><img src="img/colletion.png"/>加入收藏
+					</a></p>
+			</div>
+			<div class="col-sm-12 col-md-12 col-lg-12 col-xs-12 col-xs-12 " id="tab"> 
+				<ul>
+					<li class="on">商品介绍</li>
+					<li>规格参数</li>
+					<li>包装清单</li>
+				</ul>
+				
+				<div style="display:block;">
+					<p>配置：1-4层,5-17个插孔（2个USB插孔） 额定电流：2500W,10A；USB直流5V,2.1A
+					插筒高：90-270mm（底盘30mm）底盘直径：155*30*118mm 包装：独立气泡袋 彩盒
+					材质：PC ABS合金,阻燃材料 净重：503—1080g 线长：2m（长度可根据客户要求定制）</p>
+				</div>
+				<div>
+					<p>
+						配置：1-4层,5-17个插孔（2个USB插孔） 额定电流：2500W,10A；USB直流5V,2.1A
+					插筒高：90-270mm（底盘30mm）底盘直径：155*30*118mm 包装：独立气泡袋 彩盒
+					材质：PC ABS合金,
+					</p>
+				</div>
+				<div>
+					<p>
+					配置：1-4层,5-17个插孔（2个USB插孔） 额定电流：2500W,10A；USB直流5V,2.1A
+					插筒高：90-270mm（底盘30mm）底盘直径：155*30*118mm 包装：独立气泡袋 彩盒
+					材质：PC ABS合金,阻燃材料 净重：503—1080g 线长：2m（长度可根据客户要求定制）dsfggdsfg
+					</p>
+				</div>
+			</div>
+	
+</div>
+
+<div class="footer">
+	<p>COPYRIGHT (C) 2016WWW.JINLIAN.COM ALL RIGHTS RSERVED</p>
+</div>
+
+
+<!--这里是复选框的js-->
+<script language="javascript" type="text/javascript">
+window.onload=function(){
+	var oTab=document.getElementById("tab");
+	var aH3=oTab.getElementsByTagName("li");
+	var aDiv=oTab.getElementsByTagName("div");
+
+	for(var i=0;i<aH3.length;i++){
+		aH3[i].index=i;
+		aH3[i].onclick=function(){
+			$(this).addClass("on")
+			$(this).siblings("li").removeClass("on")
+			for(var i=0;i<aH3.length;i++){
+
+				aDiv[i].style.display="none";
+				
+				}
+
+				aDiv[this.index].style.display="block";
+				
+			};
+		};
+	};
+/*end*/
+                      $("#reduce").click(function(){
+							
+							var num = $("#prd_num").val();
+							 --num
+							if(num<=1){
+							  num=1
+							}
+							$("#prd_num").val(num)							
+						})
+						$("#add").click(function(){
+							
+							var num = $("#prd_num").val();
+							 ++num
+							  
+							if(num>99){
+							  num=99
+			     			}
+							
+							 $("#prd_num").val(num)
+						})
+						
+					
+					/***颜色的默认值***/
+					$(".color").find("span").click(function(){
+						$(this).addClass("on")
+						$(this).siblings("span").removeClass("on")
+					})
+
+                     /**改变输入框的值***/
+					var focusVal,
+					reg = /.*\..*/
+
+					$('.prd_num').focus(function() {
+						focusVal = $(this).val()
+					})
+				$(".prd_num").change(function(){
+						numA = $(this).val()
+						if(!Number(numA) || reg.test(numA)) {
+							$(this).val(focusVal)
+							numA = focusVal
+
+						} else if(numA >= 100) {
+							numA = 99
+							$(this).val(numA)
+						}															
+						$(this).val(numA);
+						total();
+				})
+						
+</script>
+
+	</body>
+</html>

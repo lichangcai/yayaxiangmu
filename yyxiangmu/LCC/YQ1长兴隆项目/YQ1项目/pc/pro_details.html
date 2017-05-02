@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>产品中心详情</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/pro_details .css">
+<link rel="stylesheet" href="css/pro_details_centent.css">
+<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			var winW = $(window).width();
+			var liLen = $(".inner_banner .bd li").length;
+			$(".inner_banner .bd").css({"width":winW*liLen+"px"});
+			$(".inner_banner .bd li").width(winW+"px");
+			var a = 0,
+				bool = true
+			$(".inner_banner .hd li").eq(0).addClass("on");
+
+			$(".inner_banner .next").click(function(){
+				show()
+				
+			})
+
+			$(".inner_banner .prev").click(function(){
+				if(bool){
+					bool = false;
+					a = $(".inner_banner .hd li.on").index();
+					a --;
+					if(a<0){
+						a = liLen-1;
+					}
+					$(".inner_banner .bd").animate({"left":-winW*a+"px"},700,function(){
+						bool = true	
+					});
+					$(".inner_banner .hd li").removeClass("on").eq(a).addClass("on");	
+				}else{
+					return ;	
+				}
+				
+			})
+
+			$(".inner_banner .hd li").click(function(){
+				if(bool){
+					bool = false
+					a = $(this).index();
+					$(".inner_banner .bd").animate({"left":-winW*a+"px"},700,function(){
+						bool = true		
+					});
+					$(".inner_banner .hd li").removeClass("on").eq(a).addClass("on");	
+				}else{
+					return ;	
+				}
+				
+			})
+
+			$(".inner_banner").mouseover(function(){
+				clearInterval(lun);
+			})
+			$(".inner_banner").mouseout(function(){
+				lun = setInterval(show,3000);
+			})
+			function show(){
+				if(bool){
+					bool = false;
+					a = a + 1;
+					if(a>liLen-1){
+						a = 0;
+					}
+					$(".inner_banner .bd").animate({"left":-winW*a+"px"},700,function(){
+						bool = true	
+					});
+					$(".inner_banner .hd li").removeClass("on").eq(a).addClass("on");
+				}else{
+					return ;	
+				}
+				
+				
+			}
+			var lun = setInterval(show,3000);
+		})
+	</script>
+     <script type="text/javascript">
+		var inputFocus = function(element,value){
+			if(element.value == value){
+				element.value = "";
+			}
+		}
+		var inputBlur = function(element,value){
+			if(element.value == ""){
+				element.value = value;
+			}
+		}
+	</script>
+</head>
+
+<body>
+<div class="header">
+		<div class="top">
+			<div class="mg">
+				<div class="logo">
+					<a href="###"><img src="images/logo.jpg" title="欢迎来到长兴隆电子有限公司" alt="亲，你的图片未加载，请刷新再试！"></a>
+				</div>
+				<div class="logo_right">
+					<form action="" class="search">
+						<input type="text" value="请输入产品信息" class="text" onfocus="inputFocus(this,this.defaultValue)" onblur="inputBlur(this,this.defaultValue">
+						<input type="submit" value="" class="submit">
+					</form>
+					
+				</div>
+			</div>
+		</div>
+		<div class="navbar">
+			<div class="mg">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li>
+						<a href="about_us.html">公司介绍</a>
+						<dl>
+                            <dd><a href="about_us.html">公司介绍</a></dd>
+							<dd><a href="about_us.html">公司文化</a></dd>
+							<dd><a href="about_us.html">公司环境</a></dd>
+						</dl>
+					</li>
+					<li>
+						<a href="news.html">新闻中心</a>
+						<dl>
+							<dd><a href="news.html">最新动态</a></dd>
+							<dd><a href="news.html">产品新闻</a></dd>
+							<dd><a href="news.html">行业新闻</a></dd>
+						</dl>
+					</li>
+					<li class="on">
+						<a href="product.html">产品中心</a>
+						<dl>
+							<dd><a href="product.html" >音响类</a></dd>
+							<dd><a href="product.html" >耳机类</a></dd>
+							<dd><a href="product.html" >键盘类</a></dd>
+                            <dd><a href="product.html" >鼠标类</a></dd>
+                            <dd><a href="product.html" >其他</a></dd>
+						</dl>
+					</li>
+					<li>
+						<a href="contact_us.html">联系我们</a>
+						<dl>
+							<dd><a href="contact_us.html">在线留言</a></dd>
+							<dd><a href="contact_us.html">联系我们</a></dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    
+    
+    
+    <div class="content">
+		<div class="inner_banner">
+		<div class="bd">
+			<ul>
+				<li><a href="product.html"><img src="images/banner3.jpg"></a></li>
+				<li><a href="news.html"><img src="images/banner2.jpg"></a></li>
+				<li><a href="index.html"><img src="images/banner.jpg"></a></li>
+			</ul>
+		</div>
+		<div class="hd">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<a href="###" class="prev"><img src="images/prev-1.jpg"></a>
+		<a href="###" class="next"><img src="images/next-1.jpg"></a>
+	    </div>
+   </div>
+   
+   
+   
+ <div class="centent">
+     <div class="mg">
+        <div class="left">
+            <div class="top">
+               <h3>产品中心</h3>
+            </div>
+            <div class="topA">
+                 <ul>
+                     <li><a href="product.html" class="on">音响类</a></li>
+                     <li><a href="product.html">耳机类</a></li>
+                     <li><a href="product.html">键盘类</a></li>
+                     <li><a href="product.html">鼠标类</a></li>
+                     <li><a href="product.html">其他类</a></li> 
+                 </ul>
+             </div>
+             <img src="images/us-top1.jpg">
+              <div class="contact"> 
+                 <ul>
+                   <li>联系人:肖生</li>
+                   <li>联系电话：0769-82365678</li>
+                   <li>QQ:12345678901</li>
+                   <li>传真:028-12345678</li>
+                   <li>联系地址:广东省东莞市桥头镇桥龙路</li>
+                   <li>120号（523523）</li>
+                 </ul>
+             </div>
+         </div>
+         
+         
+           <div class="right">
+            <div class="top">
+               <p>当前位置：<a href="index.html"> 首页</a> > <a href="product.html">产品中心</a> > <a href="product.html">音响类</a> > <span class="on">Edifier/漫步者 R2000DB经典版蓝牙HIFI遥控音箱2.0家居音响</span></p>
+              </div>
+              <div class="center">
+                  <h1>Edifier/漫步者 R2000DB经典版蓝牙HIFI遥控音箱2.0家居音响</h1>
+                 <img src="images/left.jpg">
+                  <p>牙音箱 数字功放 光纤输入全新设计 木质箱体 蓝牙音箱 数字功放 光纤输入全新
+                  设计 木质箱体 蓝牙音箱 数字功放 光纤输入全新设计 木质箱体 蓝牙音箱 数字
+                  功放 光纤输入全新设计 木质箱体 蓝牙音箱 数字功放 光纤输入全新设计 木质
+                  箱体 蓝牙音箱 数字功放 光纤输入全新设计 木质箱体 蓝牙音箱 数字功放 光纤
+                  输入全新设计 木质箱体 蓝牙音箱 数字功放 光纤输入全新设计 木质箱体 蓝牙音
+                  箱 数字功放 光纤输入全新设计 木质箱体 蓝牙音箱 数字功放 光纤输入全持与用
+                  户的信赖
+                  </p>
+                  <p> 全新设计 木质箱体 蓝牙音箱 数字功放 光纤输入全新设计 木质箱体 蓝牙音箱
+                  数字功放 光纤输入全新设计 木质箱体 蓝牙音箱 数字功放 光纤输入全新设计 
+                  木质箱体 蓝牙音箱 数字功放 光纤输入全新设计 木质体 蓝牙音箱 数字功放
+                  光纤输入全新设计 木质箱体 蓝牙音箱 数字功放 光纤输入全新设计木质箱体蓝
+                  </p>
+                  <p>新设计 木质箱体 蓝牙音箱 数字功放 光纤输入全新设计 木质箱体 蓝牙音箱 数字
+                  功放 光纤输入全新设计 木质箱体 蓝牙音箱 数字功放 光纤输入全新设计 木质
+                  箱体 蓝牙音箱 数字功放 光纤输入全新设计 木质箱体 蓝牙音箱 数字功放 光纤
+                  输入全新设计 木质箱体 蓝牙音箱 数字功放 光纤输入全新设计 木质箱体 蓝牙音
+                  箱 数字功放 输入全新设计 木质箱体 蓝牙音箱 数字功放 光纤输入全新设计 木质
+                  箱体 蓝牙音箱 数字功放 光纤输入全新设计 木质箱体 蓝牙音箱 数字功放 光纤
+                  输入
+                  </p>
+                  <ul> 
+                     <li><a href="news_details.html">上一个</a></li>
+                     <li><a href="news_details.html">下一个</a></li>
+                  </ul>
+                  
+              </div>
+         </div>
+       
+     </div>
+ </div>
+
+ 
+ <div class="footer">
+    <div class="mg">
+    <div class="footer-right">
+     <img src="images/erweima.jpg" alt="请刷新再试！" title="欢迎关注我们的官方二维码！">
+    </div>
+    <div class="footer-left">
+    <p>Copyright@2003-2016,All Right  Reserve 长兴隆电子有限公司</p>
+    <p>四川广东省东莞市桥头镇桥龙路120号（523523）</p>
+     <p>Powered by: <a href="http://www.kguowai.com/news/303.html">跨国财购网</a></p>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

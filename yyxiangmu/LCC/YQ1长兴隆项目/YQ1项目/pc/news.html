@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>新闻中心</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/news.css">
+<link rel="stylesheet" href="css/news_centent.css">
+<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			var winW = $(window).width();
+			var liLen = $(".inner_banner .bd li").length;
+			$(".inner_banner .bd").css({"width":winW*liLen+"px"});
+			$(".inner_banner .bd li").width(winW+"px");
+			var a = 0,
+				bool = true
+			$(".inner_banner .hd li").eq(0).addClass("on");
+
+			$(".inner_banner .next").click(function(){
+				show()
+				
+			})
+
+			$(".inner_banner .prev").click(function(){
+				if(bool){
+					bool = false;
+					a = $(".inner_banner .hd li.on").index();
+					a --;
+					if(a<0){
+						a = liLen-1;
+					}
+					$(".inner_banner .bd").animate({"left":-winW*a+"px"},700,function(){
+						bool = true	
+					});
+					$(".inner_banner .hd li").removeClass("on").eq(a).addClass("on");	
+				}else{
+					return ;	
+				}
+				
+			})
+
+			$(".inner_banner .hd li").click(function(){
+				if(bool){
+					bool = false
+					a = $(this).index();
+					$(".inner_banner .bd").animate({"left":-winW*a+"px"},700,function(){
+						bool = true		
+					});
+					$(".inner_banner .hd li").removeClass("on").eq(a).addClass("on");	
+				}else{
+					return ;	
+				}
+				
+			})
+
+			$(".inner_banner").mouseover(function(){
+				clearInterval(lun);
+			})
+			$(".inner_banner").mouseout(function(){
+				lun = setInterval(show,3000);
+			})
+			function show(){
+				if(bool){
+					bool = false;
+					a = a + 1;
+					if(a>liLen-1){
+						a = 0;
+					}
+					$(".inner_banner .bd").animate({"left":-winW*a+"px"},700,function(){
+						bool = true	
+					});
+					$(".inner_banner .hd li").removeClass("on").eq(a).addClass("on");
+				}else{
+					return ;	
+				}
+				
+				
+			}
+			var lun = setInterval(show,3000);
+		})
+	</script>
+    <script type="text/javascript">
+		var inputFocus = function(element,value){
+			if(element.value == value){
+				element.value = "";
+			}
+		}
+		var inputBlur = function(element,value){
+			if(element.value == ""){
+				element.value = value;
+			}
+		}
+	</script>
+</head>
+
+<body>
+<div class="header">
+		<div class="top">
+			<div class="mg">
+				<div class="logo">
+					<a href="###"><img src="images/logo.jpg" title="欢迎来到长兴隆电子有限公司" alt="亲，你的图片未加载，请刷新再试！"></a>
+				</div>
+				<div class="logo_right">
+					<form action="" class="search">
+						<input type="text" value="请输入文字搜索" class="text" onfocus="inputFocus(this,this.defaultValue)" onblur="inputBlur(this,this.defaultValue)">
+						<input type="submit" value="" class="submit">
+					</form>
+					
+				</div>
+			</div>
+		</div>
+		<div class="navbar">
+			<div class="mg">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li>
+						<a href="about_us.html">公司介绍</a>
+						<dl>
+                            <dd><a href="about_us.html">公司介绍</a></dd>
+							<dd><a href="about_us.html">公司文化</a></dd>
+							<dd><a href="about_us.html">公司环境</a></dd>
+						</dl>
+					</li>
+					<li class="on">
+						<a href="news.html">新闻中心</a>
+						<dl>
+							<dd><a href="news.html">最新动态</a></dd>
+							<dd><a href="news.html">产品新闻</a></dd>
+							<dd><a href="news.html">行业新闻</a></dd>
+						</dl>
+					</li>
+					<li>
+						<a href="product.html">产品中心</a>
+						<dl>
+							<dd><a href="product.html" >音响类</a></dd>
+							<dd><a href="product.html" >耳机类</a></dd>
+							<dd><a href="product.html" >键盘类</a></dd>
+                            <dd><a href="product.html" >鼠标类</a></dd>
+                            <dd><a href="product.html" >其他</a></dd>
+						</dl>
+					</li>
+					<li>
+						<a href="contact_us.html">联系我们</a>
+						<dl>
+							<dd><a href="contact_us.html">在线留言</a></dd>
+							<dd><a href="contact_us.html">联系我们</a></dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    
+    
+    
+    <div class="content">
+		<div class="inner_banner">
+		<div class="bd">
+			<ul>
+				<li><a href="index.html"><img src="images/banner.jpg"></a></li>
+				<li><a href="news.html"><img src="images/banner2.jpg"></a></li>
+				<li><a href="product.html"><img src="images/banner3.jpg"></a></li>
+			</ul>
+		</div>
+		<div class="hd">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<a href="###" class="prev"><img src="images/prev-1.jpg"></a>
+		<a href="###" class="next"><img src="images/next-1.jpg"></a>
+	    </div>
+   </div>
+  
+ 
+   <div class="centent">
+       <div class="mg">
+            <div class="left">
+               <div class="top"> 
+                 <h3>新闻中心</h3>
+             </div>
+             <div class="topA">
+                 <ul>
+                     <li><a href="product.html"  class="on">最新产品</a></li>
+                     <li><a href="news.html">产品新闻</a></li>
+                     <li><a href="news.html">行业新闻</a></li>
+                 </ul>
+             </div>    
+              <img src="images/us-top1.jpg">
+              <div class="top1"> 
+                 <ul>
+                   <li>联系人:肖生</li>
+                   <li>联系电话：0769-82365678</li>
+                   <li>QQ:12345678901</li>
+                   <li>传真:028-12345678</li>
+                   <li>联系地址:广东省东莞市桥头镇桥龙路</li>
+                   <li>120号（523523）</li>
+                 </ul>
+             </div>
+         </div>
+         
+         
+         <div class="right">
+             <div class="top">
+                  <p>当前位置：<a href="index.html">首页</a> > <a href="news.html">新闻中心</a> ><span>最新动态</span></p>
+             </div>
+             
+             <div class="news">
+             <p>最新动态</p>
+             </div>
+             <ul>
+             
+             <li class="ov">
+                 <div class="pic">
+                      <a href="news_details.html"><img src="images/new_centent_left1.jpg"></a>
+                 </div>
+                 <div class="textA">
+                      <h1><a href="news_details.html">iPhone7卖疯了!订购量创历史新高，钢琴黑卖断货</a></h1>
+                      <p>果粉对于iPhone 7的热情，远远超出了华尔街和分析师的预期。</p>
+                       <p>美东时间9月13日，美国四大运营商之一T-Mobile首席执行官John Legere称，iPhone 7的预售已经创下新纪录，目前为止订单数量
+                       已经是iPhone 6去年同期销售的4倍，为T-Mobile史上最出色的iPhone预售数据。
+                     </p>
+                     <p>两年合约，就能用一部iPhone 6或6S免费换一部32G的iPhone 7。但如果用户要提前退出合约，就需要按比例支付这部iPhone 7的价格（649美元）。
+                     </p>
+                 </div>
+              </li>
+              
+              <li class="ov">
+                 <div class="pic">
+                      <a href="news_details.html"><img src="images/new_centent_left2.jpg"></a>
+                 </div>
+                 <div class="textA">
+                       <h1><a href="news_details.html">苹果小米都在用 但双摄像头你真的了解吗？</a></h1>
+                      <p>继指纹识别成为手机的标配之后，双摄像头也成为厂商们新的“风向标”。搭载双摄像头
+                      的手机也逐渐多了起来，甚至是苹果公司也推出了双镜头设计的iPhone7 Plus。那么
+                      ，什么原因让厂商们对于双镜头如此趋之若鹜呢？
+                      </p>
+                      <p>众所周知，手机是高度集成化的产物，摄像头也被隐匿于其中。随着手机在厚度上越来越轻薄，而摄像头的宽度要想与机身一同变薄则较为困难。因此，备受吐槽是一种不得不妥协的选择。
+                      </p>
+                 </div>
+              </li>
+              
+              <li class="ov">
+                 <div class="pic">
+                       <a href="news_details.html"><img src="images/new_centent_left3.jpg"></a>
+                 </div>
+                 <div class="textA">
+                     <h1><a href="news_details.html">谷歌被指暗中帮助希拉里 影响300万选票</a></h1>
+                      <p>当地时间9月11日，美国纽约，出席“9·11”纪念活动的希拉里由于健康原因临时提前退场，引发对其健康状况的担忧。v健康问题引发的争议还未平息，希拉里又遇到一件头疼事。俄罗斯“卫星”通讯社12日以独家报道的形式刊文，直指美国互联网巨头谷歌公司利用用户的搜索习惯，通过过滤甚至屏蔽与希拉里相关的负面自动关联词条来为其选战助阵，这种让人难以“察觉”的支持甚至可能影响多达300万张选票的归属。
+                      </p>
+                 </div>
+              </li>
+              
+              <li class="ov">
+                 <div class="pic">
+                     <a href="news_details.html"><img src="images/new_centent_left4.jpg"></a>
+                 </div>
+                 <div class="textA">
+                      <h1><a href="news_details.html">阿里月饼事件四名员工疑似收到腾讯和360橄榄枝</a></h1>
+                     <p>9月13日消息，被阿里月饼事件刷屏后，不少人对那四名抢月饼的安全员深表同情，据知乎及朋友圈消息爆料，腾讯和奇虎360公司的高层已经发声，请这几位员工给我们投简历。作为追热点丝毫不输给杜蕾斯的淘宝，这次事件之后，再次发挥出其强大的文案能力。目前淘宝上已经开始热卖“阿里月饼”给出的推荐词是——阿里月饼公司专供，好吃到内部抢到开除。据网传阿里内部通告显示，认为秒杀虽然没有涉及到阿里外部平台业务秩序的干扰，但对于内部员工却造成福利分配的不公正，阿里安全的攻防技术应用来对付黑灰产。
+                      </P>
+                 </div>
+              </li>
+             
+            </ul>
+            <div class="number">
+                  <ul>
+                    <li><a href="#" class="on"> 1 </a></li>
+                    <li><a href="#"> 2 </a></li>
+                    <li><a href="#"> 3 </a></li>
+                    <li>...</li>
+                    <li><a href="#">11</a></li>
+                    <li><a href="#">12</a></li>
+                    <li><a href="#">13</a></li>
+                    <li>跳转至: <input name="" type="text" class="kuang"></li>
+                    <li><a href="#">跳转</a></li>
+                </ul>
+             </div>
+         </div>
+        
+       </div>
+   </div>
+   
+
+
+ 
+   <div class="footer">
+       <div class="mg">
+           <div class="footer-right">
+               <img src="images/erweima.jpg" alt="请刷新再试！" title="欢迎关注我们的官方二维码！">
+           </div>
+       <div class="footer-left">
+               <p>Copyright@2003-2016,All Right  Reserve 长兴隆电子有限公司</p>
+               <p>四川广东省东莞市桥头镇桥龙路120号（523523）</p>
+                <p>Powered by: <a href="http://www.kguowai.com/news/303.html">跨国财购网</a></p>
+      </div>
+   </div>
+</body>
+</html>

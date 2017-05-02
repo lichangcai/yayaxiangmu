@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/shop_cart.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/car_top.css" />
+		
+		<title>购物车</title>
+	</head>
+	<!--ng-controller 指令用于为你的应用添加控制器。在控制器中，你可以编写代码，制作函数和变量，并使用 scope 对象来访问。-->
+	<!--homeController是ng-controller自己定义的名字-->
+	<body ng-controller="shop_cartController">
+		<ion-view class="shop_cart">
+			<!--ion-hearder-bar 这个是固定在屏幕顶部的一个头部标题栏的用法。-->
+			<ion-header-bar class="head-top">
+				<ul>
+					<li class="item-icon-left item-icon-right">
+						<i class="ion-ios-undo-outline icon item-icon-left" ng-click="backs()" ></i>
+						<div class="header_center">
+						购物车
+					   </div>						
+					</li>
+				</ul>
+			</ion-header-bar>
+			<!--top这是结尾-->
+			<!--<这是自动轮播的代码 要加上ion-content才可以居中-->				
+				<ion-content class="content">
+					<ion-refresher pulling-text="亲，正在下拉刷新" on-refresh="loads()"></ion-refresher>
+					<ul class="row All">
+						<li>
+							<label>
+								<input type="checkbox" ng-model="inToal.checkAll" ng-click="checkedAll(inToal.checkAll)" />
+								<span></span>
+								全选
+							</label>
+						</li>
+						<li ng-click="clean()">
+						         <span>清空购物车 </span><img src="img/shop_cart/pic.png"/>
+						</li>
+					</ul>
+				    <!--购物车列表-->
+				   <!--伪元素的代码--> 
+				   
+					<ion-list class="list" ng-repeat="item in obj">
+						<div class="left">
+							<label>
+								<input type="checkbox" ng-model="item.checked" ng-click="check()"/>
+								   <span></span>								
+							</label>
+							<a ui-sref="pro_details"><img ng-src="{{item.img}}" /></a>
+						</div>
+						<div class="right">
+							<h3 ui-sref="pro_details" ui-sref="pro_details">{{item.name}}</h3>
+							<p class="p_jia">价格：<i>￥{{item.prices}}</i></p>
+							<div class="bottom">
+								<div>
+									<span>数量</span>
+									<div class="text_bot">
+										<button type="button" ng-click="miuns($index)" class="prd_sunNum">-</button>
+										<input type="text" value="{{item.unmber}}"  ng-focus="pd_focus($index)" ng-blur="pd_blur($index)" class="kuang prd_num"/>
+										<!--这是每个div中ng-click中="add($iddex)"的索引值-->
+										<button type="button"  ng-click="adds($index)" class="prd_addNum">+</button>
+									</div>
+								</div>
+								<span ng-click="detale($index)" class="date">删除</span>
+							</div>
+							<p class="xiao">月销：20</p>
+							
+						</div>
+					</ion-list>				
+				</ion-content>
+				<div class="foot bar bar-footer">
+						<p>应付总额：<i>{{inToal.total}}</i>元 </p>							
+						<p><button ui-sref="sure_order">去结算(<span class="Settlement">0</span>)</button></p>	
+				</div>
+			    <!--这里是底部的代码-->
+			    <ion-footer-bar>
+				<!--<div class="bar-footer">-->
+				    <ul>
+				   		<li  ui-sref="home">
+				   			<div>
+				   				<i class="ion-home"></i>
+				   				<p>主页</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="prostyle">
+				   			<div>
+				   				<i class="icon ion-ios-settings-strong" ></i>
+				   				<p>分类</p>
+				   			</div>
+				   			
+				   			
+				   		</li>
+				   		<li>
+				   			<div><i class="ion-ios-lightbulb-outline" ></i>
+				   				<p>发现</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="shop_cart">
+				   			<div>
+				   				<i class="icon ion-ios-cart" ></i>
+				   				<p>购物车</p>
+				   			</div>
+				   		</li>
+				   		<li ui-sref="user">
+				   			<div>
+				   				<i class="ion-person-add" ></i>
+				   				<p>我</p>
+				   			</div>
+				   		</li>
+						
+					</ul>
+			</ion-footer-bar>
+		</ion-view>
+	</body>
+
+</html>
+
